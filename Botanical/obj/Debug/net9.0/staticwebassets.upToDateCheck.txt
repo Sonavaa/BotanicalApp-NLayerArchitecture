@@ -57,10 +57,16 @@ wwwroot\client\assets\fonts\icomoon.eot
 wwwroot\client\assets\fonts\icomoon.svg
 wwwroot\client\assets\fonts\icomoon.ttf
 wwwroot\client\assets\fonts\icomoon.woff
+wwwroot\client\assets\images\aboutBannerImg.png
+wwwroot\client\assets\images\aboutImg.jpg
 wwwroot\client\assets\images\ad1.jpg
 wwwroot\client\assets\images\ad2.jpg
+wwwroot\client\assets\images\b-bg7.jpg
+wwwroot\client\assets\images\CactusPlantCategoryImg.jpg
 wwwroot\client\assets\images\default.jpg
+wwwroot\client\assets\images\FloorPlantCategoryImg.jpg
 wwwroot\client\assets\images\hbdr.png
+wwwroot\client\assets\images\headerBorderImg.png
 wwwroot\client\assets\images\HomeSlider-1.png
 wwwroot\client\assets\images\HomeSlider-2.png
 wwwroot\client\assets\images\HomeSlider-3.png
@@ -80,6 +86,7 @@ wwwroot\client\assets\images\img13.jpg
 wwwroot\client\assets\images\img14.jpg
 wwwroot\client\assets\images\img15.jpg
 wwwroot\client\assets\images\img16.jpg
+wwwroot\client\assets\images\IndoorPlantCategoryImg.jpg
 wwwroot\client\assets\images\logo.png
 wwwroot\client\assets\images\p-logo1.png
 wwwroot\client\assets\images\p-logo2.png
@@ -87,6 +94,8 @@ wwwroot\client\assets\images\p-logo3.png
 wwwroot\client\assets\images\p-logo4.png
 wwwroot\client\assets\images\p-logo5.png
 wwwroot\client\assets\images\p-logo6.png
+wwwroot\client\assets\images\TablePlantCategoryImg.jpg
+wwwroot\client\assets\images\TropicalPlantCategoryImg.jpg
 wwwroot\client\assets\js\bootstrap.min.js
 wwwroot\client\assets\js\jquery-3.4.1.min.js
 wwwroot\client\assets\js\jqueryCustome.js

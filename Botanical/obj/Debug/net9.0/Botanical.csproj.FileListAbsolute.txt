@@ -96,7 +96,6 @@ C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\fuuol
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\h00nrro1pb-zu238p5lxg.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\y5ricytoad-lrqn8z9hfd.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\v7qqslry5q-uovj7gxr5x.gz
-C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\o54pbjxpjh-y53as4i2gr.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\w6c8bnf7wf-4ehpg0512y.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\8k5ckbmypb-i8roixljxz.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\j42ecy927c-wr9pjae3ce.gz
@@ -117,3 +116,5 @@ C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\refint\Botanical
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\Botanical.pdb
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\Botanical.genruntimeconfig.cache
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\ref\Botanical.dll
+C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\Botanical.sourcelink.json
+C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\o54pbjxpjh-hxgx70snof.gz

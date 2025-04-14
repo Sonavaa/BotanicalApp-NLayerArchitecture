@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wWq6FC4tQUKMljprao0UN4hCCbJCoodlJtsSpjVB1hc=",
+  "Hash": "9mnEC5gk5wN7RbsdzO9OeASzJmyXG9LBOh/wZ57WAm0=",
   "Source": "Botanical",
   "BasePath": "_content/Botanical",
   "Mode": "Default",
@@ -353,12 +353,12 @@
       "OriginalItemSpec": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\scopedcss\\bundle\\Botanical.styles.css"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\o54pbjxpjh-y53as4i2gr.gz",
+      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\o54pbjxpjh-hxgx70snof.gz",
       "SourceId": "Botanical",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Botanical",
-      "RelativePath": "client/assets/js/main#[.{fingerprint=y53as4i2gr}]?.js.gz",
+      "RelativePath": "client/assets/js/main#[.{fingerprint=hxgx70snof}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -367,8 +367,8 @@
       "RelatedAsset": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\js\\main.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "p78qmwpici",
-      "Integrity": "6+2HdKU4RUfUQm0lf+ROv0FnMq2QRQcJOwDS5gmczHQ=",
+      "Fingerprint": "ei8xlj6eum",
+      "Integrity": "qhW8bvO5N6KDVA3ns/OopB5BCljdjxsap2QA+ajvR3g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\js\\main.js"
@@ -1340,6 +1340,48 @@
       "OriginalItemSpec": "wwwroot\\client\\assets\\fonts\\icomoon.woff"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\aboutBannerImg.png",
+      "SourceId": "Botanical",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\",
+      "BasePath": "_content/Botanical",
+      "RelativePath": "client/assets/images/aboutBannerImg#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tnh7jz3464",
+      "Integrity": "1xsz5CER4GOqrVWiAH8gltOdgwyYNzW0Pf9NLYKINMc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\assets\\images\\aboutBannerImg.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\aboutImg.jpg",
+      "SourceId": "Botanical",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\",
+      "BasePath": "_content/Botanical",
+      "RelativePath": "client/assets/images/aboutImg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sc9j6pksnb",
+      "Integrity": "5D9fsMl/7fi/Ed7SNGCT3kfCfHOSaAHuhd+jPBlGuK0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\assets\\images\\aboutImg.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\ad1.jpg",
       "SourceId": "Botanical",
       "SourceType": "Discovered",
@@ -1382,6 +1424,48 @@
       "OriginalItemSpec": "wwwroot\\client\\assets\\images\\ad2.jpg"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\b-bg7.jpg",
+      "SourceId": "Botanical",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\",
+      "BasePath": "_content/Botanical",
+      "RelativePath": "client/assets/images/b-bg7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vlqj6qqn64",
+      "Integrity": "c9vBgHEiwRNP9m0QEuSdqy5McrZdzKbC8VMydwFpqb8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\assets\\images\\b-bg7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\CactusPlantCategoryImg.jpg",
+      "SourceId": "Botanical",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\",
+      "BasePath": "_content/Botanical",
+      "RelativePath": "client/assets/images/CactusPlantCategoryImg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hilweglaq0",
+      "Integrity": "F+2igm9bI5rfNrZ/W5Diw3VYRxEOSfJXYU3EhuknECc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\assets\\images\\CactusPlantCategoryImg.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\default.jpg",
       "SourceId": "Botanical",
       "SourceType": "Discovered",
@@ -1403,6 +1487,27 @@
       "OriginalItemSpec": "wwwroot\\client\\assets\\images\\default.jpg"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\FloorPlantCategoryImg.jpg",
+      "SourceId": "Botanical",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\",
+      "BasePath": "_content/Botanical",
+      "RelativePath": "client/assets/images/FloorPlantCategoryImg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fagvyzzjvu",
+      "Integrity": "NyLHdHp3VgQqNYmWe2peqRH2ljtH9ggxscs9/U5RyGY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\assets\\images\\FloorPlantCategoryImg.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\hbdr.png",
       "SourceId": "Botanical",
       "SourceType": "Discovered",
@@ -1422,6 +1527,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\client\\assets\\images\\hbdr.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\headerBorderImg.png",
+      "SourceId": "Botanical",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\",
+      "BasePath": "_content/Botanical",
+      "RelativePath": "client/assets/images/headerBorderImg#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5hxf7vj8pj",
+      "Integrity": "xzUyNQ9UpP+A0JlHPMppdRHBUtQPj15lKeKLWR6XaBA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\assets\\images\\headerBorderImg.png"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\HomeSlider-1.png",
@@ -1823,6 +1949,27 @@
       "OriginalItemSpec": "wwwroot\\client\\assets\\images\\img16.jpg"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\IndoorPlantCategoryImg.jpg",
+      "SourceId": "Botanical",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\",
+      "BasePath": "_content/Botanical",
+      "RelativePath": "client/assets/images/IndoorPlantCategoryImg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4tx01ez8vc",
+      "Integrity": "2IuQRXuXuPTyc8P0aWmKvQNPLDiPNfJUlh1axRc0kp4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\assets\\images\\IndoorPlantCategoryImg.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\logo.png",
       "SourceId": "Botanical",
       "SourceType": "Discovered",
@@ -1970,6 +2117,48 @@
       "OriginalItemSpec": "wwwroot\\client\\assets\\images\\p-logo6.png"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\TablePlantCategoryImg.jpg",
+      "SourceId": "Botanical",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\",
+      "BasePath": "_content/Botanical",
+      "RelativePath": "client/assets/images/TablePlantCategoryImg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wx0ff7xb29",
+      "Integrity": "hG2JkijWcyUIaW0SocJZROG4zzq9D3HM0RVf31Hev94=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\assets\\images\\TablePlantCategoryImg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\TropicalPlantCategoryImg.jpg",
+      "SourceId": "Botanical",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\",
+      "BasePath": "_content/Botanical",
+      "RelativePath": "client/assets/images/TropicalPlantCategoryImg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i76zjk96kg",
+      "Integrity": "Lt3VeIwlnxccANccO4ToxnpNuZ2+LF5XTyG8P8vx1zo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client\\assets\\images\\TropicalPlantCategoryImg.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\js\\bootstrap.min.js",
       "SourceId": "Botanical",
       "SourceType": "Discovered",
@@ -2047,8 +2236,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "y53as4i2gr",
-      "Integrity": "egU5/81jo+C4wDbJnIgJolNcj0ldc2EkY12JAsT2fgc=",
+      "Fingerprint": "hxgx70snof",
+      "Integrity": "9bo8XYNs4Wd+VIBmhi9ZFjMXpQqEXMISO3b9slSVk9M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\client\\assets\\js\\main.js"
@@ -11728,6 +11917,170 @@
       ]
     },
     {
+      "Route": "client/assets/images/aboutBannerImg.png",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\aboutBannerImg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "260386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1xsz5CER4GOqrVWiAH8gltOdgwyYNzW0Pf9NLYKINMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:17:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1xsz5CER4GOqrVWiAH8gltOdgwyYNzW0Pf9NLYKINMc="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/aboutBannerImg.tnh7jz3464.png",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\aboutBannerImg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "260386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1xsz5CER4GOqrVWiAH8gltOdgwyYNzW0Pf9NLYKINMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:17:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tnh7jz3464"
+        },
+        {
+          "Name": "label",
+          "Value": "client/assets/images/aboutBannerImg.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1xsz5CER4GOqrVWiAH8gltOdgwyYNzW0Pf9NLYKINMc="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/aboutImg.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\aboutImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50851"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5D9fsMl/7fi/Ed7SNGCT3kfCfHOSaAHuhd+jPBlGuK0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:17:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5D9fsMl/7fi/Ed7SNGCT3kfCfHOSaAHuhd+jPBlGuK0="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/aboutImg.sc9j6pksnb.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\aboutImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50851"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5D9fsMl/7fi/Ed7SNGCT3kfCfHOSaAHuhd+jPBlGuK0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:17:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sc9j6pksnb"
+        },
+        {
+          "Name": "label",
+          "Value": "client/assets/images/aboutImg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5D9fsMl/7fi/Ed7SNGCT3kfCfHOSaAHuhd+jPBlGuK0="
+        }
+      ]
+    },
+    {
       "Route": "client/assets/images/ad1.76xyd3ezfq.jpg",
       "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\ad1.jpg",
       "Selectors": [],
@@ -11892,6 +12245,170 @@
       ]
     },
     {
+      "Route": "client/assets/images/b-bg7.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\b-bg7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c9vBgHEiwRNP9m0QEuSdqy5McrZdzKbC8VMydwFpqb8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:31:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c9vBgHEiwRNP9m0QEuSdqy5McrZdzKbC8VMydwFpqb8="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/b-bg7.vlqj6qqn64.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\b-bg7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c9vBgHEiwRNP9m0QEuSdqy5McrZdzKbC8VMydwFpqb8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:31:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vlqj6qqn64"
+        },
+        {
+          "Name": "label",
+          "Value": "client/assets/images/b-bg7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c9vBgHEiwRNP9m0QEuSdqy5McrZdzKbC8VMydwFpqb8="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/CactusPlantCategoryImg.hilweglaq0.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\CactusPlantCategoryImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F+2igm9bI5rfNrZ/W5Diw3VYRxEOSfJXYU3EhuknECc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 14:58:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hilweglaq0"
+        },
+        {
+          "Name": "label",
+          "Value": "client/assets/images/CactusPlantCategoryImg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F+2igm9bI5rfNrZ/W5Diw3VYRxEOSfJXYU3EhuknECc="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/CactusPlantCategoryImg.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\CactusPlantCategoryImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F+2igm9bI5rfNrZ/W5Diw3VYRxEOSfJXYU3EhuknECc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 14:58:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F+2igm9bI5rfNrZ/W5Diw3VYRxEOSfJXYU3EhuknECc="
+        }
+      ]
+    },
+    {
       "Route": "client/assets/images/default.jpg",
       "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\default.jpg",
       "Selectors": [],
@@ -11974,6 +12491,88 @@
       ]
     },
     {
+      "Route": "client/assets/images/FloorPlantCategoryImg.fagvyzzjvu.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\FloorPlantCategoryImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NyLHdHp3VgQqNYmWe2peqRH2ljtH9ggxscs9/U5RyGY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 14:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fagvyzzjvu"
+        },
+        {
+          "Name": "label",
+          "Value": "client/assets/images/FloorPlantCategoryImg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NyLHdHp3VgQqNYmWe2peqRH2ljtH9ggxscs9/U5RyGY="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/FloorPlantCategoryImg.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\FloorPlantCategoryImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NyLHdHp3VgQqNYmWe2peqRH2ljtH9ggxscs9/U5RyGY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 14:58:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NyLHdHp3VgQqNYmWe2peqRH2ljtH9ggxscs9/U5RyGY="
+        }
+      ]
+    },
+    {
       "Route": "client/assets/images/hbdr.5hxf7vj8pj.png",
       "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\hbdr.png",
       "Selectors": [],
@@ -12042,6 +12641,88 @@
         {
           "Name": "Last-Modified",
           "Value": "Wed, 25 Sep 2019 11:46:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xzUyNQ9UpP+A0JlHPMppdRHBUtQPj15lKeKLWR6XaBA="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/headerBorderImg.5hxf7vj8pj.png",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\headerBorderImg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xzUyNQ9UpP+A0JlHPMppdRHBUtQPj15lKeKLWR6XaBA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:21:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5hxf7vj8pj"
+        },
+        {
+          "Name": "label",
+          "Value": "client/assets/images/headerBorderImg.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xzUyNQ9UpP+A0JlHPMppdRHBUtQPj15lKeKLWR6XaBA="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/headerBorderImg.png",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\headerBorderImg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xzUyNQ9UpP+A0JlHPMppdRHBUtQPj15lKeKLWR6XaBA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:21:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13614,6 +14295,88 @@
       ]
     },
     {
+      "Route": "client/assets/images/IndoorPlantCategoryImg.4tx01ez8vc.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\IndoorPlantCategoryImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24397"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2IuQRXuXuPTyc8P0aWmKvQNPLDiPNfJUlh1axRc0kp4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 14:58:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4tx01ez8vc"
+        },
+        {
+          "Name": "label",
+          "Value": "client/assets/images/IndoorPlantCategoryImg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2IuQRXuXuPTyc8P0aWmKvQNPLDiPNfJUlh1axRc0kp4="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/IndoorPlantCategoryImg.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\IndoorPlantCategoryImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24397"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2IuQRXuXuPTyc8P0aWmKvQNPLDiPNfJUlh1axRc0kp4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 14:58:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2IuQRXuXuPTyc8P0aWmKvQNPLDiPNfJUlh1axRc0kp4="
+        }
+      ]
+    },
+    {
       "Route": "client/assets/images/logo.14jg539m3a.png",
       "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\logo.png",
       "Selectors": [],
@@ -14184,6 +14947,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-dkphqNU8YQZ+QeIQT1DZa9wj5pS0WIcCIInvhSAW6/o="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/TablePlantCategoryImg.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\TablePlantCategoryImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19935"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hG2JkijWcyUIaW0SocJZROG4zzq9D3HM0RVf31Hev94=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 14:59:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hG2JkijWcyUIaW0SocJZROG4zzq9D3HM0RVf31Hev94="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/TablePlantCategoryImg.wx0ff7xb29.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\TablePlantCategoryImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19935"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hG2JkijWcyUIaW0SocJZROG4zzq9D3HM0RVf31Hev94=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 14:59:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wx0ff7xb29"
+        },
+        {
+          "Name": "label",
+          "Value": "client/assets/images/TablePlantCategoryImg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hG2JkijWcyUIaW0SocJZROG4zzq9D3HM0RVf31Hev94="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/TropicalPlantCategoryImg.i76zjk96kg.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\TropicalPlantCategoryImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lt3VeIwlnxccANccO4ToxnpNuZ2+LF5XTyG8P8vx1zo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 14:58:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i76zjk96kg"
+        },
+        {
+          "Name": "label",
+          "Value": "client/assets/images/TropicalPlantCategoryImg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lt3VeIwlnxccANccO4ToxnpNuZ2+LF5XTyG8P8vx1zo="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/images/TropicalPlantCategoryImg.jpg",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\TropicalPlantCategoryImg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lt3VeIwlnxccANccO4ToxnpNuZ2+LF5XTyG8P8vx1zo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 14:58:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lt3VeIwlnxccANccO4ToxnpNuZ2+LF5XTyG8P8vx1zo="
         }
       ]
     },
@@ -15082,13 +16009,13 @@
       ]
     },
     {
-      "Route": "client/assets/js/main.js",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\o54pbjxpjh-y53as4i2gr.gz",
+      "Route": "client/assets/js/main.hxgx70snof.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\o54pbjxpjh-hxgx70snof.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003039513678"
+          "Quality": "0.001769911504"
         }
       ],
       "ResponseHeaders": [
@@ -15098,19 +16025,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "328"
+          "Value": "564"
         },
         {
           "Name": "ETag",
-          "Value": "\"6+2HdKU4RUfUQm0lf+ROv0FnMq2QRQcJOwDS5gmczHQ=\""
+          "Value": "\"qhW8bvO5N6KDVA3ns/OopB5BCljdjxsap2QA+ajvR3g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 09:54:09 GMT"
+          "Value": "Mon, 14 Apr 2025 15:46:11 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -15126,18 +16053,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"egU5/81jo+C4wDbJnIgJolNcj0ldc2EkY12JAsT2fgc=\""
+          "Value": "W/\"9bo8XYNs4Wd+VIBmhi9ZFjMXpQqEXMISO3b9slSVk9M=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "hxgx70snof"
+        },
+        {
+          "Name": "label",
+          "Value": "client/assets/js/main.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-egU5/81jo+C4wDbJnIgJolNcj0ldc2EkY12JAsT2fgc="
+          "Value": "sha256-9bo8XYNs4Wd+VIBmhi9ZFjMXpQqEXMISO3b9slSVk9M="
         }
       ]
     },
     {
-      "Route": "client/assets/js/main.js",
+      "Route": "client/assets/js/main.hxgx70snof.js",
       "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -15147,7 +16082,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "723"
+          "Value": "1269"
         },
         {
           "Name": "Content-Type",
@@ -15155,121 +16090,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"egU5/81jo+C4wDbJnIgJolNcj0ldc2EkY12JAsT2fgc=\""
+          "Value": "\"9bo8XYNs4Wd+VIBmhi9ZFjMXpQqEXMISO3b9slSVk9M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 09:54:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-egU5/81jo+C4wDbJnIgJolNcj0ldc2EkY12JAsT2fgc="
-        }
-      ]
-    },
-    {
-      "Route": "client/assets/js/main.js.gz",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\o54pbjxpjh-y53as4i2gr.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "328"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6+2HdKU4RUfUQm0lf+ROv0FnMq2QRQcJOwDS5gmczHQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 09:54:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6+2HdKU4RUfUQm0lf+ROv0FnMq2QRQcJOwDS5gmczHQ="
-        }
-      ]
-    },
-    {
-      "Route": "client/assets/js/main.y53as4i2gr.js",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\o54pbjxpjh-y53as4i2gr.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003039513678"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "328"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6+2HdKU4RUfUQm0lf+ROv0FnMq2QRQcJOwDS5gmczHQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 09:54:09 GMT"
+          "Value": "Mon, 14 Apr 2025 15:46:11 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"egU5/81jo+C4wDbJnIgJolNcj0ldc2EkY12JAsT2fgc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y53as4i2gr"
+          "Value": "hxgx70snof"
         },
         {
           "Name": "label",
@@ -15277,13 +16112,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-egU5/81jo+C4wDbJnIgJolNcj0ldc2EkY12JAsT2fgc="
+          "Value": "sha256-9bo8XYNs4Wd+VIBmhi9ZFjMXpQqEXMISO3b9slSVk9M="
         }
       ]
     },
     {
-      "Route": "client/assets/js/main.y53as4i2gr.js",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\js\\main.js",
+      "Route": "client/assets/js/main.hxgx70snof.js.gz",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\o54pbjxpjh-hxgx70snof.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15292,7 +16127,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "723"
+          "Value": "564"
         },
         {
           "Name": "Content-Type",
@@ -15300,56 +16135,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"egU5/81jo+C4wDbJnIgJolNcj0ldc2EkY12JAsT2fgc=\""
+          "Value": "\"qhW8bvO5N6KDVA3ns/OopB5BCljdjxsap2QA+ajvR3g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 09:54:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "y53as4i2gr"
-        },
-        {
-          "Name": "label",
-          "Value": "client/assets/js/main.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-egU5/81jo+C4wDbJnIgJolNcj0ldc2EkY12JAsT2fgc="
-        }
-      ]
-    },
-    {
-      "Route": "client/assets/js/main.y53as4i2gr.js.gz",
-      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\o54pbjxpjh-y53as4i2gr.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "328"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6+2HdKU4RUfUQm0lf+ROv0FnMq2QRQcJOwDS5gmczHQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 09:54:09 GMT"
+          "Value": "Mon, 14 Apr 2025 15:46:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15367,7 +16157,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y53as4i2gr"
+          "Value": "hxgx70snof"
         },
         {
           "Name": "label",
@@ -15375,7 +16165,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6+2HdKU4RUfUQm0lf+ROv0FnMq2QRQcJOwDS5gmczHQ="
+          "Value": "sha256-qhW8bvO5N6KDVA3ns/OopB5BCljdjxsap2QA+ajvR3g="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/js/main.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\o54pbjxpjh-hxgx70snof.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001769911504"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "564"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qhW8bvO5N6KDVA3ns/OopB5BCljdjxsap2QA+ajvR3g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:46:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9bo8XYNs4Wd+VIBmhi9ZFjMXpQqEXMISO3b9slSVk9M=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9bo8XYNs4Wd+VIBmhi9ZFjMXpQqEXMISO3b9slSVk9M="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/js/main.js",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1269"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9bo8XYNs4Wd+VIBmhi9ZFjMXpQqEXMISO3b9slSVk9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:46:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9bo8XYNs4Wd+VIBmhi9ZFjMXpQqEXMISO3b9slSVk9M="
+        }
+      ]
+    },
+    {
+      "Route": "client/assets/js/main.js.gz",
+      "AssetFile": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\obj\\Debug\\net9.0\\compressed\\o54pbjxpjh-hxgx70snof.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "564"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qhW8bvO5N6KDVA3ns/OopB5BCljdjxsap2QA+ajvR3g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Apr 2025 15:46:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qhW8bvO5N6KDVA3ns/OopB5BCljdjxsap2QA+ajvR3g="
         }
       ]
     },

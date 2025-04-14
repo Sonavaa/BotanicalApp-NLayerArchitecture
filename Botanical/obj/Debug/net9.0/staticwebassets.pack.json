@@ -141,6 +141,14 @@
       "PackagePath": "staticwebassets\\client\\assets\\fonts\\icomoon.woff"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\CactusPlantCategoryImg.jpg",
+      "PackagePath": "staticwebassets\\client\\assets\\images\\CactusPlantCategoryImg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\FloorPlantCategoryImg.jpg",
+      "PackagePath": "staticwebassets\\client\\assets\\images\\FloorPlantCategoryImg.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\HomeSlider-1.png",
       "PackagePath": "staticwebassets\\client\\assets\\images\\HomeSlider-1.png"
     },
@@ -153,6 +161,26 @@
       "PackagePath": "staticwebassets\\client\\assets\\images\\HomeSlider-3.png"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\IndoorPlantCategoryImg.jpg",
+      "PackagePath": "staticwebassets\\client\\assets\\images\\IndoorPlantCategoryImg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\TablePlantCategoryImg.jpg",
+      "PackagePath": "staticwebassets\\client\\assets\\images\\TablePlantCategoryImg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\TropicalPlantCategoryImg.jpg",
+      "PackagePath": "staticwebassets\\client\\assets\\images\\TropicalPlantCategoryImg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\aboutBannerImg.png",
+      "PackagePath": "staticwebassets\\client\\assets\\images\\aboutBannerImg.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\aboutImg.jpg",
+      "PackagePath": "staticwebassets\\client\\assets\\images\\aboutImg.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\ad1.jpg",
       "PackagePath": "staticwebassets\\client\\assets\\images\\ad1.jpg"
     },
@@ -161,12 +189,20 @@
       "PackagePath": "staticwebassets\\client\\assets\\images\\ad2.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\b-bg7.jpg",
+      "PackagePath": "staticwebassets\\client\\assets\\images\\b-bg7.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\default.jpg",
       "PackagePath": "staticwebassets\\client\\assets\\images\\default.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\hbdr.png",
       "PackagePath": "staticwebassets\\client\\assets\\images\\hbdr.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\headerBorderImg.png",
+      "PackagePath": "staticwebassets\\client\\assets\\images\\headerBorderImg.png"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\img01.jpg",
