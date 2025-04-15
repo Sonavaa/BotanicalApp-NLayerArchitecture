@@ -2,9 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Botanical",
+    "\\Botanical\\Views",
+    "\\Botanical\\Views\\Wishlist",
     "\\Data",
     "\\Data\\Context"
   ],
-  "SelectedNode": "\\Botanical\\appsettings.json",
+  "SelectedNode": "\\Botanical\\Views\\Wishlist\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

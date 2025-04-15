@@ -91,12 +91,40 @@
 				</div>
 				<div class="col-sm-3 col-lg-2">
 					<!-- wishListII -->
-					<ul class="nav nav-tabs wishListII pt-5 justify-content-end border-bottom-0">
+					<ul class="nav nav-tabs wishListII pt-6 justify-content-end border-bottom-0">
 						<li class="nav-item ml-0"><a class="nav-link icon-search" href="javascript:void(0);"></a></li>
-							<li class="nav-item"><a class="nav-link position-relative icon-heart" href="~/client/assets/javascript:void(0);"><span class="num rounded d-block">1</span></a></li>
+						<li class="nav-item"><a asp-controller="Wishlist" asp-action="Index" class="nav-link position-relative icon-heart"><span class="num rounded d-block">1</span></a></li>
 						<li class="nav-item"><a asp-controller="Cart" asp-action="Index" class="nav-link position-relative icon-cart"><span class="num rounded d-block">2</span></a></li>
 						<li class="nav-item"><a class="nav-link icon-profile" href="javascript:void(0);"></a></li>
 					</ul>
+					<!-- Expanding Search Bar (Left of Search Icon) -->
+					<div id="searchBarContainer" class="position-absolute d-none" style="top: 20px; right: 165px; z-index: 1050;">
+						<form asp-controller="Search" asp-action="Index" method="get" class="position-relative">
+							<input type="text"
+								   name="query"
+								   class="form-control rounded-pill search-bar pe-5"
+								   placeholder="Search..."
+								   aria-label="Search" />
+						</form>
+					</div>
+
+
+					<style>
+						.search-bar {
+							transition: width 0.3s ease-in-out;
+							width: 40px;
+							height: 37px;
+							padding-left: 15px;
+							background-color: #fff;
+						}
+
+							.search-bar:focus {
+								width: 185px;
+								height:37px;
+								background-color:#fff;
+							}
+					</style>
+
 				</div>
 			</div>
 		</header>
@@ -124,3 +152,23 @@
 	<script src="~/client/assets/js/main.js"></script>
 </body>
 </html>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const searchIcon = document.querySelector(".icon-search");
+		const searchBar = document.getElementById("searchBarContainer");
+
+		if (searchIcon && searchBar) {
+			searchIcon.addEventListener("click", function (e) {
+				e.stopPropagation();
+				searchBar.classList.toggle("d-none");
+				searchBar.querySelector('input').focus(); // Autofocus input
+			});
+		}
+
+		document.addEventListener("click", function (e) {
+			if (!searchBar.contains(e.target) && !searchIcon.contains(e.target)) {
+				searchBar.classList.add("d-none");
+			}
+		});
+	});
+</script>

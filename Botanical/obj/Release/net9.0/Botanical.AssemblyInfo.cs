@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Botanical")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+717620fff4e28453ee68b28b560972e5423ec57c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf64a4e3082f2e4d6adfeb13c4b60ab22a49df7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Botanical")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Botanical")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

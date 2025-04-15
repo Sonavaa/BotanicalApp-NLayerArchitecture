@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Botanical.wr9pjae3ce.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RAfrA7H4L5Cr0RqTnYQyjVtEi6XPUYwHswqoMNqNBvY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RAfrA7H4L5Cr0RqTnYQyjVtEi6XPUYwHswqoMNqNBvY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 14:23:41 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RAfrA7H4L5Cr0RqTnYQyjVtEi6XPUYwHswqoMNqNBvY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 11:18:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Botanical/Botanical.wr9pjae3ce.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Botanical.wr9pjae3ce.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wr9pjae3ce"},{"Name":"integrity","Value":"sha256-RAfrA7H4L5Cr0RqTnYQyjVtEi6XPUYwHswqoMNqNBvY="},{"Name":"label","Value":"_content/Botanical/Botanical.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RAfrA7H4L5Cr0RqTnYQyjVtEi6XPUYwHswqoMNqNBvY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Apr 2025 14:23:41 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RAfrA7H4L5Cr0RqTnYQyjVtEi6XPUYwHswqoMNqNBvY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 11:18:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Botanical/client/assets/css/bootstrap.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\css\bootstrap.css'))</AssetFile>

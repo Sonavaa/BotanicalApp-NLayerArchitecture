@@ -16,7 +16,7 @@ namespace Business.DTOs.Products
         public string ProductCode { get; set; } = null!;
         public int Quantity { get; set; }
         public List<ProductImages>? Images { get; set; }
-        public string MainImageUrl => Images?.FirstOrDefault(img => img.isMain)?.imgUrl ?? "default.jpg";
+        public string MainImageUrl => Images?.FirstOrDefault(img => img.IsMain)?.ImgPath ?? "default.jpg";
         public DateTime CreatedAt { get; set; }
     }
 }

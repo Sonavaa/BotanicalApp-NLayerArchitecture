@@ -32,3 +32,4 @@ C:\Users\HP\Desktop\BotanicalProject\Data\obj\Debug\net9.0\refint\Data.dll
 C:\Users\HP\Desktop\BotanicalProject\Data\obj\Debug\net9.0\Data.pdb
 C:\Users\HP\Desktop\BotanicalProject\Data\obj\Debug\net9.0\Data.genruntimeconfig.cache
 C:\Users\HP\Desktop\BotanicalProject\Data\obj\Debug\net9.0\ref\Data.dll
+C:\Users\HP\Desktop\BotanicalProject\Data\obj\Debug\net9.0\Data.sourcelink.json
