@@ -5,6 +5,874 @@
       "PackagePath": "staticwebassets\\Botanical.wr9pjae3ce.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\css\\demo.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\demo.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\css\\site.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\Logo-Event.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\Logo-Event.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\avatars\\1.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\avatars\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\avatars\\2.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\avatars\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\avatars\\3.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\avatars\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\avatars\\4.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\avatars\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\avatars\\5.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\avatars\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\avatars\\6.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\avatars\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\avatars\\7.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\avatars\\7.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\avatars\\default.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\avatars\\default.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\backgrounds\\18.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\backgrounds\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\11.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\12.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\13.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\17.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\18.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\19.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\20.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\3.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\4.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\5.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\elements\\7.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\elements\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\asana.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\asana.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\aws.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\aws.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\behance.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\behance.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\dribbble.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\dribbble.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\facebook.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\github.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\github.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\google.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\google.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\instagram.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\mailchimp.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\mailchimp.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\slack.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\slack.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\brands\\twitter.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\brands\\twitter.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\logo.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\misc\\aviato.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\misc\\aviato.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\misc\\bitbank.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\misc\\bitbank.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\misc\\triangle-light.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\misc\\triangle-light.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\misc\\zipcar.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\misc\\zipcar.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\payments\\american-bank.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\payments\\american-bank.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\payments\\citi.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\payments\\citi.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\payments\\digital-ocean.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\payments\\digital-ocean.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\payments\\gumroad.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\payments\\gumroad.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\payments\\mastercard-2.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\payments\\mastercard-2.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\icons\\payments\\stripes.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\icons\\payments\\stripes.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\illustrations\\404.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\illustrations\\404.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\illustrations\\auth-basic-mask-light.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\illustrations\\auth-basic-mask-light.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\illustrations\\misc-mask-light.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\illustrations\\misc-mask-light.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\illustrations\\misc-under-maintenance.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\illustrations\\misc-under-maintenance.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\illustrations\\tree-3.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\illustrations\\tree-3.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\illustrations\\tree.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\illustrations\\tree.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\illustrations\\trophy.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\illustrations\\trophy.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\layouts\\layout-container-light.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\layouts\\layout-container-light.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\layouts\\layout-fluid-light.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\layouts\\layout-fluid-light.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\layouts\\layout-without-menu-light.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\layouts\\layout-without-menu-light.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\img\\layouts\\layout-without-navbar-light.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\layouts\\layout-without-navbar-light.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\chart-1.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\chart-1.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\chart-2.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\chart-2.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\config.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\config.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\dashboards-analytics.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\dashboards-analytics.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\dropdown.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\dropdown.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\extended-ui-perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\extended-ui-perfect-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\fixed-plugin.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\fixed-plugin.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\form-basic-inputs.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\form-basic-inputs.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\nav-pills.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\nav-pills.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\navbar-collapse.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\navbar-collapse.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\navbar-sticky.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\navbar-sticky.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\pages-account-settings-account.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\pages-account-settings-account.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\plugins\\Chart.extension.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\plugins\\Chart.extension.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\plugins\\chartjs.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\plugins\\chartjs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\plugins\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\plugins\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\sidenav-burger.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\sidenav-burger.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\site.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\soft-ui-dashboard-tailwind.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\soft-ui-dashboard-tailwind.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\soft-ui-dashboard-tailwind.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\soft-ui-dashboard-tailwind.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\tooltips.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\tooltips.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\ui-modals.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\ui-modals.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\ui-popover.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\ui-popover.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\js\\ui-toasts.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\ui-toasts.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\fonts\\remixicon\\remixicon.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\fonts\\remixicon\\remixicon.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\js\\helpers.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\js\\helpers.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\js\\menu.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\js\\menu.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\apex-charts\\apex-charts.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\apex-charts\\apex-charts.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\apex-charts\\apexcharts.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\apex-charts\\apexcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\highlight\\highlight-github.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\highlight\\highlight-github.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\highlight\\highlight.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\highlight\\highlight.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\highlight\\highlight.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\highlight\\highlight.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\masonry\\masonry.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\masonry\\masonry.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\node-waves\\node-waves.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\node-waves\\node-waves.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\node-waves\\node-waves.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\node-waves\\node-waves.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\perfect-scrollbar\\perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\perfect-scrollbar\\perfect-scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\libs\\popper\\popper.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\libs\\popper\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_accordion.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_alert.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_badge.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_button-group.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_buttons.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_card.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_carousel.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_close.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_forms.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_functions.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_include.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_include.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_list-group.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_mixins.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_modal.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_nav.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_navbar.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_pagination.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_popover.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_progress.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_reboot.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_root.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_spinners.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_tables.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_toasts.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_type.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_utilities-ltr.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_utilities-ltr.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_utilities.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\_variables.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\forms\\_validation.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_misc.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_navs.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_navs.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_progress.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_toasts.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap-extended\\mixins\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_bootstrap.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_colors.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_colors.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_app-brand.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_app-brand.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_avatar.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_avatar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_base.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_base.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_common.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_common.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_footer.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_include.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_include.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_layout.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_layout.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_menu.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_menu.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_mixins.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_text-divider.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_text-divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\_variables.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\mixins\\_app-brand.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\mixins\\_app-brand.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\mixins\\_avatar.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\mixins\\_avatar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\mixins\\_footer.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\mixins\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\mixins\\_menu.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\mixins\\_menu.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\mixins\\_misc.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\mixins\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\mixins\\_navbar.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\mixins\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_components\\mixins\\_text-divider.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_components\\mixins\\_text-divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_custom-variables\\_bootstrap-extended.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_custom-variables\\_bootstrap-extended.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_custom-variables\\_components.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_custom-variables\\_components.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_custom-variables\\_libs.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_custom-variables\\_libs.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_custom-variables\\_pages.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_custom-variables\\_pages.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_custom-variables\\_support.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_custom-variables\\_support.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_theme\\_common.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_theme\\_common.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\_theme\\_theme.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\_theme\\_theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\core.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\core.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\pages\\page-account-settings.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\pages\\page-account-settings.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\pages\\page-auth.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\pages\\page-auth.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\pages\\page-icons.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\pages\\page-icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\pages\\page-misc.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\pages\\page-misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\scss\\theme-default.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\scss\\theme-default.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\src\\site.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\src\\site.scss"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\css\\core.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\css\\core.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\css\\pages\\page-account-settings.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\css\\pages\\page-account-settings.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\css\\pages\\page-auth.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\css\\pages\\page-auth.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\css\\pages\\page-icons.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\css\\pages\\page-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\css\\pages\\page-misc.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\css\\pages\\page-misc.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\css\\theme-default.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\css\\theme-default.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.eot"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.svg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fonts\\remixicon\\remixicon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\js\\helpers.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\js\\helpers.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\js\\menu.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\js\\menu.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\apex-charts\\apex-charts.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\apex-charts\\apex-charts.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\apex-charts\\apexcharts.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\apex-charts\\apexcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\highlight\\highlight-github.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\highlight\\highlight-github.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\highlight\\highlight.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\highlight\\highlight.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\highlight\\highlight.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\highlight\\highlight.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\masonry\\masonry.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\masonry\\masonry.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\node-waves\\node-waves.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\node-waves\\node-waves.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\node-waves\\node-waves.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\node-waves\\node-waves.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\admin\\assets\\vendor\\libs\\popper\\popper.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\vendor\\libs\\popper\\popper.js"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\client\\assets\\css\\bootstrap.css"
     },
@@ -193,10 +1061,6 @@
       "PackagePath": "staticwebassets\\client\\assets\\images\\b-bg7.jpg"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\default.jpg",
-      "PackagePath": "staticwebassets\\client\\assets\\images\\default.jpg"
-    },
-    {
       "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\hbdr.png",
       "PackagePath": "staticwebassets\\client\\assets\\images\\hbdr.png"
     },
@@ -271,6 +1135,10 @@
     {
       "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\logo.png",
       "PackagePath": "staticwebassets\\client\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\noImg.jpg",
+      "PackagePath": "staticwebassets\\client\\assets\\images\\noImg.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\images\\p-logo1.png",

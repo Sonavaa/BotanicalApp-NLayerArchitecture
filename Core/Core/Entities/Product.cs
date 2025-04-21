@@ -8,7 +8,7 @@ namespace Botanical.Models
     public class Product : BaseAuditable
     {
         public string Name { get; set; } = null!;
-        public Category CategoryId { get; set; } = null!;
+        public Guid CategoryId { get; set; }
         public Category? Category { get; set; }
         public decimal Price { get; set; } = default!;
         public decimal? DiscountedPrice { get; set; }
@@ -16,8 +16,7 @@ namespace Botanical.Models
         public string ProductCode { get; set; } = null!;
         public int Quantity { get; set; }
         public bool? IsInWishList { get; set; }
-        public IEnumerable<ProductImages>? Images { get; set; } 
-        public string MainImageUrl => Images?.FirstOrDefault(img => img.IsMain)?.ImgPath ?? "default.jpg";
+        public string? ImagePath { get; set; }
         public IEnumerable<ProductTag>? ProductTags { get; set; }
         public IEnumerable<Review>? Reviews { get; set; }
 

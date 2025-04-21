@@ -1,0 +1,60 @@
+﻿@using Business.DTOs.Category
+@model CreateCategoryDTO
+
+<form asp-action="AddCategory" asp-area="Admin" asp-controller="Category" method="post" asp-validation-summary="All" enctype="multipart/form-data">
+    <h4 style="margin-left:40px">Add Category</h4>
+
+    <div class="addOrEditCard card">
+        <!-- Image Preview -->
+        <div class="chosenImage">
+            <img id="imagePreview" src="~/client/assets/images/noImg.jpg" alt="Category Image" />
+        </div>
+
+
+        <div class="card-body">
+            <!-- Language Dropdown -->
+       @*      <div class="form-floating form-floating-outline mb-3">
+                <select asp-for="LanguageId" name="LanguageId" asp-items="@ViewBag.Languages" class="form-select" aria-label="Choose a Language">
+                    <option selected disabled value="">Choose a Language</option>
+                   
+                </select>
+                <label asp-for="LanguageId">Language</label>
+                <span class="form-text text-danger" asp-validation-for="LanguageId"></span>
+            </div> *@
+
+            <!-- File Input for Image -->
+            <div class="mb-3">
+                <label asp-for="ImageFile" class="form-label">Category's Image</label>
+                <input class="form-control" type="file" asp-for="ImageFile" name="ImageFile" id="ImageFile" accept="image/*" onchange="previewImage(event)">
+                <span class="form-text text-danger" asp-validation-for="ImageFile"></span>
+            </div>
+
+            <!-- Category Name (inside CategoryDetails) -->
+            <div>
+                <label asp-for="Name" class="form-label">Category Name</label>
+                <input type="text" asp-for="Name" name="Name" class="form-control" placeholder="Enter Category Name">
+                <span class="form-text text-danger" asp-validation-for="Name"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary mt-3">Save</button>
+        </div>
+    </div>
+</form>
+
+<!-- Image Preview Script -->
+<!-- Image Preview Script -->
+<script>
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var output = document.getElementById('imagePreview');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>

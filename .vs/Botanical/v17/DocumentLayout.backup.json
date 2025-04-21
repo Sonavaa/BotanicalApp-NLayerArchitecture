@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\BotanicalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|c:\\users\\hp\\desktop\\botanicalproject\\business\\dtos\\products\\getproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|solutionrelative:business\\dtos\\products\\getproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|c:\\users\\hp\\desktop\\botanicalproject\\business\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|solutionrelative:business\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|c:\\users\\hp\\desktop\\botanicalproject\\business\\dtos\\products\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|solutionrelative:business\\dtos\\products\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|c:\\users\\hp\\desktop\\botanicalproject\\business\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|solutionrelative:business\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|c:\\users\\hp\\desktop\\botanicalproject\\business\\validators\\category\\createcategorydtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|solutionrelative:business\\validators\\category\\createcategorydtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|c:\\users\\hp\\desktop\\botanicalproject\\business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|solutionrelative:business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,28 +58,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetProductDTO.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\DTOs\\Products\\GetProductDTO.cs",
-              "RelativeDocumentMoniker": "Business\\DTOs\\Products\\GetProductDTO.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\DTOs\\Products\\GetProductDTO.cs",
-              "RelativeToolTip": "Business\\DTOs\\Products\\GetProductDTO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CreateCategoryDTOValidator.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Validators\\Category\\CreateCategoryDTOValidator.cs",
+              "RelativeDocumentMoniker": "Business\\Validators\\Category\\CreateCategoryDTOValidator.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Validators\\Category\\CreateCategoryDTOValidator.cs",
+              "RelativeToolTip": "Business\\Validators\\Category\\CreateCategoryDTOValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T13:15:31.802Z",
+              "WhenOpened": "2025-04-21T16:17:35.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\CategoryService.cs",
+              "RelativeToolTip": "Business\\Services\\CategoryService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T16:13:35.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateProductDTO.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\DTOs\\Products\\CreateProductDTO.cs",
-              "RelativeDocumentMoniker": "Business\\DTOs\\Products\\CreateProductDTO.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\DTOs\\Products\\CreateProductDTO.cs",
-              "RelativeToolTip": "Business\\DTOs\\Products\\CreateProductDTO.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAABYAAAAAAAAAA==",
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Business\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\ServiceRegistration.cs",
+              "RelativeToolTip": "Business\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T13:15:17.165Z",
+              "WhenOpened": "2025-04-21T16:12:22.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\ProductService.cs",
+              "RelativeToolTip": "Business\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T16:10:53.261Z",
               "EditorCaption": ""
             }
           ]
