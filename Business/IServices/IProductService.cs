@@ -11,7 +11,7 @@ namespace Business.Services
     {   
         Task AddProduct(CreateProductDTO addProductDTO);
         Task<List<GetProductDTO>> GetAllProductAsync();
-        Task GetProductById(Guid Id);
+        Task<GetProductDTO> GetProductById(Guid Id);
         Task EditProduct(Guid Id, CreateProductDTO updateProductDTO);
         Task DeleteProduct(Guid Id);
         Task RestoreProduct(Guid Id);

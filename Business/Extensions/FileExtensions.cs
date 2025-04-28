@@ -1,9 +1,4 @@
 ﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Extensions
 {
@@ -12,14 +7,15 @@ namespace Business.Extensions
         public static async Task<string> SaveFilesAsync(this IFormFile file, string root, string client, string folderNameAssets, string folderNameImages, string folderName)
         {
             string uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
-            string path = Path.Combine(root, client, folderNameAssets, folderNameImages, folderName, uniqueFileName);
+            string fullPath = Path.Combine(root, "wwwroot", client, folderNameAssets, folderNameImages, folderName, uniqueFileName);
 
-            Directory.CreateDirectory(Path.GetDirectoryName(path));
+            Directory.CreateDirectory(Path.GetDirectoryName(fullPath)!);
 
-            using FileStream fs = new FileStream(path, FileMode.Create);
+            using FileStream fs = new FileStream(fullPath, FileMode.Create);
             await file.CopyToAsync(fs);
-            return uniqueFileName;
+            return Path.Combine(client, folderNameAssets, folderNameImages, folderName, uniqueFileName).Replace("\\", "/"); // for returning relative web path
         }
+
 
         public static bool CheckFileType(this IFormFile file, string fileType)
         {
@@ -45,13 +41,15 @@ namespace Business.Extensions
             return false;
         }
 
-        public static void DeleteFile(this IFormFile file, string root, string client, string folderNameAssets, string folderNameImages, string folderName, string fileName)
+        public static void DeleteFile(string root, string client, string folderNameAssets, string folderNameImages, string folderName, string fileName)
         {
-            string path = Path.Combine(root, client, folderNameAssets, folderNameImages, folderName, fileName);
+            string path = Path.Combine(root, "wwwroot", client, folderNameAssets, folderNameImages, folderName, fileName);
             if (File.Exists(path))
             {
                 File.Delete(path);
             }
         }
+
+
     }
 }

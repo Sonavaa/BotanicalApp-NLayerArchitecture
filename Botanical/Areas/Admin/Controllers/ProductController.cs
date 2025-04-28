@@ -1,8 +1,12 @@
 ﻿using AutoMapper;
+using Business.DTOs.Category;
 using Business.DTOs.Products;
+using Business.IServices;
 using Business.Services;
+using Core.Entities;
 using Data.Context;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Botanical.Areas.Admin.Controllers
 {
@@ -10,12 +14,14 @@ namespace Botanical.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
-		public ProductController(IProductService productService, AppDbContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor)
+		public ProductController(IProductService productService, ICategoryService categoryService, AppDbContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor)
 		{
             _productService = productService;
+            _categoryService = categoryService;
 			_context = context;
 			_mapper = mapper;
 			_httpContextAccessor = httpContextAccessor;
@@ -28,33 +34,41 @@ namespace Botanical.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> AddProduct()
+        public IActionResult AddProduct()
         {
-			return View();
+            var categories = _context.Categories.Where(c=>!c.IsDeleted).ToList();
+            ViewBag.Categories = new SelectList(categories, "Id", "Name");
+            var tags = _context.Tags.Where(c => !c.IsDeleted).ToList();
+            ViewBag.Tags = new SelectList(tags, "Id", "Name"); 
+            return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddProduct(CreateProductDTO addProductDTO)
         {
-
             if (!ModelState.IsValid)
             {
-				return View();
+                return View(addProductDTO);
             }
 
 
             try
             {
                 await _productService.AddProduct(addProductDTO);
-
-                return RedirectToAction("Index", "Product");
+                return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
                 ModelState.AddModelError("", ex.Message);
                 return View(addProductDTO);
             }
+            //catch (Exception ex)
+            //{
+            //    // General exception (file upload, server errors, etc.)
+            //    ModelState.AddModelError(string.Empty, ex.Message);
+            //    return View(addCategoryDTO);
+            //}
         }
 
         [HttpPost]
@@ -85,38 +99,50 @@ namespace Botanical.Areas.Admin.Controllers
             }
         }
 
-        //[HttpGet]
-        //public async Task<IActionResult> EditProduct(Guid Id)
-        //{
-        //    try
-        //    {
+        [HttpGet]
+        public async Task<IActionResult> EditProduct(Guid Id)
+        {
+            try
+            {
+                var product = await _productService.GetProductById(Id);
 
-        //        var product = _productService.GetProductById(Id);
+                if (product == null)
+                {
+                    return NotFound("Product not found.");
+                }
 
-        //        if (product == null)
-        //        {
-        //            return NotFound("Product not found.");
-        //        }
+                var categories = await _categoryService.GetAllCategoryAsync(); 
+                if (categories == null || !categories.Any())
+                {
+                    return View("Error","No categories found." );
+                }
 
-        //        var updateProductDTO = new CreateProductDTO
-        //        {
-        //            Name = updateProductDTO.Name,                    
-        //            Price = updateProductDTO.Price,
-        //            DiscountedPrice = updateProductDTO.DiscountedPrice,
+                var updateProductDTO = new CreateProductDTO
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    Description = product.Description,
+                    ImagePath = product.ImagePath,
+                    Price = product.Price,
+                    DiscountedPrice = product.DiscountedPrice,
+                    Quantity = product.Quantity,
+                    ProductCode = product.ProductCode,
+                    CategoryId = product.CategoryId 
+                };
 
+                ViewBag.Categories = new SelectList(categories, "Id", "Name");
 
-        //        };
+                return View(updateProductDTO);
+            }
+            catch (Exception ex)
+            {
+                return View("Error", ex.Message );
+            }
+        }
 
-        //        return View(updateProductDTO);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return View("Error", ex.Message); 
-        //    }
-        //}
 
         [HttpPost]
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditProductAsync(Guid id,  CreateProductDTO updateProductDTO)
         {
             if (!ModelState.IsValid)

@@ -1,26 +1,15 @@
 ﻿@using Business.DTOs.Products
 @model CreateProductDTO
-
 <form asp-action="AddProduct" asp-area="Admin" asp-controller="Product" method="post" asp-validation-summary="All" enctype="multipart/form-data">
     <h4 style="margin-left:40px">Add Product</h4>
 
     <div class="addOrEditCard card">
         <!-- Image Preview -->
         <div class="chosenImage">
-            <img id="imagePreview" src="~/client/assets/img/teams/team-2.jpg" alt="{Product} Image" />
+            <img id="imagePreview" src="~/client/assets/images/noImg.jpg" alt="Product Image" />
         </div>
 
         <div class="card-body">
-            <!-- Language Dropdown -->
-       @*      <div class="form-floating form-floating-outline mb-3">
-                <select asp-for="LanguageId" name="LanguageId" asp-items="@ViewBag.Languages" class="form-select" aria-label="Choose a Language">
-                    <option selected disabled value="">Choose a Language</option>
-                   
-                </select>
-                <label asp-for="LanguageId">Language</label>
-                <span class="form-text text-danger" asp-validation-for="LanguageId"></span>
-            </div> *@
-
             <!-- File Input for Image -->
             <div class="mb-3">
                 <label asp-for="ImageFile" class="form-label">Product's Image</label>
@@ -28,7 +17,20 @@
                 <span class="form-text text-danger" asp-validation-for="ImageFile"></span>
             </div>
 
-            <!-- Product Name (inside ProductDetails) -->
+            <!-- Product Category -->
+            <div>
+                <label asp-for="CategoryId" class="form-label">Product Category</label>
+                <select asp-for="CategoryId" name="CategoryId" class="form-control">
+                    <option value="" selected disabled>Select a Category</option>
+                    @foreach (var category in ViewBag.Categories as SelectList)
+                    {
+                        <option value="@category.Value">@category.Text</option>
+                    }
+                </select>
+                <span class="form-text text-danger" asp-validation-for="CategoryId"></span>
+            </div>
+
+            <!-- Product Name-->
             <div>
                 <label asp-for="Name" class="form-label">Product Name</label>
                 <input type="text" asp-for="Name" name="Name" class="form-control" placeholder="Enter Product Name">
@@ -65,11 +67,31 @@
 
             <!-- Quantity -->
             <div>
-                <label asp-for="ProductCode" class="form-label">Quantity</label>
-                <input type="number" asp-for="ProductCode" name="Quantity" class="form-control" placeholder="Enter Quantity">
-                <span class="form-text text-danger" asp-validation-for="ProductCode"></span>
+                <label asp-for="Quantity" class="form-label">Quantity</label>
+                <input type="number" asp-for="Quantity" name="Quantity" class="form-control" placeholder="Enter Quantity">
+                <span class="form-text text-danger" asp-validation-for="Quantity"></span>
             </div>
 
+            <!-- Tags -->
+      @*       <div>
+                <label for="Tags" class="form-label">Tags</label>
+                <div class="form-group">
+                    <!-- Predefined Tags Dropdown -->
+                    <select id="Tags" name="Tags" class="form-control" multiple>
+                        @foreach (var tag in ViewBag.Tags as List<SelectListItem>)
+                        {
+                            <option value="@tag.Value">@tag.Text</option>
+                        }
+                    </select>
+                    <span class="form-text text-danger" asp-validation-for="Tags"></span>
+                </div>
+                <div class="mt-2">
+                    <!-- New Tag Input -->
+                    <label for="NewTag" class="form-label">Create New Tag</label>
+                    <input type="text" id="NewTag" name="NewTag" class="form-control" placeholder="Enter New Tag">
+                    <span class="form-text text-danger" asp-validation-for="NewTag"></span>
+                </div>
+            </div> *@
 
             <!-- Submit Button -->
             <button type="submit" class="btn btn-primary mt-3">Save</button>
@@ -81,13 +103,12 @@
 <script>
     function previewImage(event) {
         var reader = new FileReader();
-        reader.onload = function(){
+        reader.onload = function () {
             var output = document.getElementById('imagePreview');
             output.src = reader.result;
         };
         reader.readAsDataURL(event.target.files[0]);
     }
-    });
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

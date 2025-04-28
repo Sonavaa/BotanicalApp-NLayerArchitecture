@@ -4,6 +4,7 @@ using Business.IServices;
 using Business.Services;
 using Data.Context;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.SecurityTokenService;
 
 namespace Botanical.Areas.Admin.Controllers
 {
@@ -29,34 +30,39 @@ namespace Botanical.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> AddCategory()
+        public IActionResult AddCategory()
         {
-			return View();
+            return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddCategory(CreateCategoryDTO addCategoryDTO)
         {
-
             if (!ModelState.IsValid)
             {
-				return View();
+                return View(addCategoryDTO);
             }
 
 
             try
             {
                 await _CategoryService.AddCategory(addCategoryDTO);
-
-                return RedirectToAction("Index", "Category");
+                return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
                 ModelState.AddModelError("", ex.Message);
                 return View(addCategoryDTO);
             }
+            //catch (Exception ex)
+            //{
+            //    // General exception (file upload, server errors, etc.)
+            //    ModelState.AddModelError(string.Empty, ex.Message);
+            //    return View(addCategoryDTO);
+            //}
         }
+
 
         [HttpPost]
         public async Task<IActionResult> DeleteCategory(Guid id)
@@ -91,31 +97,31 @@ namespace Botanical.Areas.Admin.Controllers
         {
             try
             {
+                var category = await _CategoryService.GetCategoryById(Id);
 
-                var Category = await _CategoryService.GetCategoryById(Id);
-
-                if (Category == null)
+                if (category == null)
                 {
                     return NotFound("Category not found.");
                 }
 
                 var updateCategoryDTO = new CreateCategoryDTO
                 {
-                    Id = Category.Id,
-                    Name = Category.Name,
-                    ImgPath = Category.ImgPath,
+                    Id = category.Id,
+                    Name = category.Name,
+                    ImgPath = category.ImgPath,
                 };
 
                 return View(updateCategoryDTO);
             }
             catch (Exception ex)
             {
-                return View("Error", ex.Message);
+                // Log the exception (ex) here if necessary
+                return View("EditCategory", ex.Message);
             }
         }
 
         [HttpPost]
-        //[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditCategoryAsync(Guid id,  CreateCategoryDTO updateCategoryDTO)
         {
             if (!ModelState.IsValid)

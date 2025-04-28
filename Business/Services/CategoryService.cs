@@ -33,16 +33,16 @@ namespace Data.Services
 
         public async Task AddCategory(CreateCategoryDTO addCategoryDTO)
         {
-            //bool isCategoryExist = await _CategoryReadRepository.GetAll().AnyAsync(x => x.Name == addCategoryDTO.Name && x.Id == addCategoryDTO.Id);
-            //if (isCategoryExist)
-            //{
-            //    throw new BadRequestException("This Category already exists.");
-            //}
-
             var validationResult = await _CreateCategoryValidator.ValidateAsync(addCategoryDTO);
             if (!validationResult.IsValid)
             {
                 throw new ValidationException(validationResult.Errors);
+            }
+
+            bool isCategoryExist = await _CategoryReadRepository.GetAll().AnyAsync(x => x.Name == addCategoryDTO.Name || x.Id == addCategoryDTO.Id);
+            if (isCategoryExist)
+            {
+                throw new BadRequestException("This Category already exists.");
             }
 
             if (!addCategoryDTO.ImageFile.CheckFileType("image"))
@@ -55,7 +55,8 @@ namespace Data.Services
                 throw new Exception("File size is too large. Maximum allowed size is 200MB.");
             }
 
-            string uniqueFileName = await addCategoryDTO.ImageFile.SaveFilesAsync(_env.ContentRootPath, "client", "assets", "images", "CategoryImages");
+            string uniqueFileName = await addCategoryDTO.ImageFile
+                .SaveFilesAsync(_env.ContentRootPath, "client", "assets", "images", "CategoryImages");
 
 
             var Category = _mapper.Map<Category>(addCategoryDTO);
@@ -63,7 +64,6 @@ namespace Data.Services
             Category.Id = Guid.NewGuid();
             Category.ImgPath = uniqueFileName;
             Category.CreatedBy = "System";
-            Category.UpdatedAt = DateTime.UtcNow.AddHours(4);
 
             await _CategoryWriteRepository.AddAsync(Category);
             await _CategoryWriteRepository.SaveChangeAsync();
@@ -100,6 +100,11 @@ namespace Data.Services
         public async Task EditCategory(Guid Id, CreateCategoryDTO updateCategoryDTO)
         {
             var validationResult = await _CreateCategoryValidator.ValidateAsync(updateCategoryDTO);
+            if (!validationResult.IsValid)
+            {
+                throw new ValidationException(validationResult.Errors);
+            }
+
             var category = await _CategoryReadRepository.GetAll()
                 .FirstOrDefaultAsync(c => c.Id == Id);
 
@@ -108,13 +113,48 @@ namespace Data.Services
                 throw new Exception("Category not found.");
             }
 
-            category.ImgPath = updateCategoryDTO.ImgPath;
+            if (updateCategoryDTO.ImageFile != null)
+            {
+                if (!updateCategoryDTO.ImageFile.CheckFileType("image"))
+                {
+                    throw new Exception("Invalid file type. Please upload an image.");
+                }
+
+                if (!updateCategoryDTO.ImageFile.CheckFileSize(200))
+                {
+                    throw new Exception("File size is too large. Maximum allowed size is 200MB.");
+                }
+
+                if (!string.IsNullOrEmpty(category.ImgPath))
+                {
+                    string oldFileName = Path.GetFileName(category.ImgPath);
+                    FileExtensions.DeleteFile(
+                        _env.ContentRootPath,
+                        "client",
+                        "assets",
+                        "images",
+                        "CategoryImages",
+                        oldFileName
+                    );
+                }
+
+                string uniqueFileName = await updateCategoryDTO.ImageFile
+                    .SaveFilesAsync(_env.ContentRootPath, "client", "assets", "images", "CategoryImages");
+
+                category.ImgPath = uniqueFileName;
+            }
+            else
+            {
+                category.ImgPath = category.ImgPath;
+            }
+
             category.Name = updateCategoryDTO.Name;
+            category.UpdatedBy = "Admin";
+            category.UpdatedAt = DateTime.UtcNow.AddHours(4);
 
             _CategoryWriteRepository.Update(category);
             await _CategoryWriteRepository.SaveChangeAsync();
         }
-
 
         public async Task DeleteCategory(Guid Id)
         {

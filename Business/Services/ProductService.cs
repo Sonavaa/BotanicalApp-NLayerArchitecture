@@ -1,9 +1,12 @@
 ﻿using AutoMapper;
 using Botanical.Models;
+using Business.DTOs.Category;
 using Business.DTOs.Products;
 using Business.Extensions;
 using Business.Services;
+using Core.Entities;
 using Core.Repositories;
+using Data.Repositories;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
@@ -30,13 +33,12 @@ namespace Data.Services
 
         public async Task AddProduct(CreateProductDTO addProductDTO)
         {
-            //bool isProductExist = await _ProductReadRepository.GetAll().AnyAsync(x => x.Name == addProductDTO.Name && x.Id == addProductDTO.Id);
-            //if (isProductExist)
-            //{
-            //    throw new BadRequestException("This product already exists.");
-            //}
+            bool isProductExist = await _ProductReadRepository.GetAll().AnyAsync(x => x.Name == addProductDTO.Name && x.Id == addProductDTO.Id);
+            if (isProductExist)
+            {
+                throw new BadRequestException("This product already exists.");
+            }
 
-            var validationResult = await _CreateProductValidator.ValidateAsync(addProductDTO);
 
             if (!addProductDTO.ImageFile.CheckFileType("image"))
             {
@@ -48,7 +50,7 @@ namespace Data.Services
                 throw new Exception("File size is too large. Maximum allowed size is 200MB.");
             }
 
-            string uniqueFileName = await addProductDTO.ImageFile.SaveFilesAsync(_env.ContentRootPath, "client", "assets", "images", "productImages");
+            string uniqueFileName = await addProductDTO.ImageFile.SaveFilesAsync(_env.ContentRootPath, "client", "assets", "images", "ProductImages");
 
 
             var product = _mapper.Map<Product>(addProductDTO);
@@ -57,7 +59,6 @@ namespace Data.Services
             product.ImagePath = uniqueFileName;
             product.IsInWishList = false;
             product.CreatedBy = "System";
-            product.UpdatedAt = DateTime.UtcNow.AddHours(4);
 
             await _ProductWriteRepository.AddAsync(product);
             await _ProductWriteRepository.SaveChangeAsync();
@@ -68,6 +69,9 @@ namespace Data.Services
             var products = await _ProductReadRepository.GetAll()
                  .Select(p => new GetProductDTO
                  {
+                     Id = p.Id,
+                     IsDeleted = p.IsDeleted,
+                     ImagePath = p.ImagePath,
                      Name = p.Name,
                      Price = p.Price,
                      DiscountedPrice = p.DiscountedPrice,
@@ -82,21 +86,82 @@ namespace Data.Services
 
             return products;
         }
-
-        public async Task GetProductById(Guid Id)
+        public async Task<GetProductDTO> GetProductById(Guid Id)
         {
-            var product = await _ProductReadRepository.GetByIdAsync(Id.ToString());
-            if (product == null)
+
+            var product = await _ProductReadRepository.GetAll().Where(c => c.Id == Id).Select(x => new GetProductDTO
             {
-                throw new Exception("Product not found");
-            }
+                Id = x.Id,
+                Name = x.Name,
+                ImagePath = x.ImagePath,
+                ProductCode = x.ProductCode,
+                Price = x.Price,
+                DiscountedPrice = x.DiscountedPrice,
+                Description = x.Description,
+                Quantity = x.Quantity,
+                CategoryId = x.CategoryId
+            }).FirstOrDefaultAsync();
+            return product;
         }
 
         public async Task EditProduct(Guid Id, CreateProductDTO updateProductDTO)
         {
 
             var validationResult = await _CreateProductValidator.ValidateAsync(updateProductDTO);
-            throw new NotImplementedException();
+            if (!validationResult.IsValid)
+            {
+                throw new ValidationException(validationResult.Errors);
+            }
+
+            var category = await _ProductReadRepository.GetAll()
+                .FirstOrDefaultAsync(c => c.Id == Id);
+
+            if (category == null)
+            {
+                throw new Exception("Product not found.");
+            }
+
+            if (updateProductDTO.ImageFile != null)
+            {
+                if (!updateProductDTO.ImageFile.CheckFileType("image"))
+                {
+                    throw new Exception("Invalid file type. Please upload an image.");
+                }
+
+                if (!updateProductDTO.ImageFile.CheckFileSize(200))
+                {
+                    throw new Exception("File size is too large. Maximum allowed size is 200MB.");
+                }
+
+                if (!string.IsNullOrEmpty(category.ImagePath))
+                {
+                    string oldFileName = Path.GetFileName(category.ImagePath);
+                    FileExtensions.DeleteFile(
+                        _env.ContentRootPath,
+                        "client",
+                        "assets",
+                        "images",
+                        "CategoryImages",
+                        oldFileName
+                    );
+                }
+
+                string uniqueFileName = await updateProductDTO.ImageFile
+                    .SaveFilesAsync(_env.ContentRootPath, "client", "assets", "images", "ProductImages");
+
+                category.ImagePath = uniqueFileName;
+            }
+            else
+            {
+                category.ImagePath = category.ImagePath;
+            }
+
+            category.Name = updateProductDTO.Name;
+            category.UpdatedBy = "Admin";
+            category.UpdatedAt = DateTime.UtcNow.AddHours(4);
+
+            _ProductWriteRepository.Update(category);
+            await _ProductWriteRepository.SaveChangeAsync();
         }
 
         public async Task DeleteProduct(Guid Id)

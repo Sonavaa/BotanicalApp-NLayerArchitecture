@@ -1,0 +1,110 @@
+﻿@using Business.DTOs.Products
+@model CreateProductDTO
+
+<form asp-action="EditProduct" asp-area="Admin" asp-controller="Product" asp-route-id="@Model.Id" method="post" asp-validation-summary="All" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <h4 style="margin-left:40px">Edit Product</h4>
+
+    <div class="addOrEditCard card">
+        <!-- Image Preview -->
+        <div class="chosenImage">
+            <img id="imagePreview" src="@(string.IsNullOrEmpty(Model.ImagePath) ? Url.Content("~/client/assets/images/noImg.jpg") : Url.Content("~/" + Model.ImagePath))" alt="Product Image" />
+        </div>
+
+        <div class="card-body">
+            <!-- Language Dropdown -->
+            @*      <div class="form-floating form-floating-outline mb-3">
+                <select asp-for="LanguageId" name="LanguageId" asp-items="@ViewBag.Languages" class="form-select" aria-label="Choose a Language">
+                    <option selected disabled value="">Choose a Language</option>
+
+                </select>
+                <label asp-for="LanguageId">Language</label>
+                <span class="form-text text-danger" asp-validation-for="LanguageId"></span>
+            </div> *@
+
+            <!-- File Input for Image -->
+            <div class="mb-3">
+                <label asp-for="ImageFile" class="form-label">Product's Image</label>
+                <input class="form-control" type="file" asp-for="ImageFile" name="ImageFile" id="ImageFile" accept="image/*" onchange="previewImage(event)">
+                <span class="form-text text-danger" asp-validation-for="ImageFile"></span>
+            </div>
+
+            <!-- Product Category -->
+            <div>
+                <label asp-for="CategoryId" class="form-label">Product Category</label>
+                <select asp-for="CategoryId" name="CategoryId" class="form-control">
+                    <option value="" selected disabled>Select a Category</option>
+                    @foreach (var category in ViewBag.Categories as SelectList)
+                    {
+                        <option value="@category.Value">@category.Text</option>
+                    }
+                    <!-- Add more categories as needed -->
+                </select>
+                <span class="form-text text-danger" asp-validation-for="CategoryId"></span>
+            </div>
+
+
+            <!-- Product Name-->
+            <div>
+                <label asp-for="Name" class="form-label">Product Name</label>
+                <input type="text" asp-for="Name" name="Name" class="form-control" placeholder="Enter Product Name">
+                <span class="form-text text-danger" asp-validation-for="Name"></span>
+            </div>
+
+            <!-- Product Description -->
+            <div>
+                <label asp-for="Description" class="form-label">Product Description</label>
+                <textarea asp-for="Description" name="Description" class="form-control" placeholder="Enter Product Description"></textarea>
+                <span class="form-text text-danger" asp-validation-for="Description"></span>
+            </div>
+
+            <!-- Price -->
+            <div>
+                <label asp-for="Price" class="form-label">Price</label>
+                <input type="number" asp-for="Price" name="Price" class="form-control" placeholder="Enter Price">
+                <span class="form-text text-danger" asp-validation-for="Price"></span>
+            </div>
+
+            <!-- Discounted Price -->
+            <div>
+                <label asp-for="DiscountedPrice" class="form-label">Discounted Price</label>
+                <input type="number" asp-for="DiscountedPrice" name="DiscountedPrice" class="form-control" placeholder="Enter Discounted Price">
+                <span class="form-text text-danger" asp-validation-for="DiscountedPrice"></span>
+            </div>
+
+            <!-- Product Code -->
+            <div>
+                <label asp-for="ProductCode" class="form-label">Product Code</label>
+                <input type="text" asp-for="ProductCode" name="ProductCode" class="form-control" placeholder="Enter Product Code">
+                <span class="form-text text-danger" asp-validation-for="ProductCode"></span>
+            </div>
+
+            <!-- Quantity -->
+            <div>
+                <label asp-for="Quantity" class="form-label">Quantity</label>
+                <input type="number" asp-for="Quantity" name="Quantity" class="form-control" placeholder="Enter Quantity">
+                <span class="form-text text-danger" asp-validation-for="Quantity"></span>
+            </div>
+
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary mt-3">Save</button>
+        </div>
+    </div>
+</form>
+
+<!-- Image Preview Script -->
+<script>
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var output = document.getElementById('imagePreview');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
