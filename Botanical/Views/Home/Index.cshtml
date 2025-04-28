@@ -7,27 +7,31 @@
     <!-- introBlock -->
     <section class="introBlock position-relative">
         <div class="slick-fade">
-            <div>
-                <div class="align w-100 d-flex align-items-center bgCover" style="background-image: url(images/b-bg.jpg);">
-                    <!-- holder -->
-                    <div class="container position-relative holder pt-xl-10 pt-0">
-                        <!-- py-12 pt-lg-30 pb-lg-25 -->
-                        <div class="row">
-                            <div class="col-12 col-xl-7">
-                                <div class="txtwrap pr-lg-10">
-                                    <h1 class="fwEbold position-relative pb-lg-8 pb-4 mb-xl-7 mb-lg-6">Houseplant <span class="text-break d-block">The Perfect Choice.</span></h1>
-                                    <p class="mb-xl-15 mb-lg-10">Lorem ipsum is simply dummy text of the printing and typesetting industry <br>has been the industry's standard.</p>
-                                    <a asp-controller="Store" asp-action="Index" class="btn btnTheme btnShop fwEbold text-white md-round py-md-3 px-md-4 py-2 px-3">Shop Now <i class="fas fa-arrow-right ml-2"></i></a>
+        @foreach (var slider in Model.Sliders)
+            {
+                <div>
+                    <div class="align w-100 d-flex align-items-center bgCover" style="background-image: url(images/b-bg.jpg);">
+                        <!-- holder -->
+                        <div class="container position-relative holder pt-xl-10 pt-0">
+                            <!-- py-12 pt-lg-30 pb-lg-25 -->
+                            <div class="row">
+                                <div class="col-12 col-xl-7">
+                                    <div class="txtwrap pr-lg-10">
+                                        <span class="title d-block text-uppercase fwEbold position-relative pl-2 mb-lg-5 mb-sm-3 mb-1">@slider.SubTitle</span>
+                                        <h1 class="fwEbold position-relative pb-lg-8 pb-4 mb-xl-7 mb-lg-6">@slider.Title</h1>
+                                        <p class="mb-xl-15 mb-lg-10">@slider.Description</p>
+                                        <a asp-controller="Store" asp-action="Index" class="btn btnTheme btnShop fwEbold text-white md-round py-md-3 px-md-4 py-2 px-3">Shop Now <i class="fas fa-arrow-right ml-2"></i></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="imgHolder">
-                                <img src="~/client/assets/images/HomeSlider-1.png" alt="image description" class="img-fluid w-100">
+                                <div class="imgHolder">
+                                    <img src="~/@slider.ImagePath" alt="image description" class="img-fluid w-100">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
+            }
+@*             <div>
                 <div class="align w-100 d-flex align-items-center bgCover" style="background-image: url(images/b-bg2.jpg);">
                     <!-- holder -->
                     <div class="container position-relative holder pt-xl-10 pt-0">
@@ -68,7 +72,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> *@
         </div>
         <div class="slickNavigatorsWrap">
             <a href="~/client/assets/#" class="slick-prev"><i class="icon-leftarrow"></i></a>
@@ -121,32 +125,36 @@
         </header>
         <div class="col-12 p-0 overflow-hidden d-flex flex-wrap">
             <!-- featureCol -->
-            @foreach (var product in Model.Products?.Take(10))
+             @foreach (var slideProduct in Model.Products.OrderByDescending(p => p.CreatedAt).Take(10))
             {
-                <a asp-controller="Product" asp-action="Detail"  class="featureCol px-3 position-relative mb-6">
-                    <div class="border">
-                        <div class="imgHolder position-relative w-100 overflow-hidden">
-                            <img src="~/client/assets/images/@product.ImagePath" alt="image description" class="img-fluid w-100">
-                            <ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
-                                <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-heart d-block"></a></li>
-                                <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-cart d-block"></a></li>
-                                <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-eye d-block"></a></li>
-                                <li class="overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-arrow d-block"></a></li>
-                            </ul>
-                        </div>
-                        <div class="text-center py-xl-5 py-sm-4 py-2 px-xl-2 px-1">
-                            <span class="title d-block mb-2"><a href="~/client/assets/shop-detail.html">@product.Name</a></span>
-                            @if(product.DiscountedPrice > 0){
-                                <span class="price d-block fwEbold"><del>@product.DiscountedPrice $</del>@product.Price $</span>
-                            }
-                           else{
-                                <span class="price d-block fwEbold">@product.Price $</span>
-                           }
-                            @* 	<span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">HOT</span>
-						<span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block">Sale</span> *@
+                <div>
+                    <!-- featureCol -->
+                    <div class="featureCol w-100 px-3 mb-sm-8 mb-6">
+                        <div class="border">
+                            <div class="imgHolder position-relative w-100 overflow-hidden">
+                                <img src="~/@slideProduct.ImagePath" alt="image description" class="img-fluid w-100" style="height:240px; width:240px !important">
+                                <ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
+                                    <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-heart d-block"></a></li>
+                                    <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-cart d-block"></a></li>
+                                    <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-eye d-block"></a></li>
+                                    <li class="overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-arrow d-block"></a></li>
+                                </ul>
+                            </div>
+                            <div class="text-center py-5 px-2">
+                                <span class="title d-block mb-2"><a href="~/client/assets/shop-detail.html">@slideProduct.Name</a></span>
+                                @if (slideProduct.DiscountedPrice is not null & slideProduct.DiscountedPrice < slideProduct.Price)
+                                {
+                                    <span class="price d-block fwEbold"><del>@slideProduct.Price $</del>@slideProduct.DiscountedPrice $</span>
+                                }else
+                                {
+                                    <span class="price d-block fwEbold">@slideProduct.Price $</span>
+                                }
+                                    <span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block bg-red">HOT</span>
+                                    <span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block">Sale</span>
+                            </div>
                         </div>
                     </div>
-                </a>
+                </div>
             }
         </div>
     </section>
@@ -279,7 +287,7 @@
                     <div class="featureCol w-100 px-3 mb-sm-8 mb-6">
                         <div class="border">
                             <div class="imgHolder position-relative w-100 overflow-hidden">
-                                <img src="~/client/assets/images/@slideProduct.ImagePath" alt="image description" class="img-fluid w-100">
+                                <img src="~/@slideProduct.ImagePath" alt="image description" class="img-fluid w-100" style="height:240px">
                                 <ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
                                     <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-heart d-block"></a></li>
                                     <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-cart d-block"></a></li>

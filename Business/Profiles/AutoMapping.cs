@@ -2,6 +2,7 @@
 using Botanical.Models;
 using Business.DTOs.Category;
 using Business.DTOs.Products;
+using Business.DTOs.Slider;
 using Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,14 @@ namespace Business.Profiles
                   .ForMember(dest => dest.UpdatedAt, opt => opt.MapFrom(src => DateTime.UtcNow.AddHours(4)));
             //updatedBy elave et
             CreateMap<Category, GetCategoryDTO>().ReverseMap();
+
+            //Slider
+            CreateMap<Slider, CreateSliderDTO>().ReverseMap()
+                  .ForMember(dest => dest.Id, opt => opt.Ignore())
+                  .ForMember(dest => dest.CreatedAt, opt => opt.Ignore())
+                  .ForMember(dest => dest.UpdatedAt, opt => opt.MapFrom(src => DateTime.UtcNow.AddHours(4)));
+            //updatedBy elave et
+            CreateMap<Slider, GetSliderDTO>().ReverseMap();
         }
     }
 }

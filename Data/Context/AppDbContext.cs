@@ -38,7 +38,7 @@ namespace Data.Context
                 .HasOne(p => p.Category)
                 .WithMany(c => c.Products)
                 .HasForeignKey(p => p.CategoryId)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.Cascade);
 
             //        modelBuilder.Entity<Cart>()
             //.HasOne(c => c.AppUser)

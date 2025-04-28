@@ -38,25 +38,16 @@ namespace Business.Validators.Product
             RuleFor(x => x.ImageFile)
                 .NotEmpty().WithMessage("Image is required.");
 
-            //isCreatingde elave et 
+            RuleFor(x => x.ImageFile)
+                .Must(file => file == null || file.Length > 0).WithMessage("Uploaded image cannot be empty.")
+                .Must(file => file == null || file.Length <= 200 * 1024 * 1024)
+                    .WithMessage("Image size must be less than 2MB.")
+                .Must(file => file == null ||
+                    file.ContentType == "image/jpeg" ||
+                    file.ContentType == "image/png" ||
+                    file.ContentType == "image/jpg")
+                    .WithMessage("Only JPEG, JPG, and PNG formats are allowed.");
 
-            //RuleFor(x => x.ImageFile)
-            //    .NotNull().WithMessage("Image file is required.")
-            //    .Must(file => file.CheckFileType("image")).WithMessage("Invalid file type. Please upload an image.")
-            //    .Must(file => file.CheckFileSize(10)).WithMessage("File size is too large. Maximum allowed size is 10MB.");
-
-      //      RuleFor(x => x.ImageFile)
-      //.Must(BeAValidImage).When(x => x.ImageFile != null)
-      //.WithMessage("Only image files (jpg, jpeg, png) are allowed.");
-      //  }
-
-      //  private bool BeAValidImage(IFormFile file)
-      //  {
-      //      var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
-      //      var extension = System.IO.Path.GetExtension(file.FileName).ToLower();
-      //      return allowedExtensions.Contains(extension);
-      //  }
-
-    }
+        }
     }
 }

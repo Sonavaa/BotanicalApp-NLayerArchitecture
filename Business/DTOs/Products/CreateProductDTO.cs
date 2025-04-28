@@ -19,9 +19,6 @@ namespace Business.DTOs.Products
         public string ProductCode { get; set; } = null!;
         public int Quantity { get; set; }
         public string? ImagePath {  get; set; }
-        public List<string> Tags {get; set;}
-        public string NewTag {  get; set; }
-
         public IFormFile? ImageFile { get; set; }
     }
 }

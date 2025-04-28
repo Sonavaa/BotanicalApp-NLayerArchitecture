@@ -33,12 +33,6 @@ namespace Data.Services
 
         public async Task AddCategory(CreateCategoryDTO addCategoryDTO)
         {
-            var validationResult = await _CreateCategoryValidator.ValidateAsync(addCategoryDTO);
-            if (!validationResult.IsValid)
-            {
-                throw new ValidationException(validationResult.Errors);
-            }
-
             bool isCategoryExist = await _CategoryReadRepository.GetAll().AnyAsync(x => x.Name == addCategoryDTO.Name || x.Id == addCategoryDTO.Id);
             if (isCategoryExist)
             {

@@ -13,12 +13,18 @@ namespace Business.Validators.Category
                 .Length(3, 100).WithMessage("Category Name must be between 3 and 100 characters.");
 
             RuleFor(x => x.ImageFile)
-                .Must(file => file == null || file.Length > 0)
-                .WithMessage("Image file cannot be empty if provided.")
-                .Must(file => file == null || file.CheckFileType("image")) 
-                .WithMessage("Invalid file type. Please upload an image.")
-                .Must(file => file == null || file.CheckFileSize(200)) 
-                .WithMessage("File size is too large. Maximum allowed size is 200MB.");
+                .NotEmpty().WithMessage("Image is required.");
+
+            RuleFor(x => x.ImageFile)
+               .Must(file => file == null || file.Length > 0).WithMessage("Uploaded image cannot be empty.")
+               .Must(file => file == null || file.Length <= 200 * 1024 * 1024)
+                   .WithMessage("Image size must be less than 2MB.")
+               .Must(file => file == null ||
+                   file.ContentType == "image/jpeg" ||
+                   file.ContentType == "image/png" ||
+                   file.ContentType == "image/jpg")
+                   .WithMessage("Only JPEG, JPG, and PNG formats are allowed.");
+
         }
     }
 }

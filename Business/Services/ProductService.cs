@@ -33,7 +33,8 @@ namespace Data.Services
 
         public async Task AddProduct(CreateProductDTO addProductDTO)
         {
-            bool isProductExist = await _ProductReadRepository.GetAll().AnyAsync(x => x.Name == addProductDTO.Name && x.Id == addProductDTO.Id);
+            bool isProductExist = await _ProductReadRepository.GetAll().AnyAsync(x => (x.Name == addProductDTO.Name && x.CategoryId == addProductDTO.CategoryId)
+                || x.ProductCode == addProductDTO.ProductCode);
             if (isProductExist)
             {
                 throw new BadRequestException("This product already exists.");

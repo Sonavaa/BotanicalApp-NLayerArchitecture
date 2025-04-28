@@ -21,71 +21,77 @@
     <div class="menu-inner-shadow"></div>
 
     @* ! Full version menu-items *@
-    <ul class="menu-inner py-1">
-        <!-- Dashboards -->
-        <li class='menu-item@(currentPage == "/Tables/Basic" ? " active" : "")'>
-            <a asp-controller="Dashboards" asp-action="Index" class="menu-link">
-                <i class="menu-icon tf-icons ri-home-smile-line"></i>
-                <div>Dashboard</div>
-            </a>
-        </li>
+<ul class="menu-inner py-1">
+    <!-- Dashboards -->
+    <li class='menu-item@(currentPage == "/Tables/Basic" ? " active" : "")'>
+        <a asp-controller="Dashboards" asp-action="Index" class="menu-link">
+            <i class="menu-icon tf-icons ri-home-smile-line"></i>
+            <div>Dashboard</div>
+        </a>
+    </li>
 
-        <!-- Layouts -->
-      
-                <li class='menu-item@(currentPage == "/LayoutExamples/WithoutMenu" ? " active" : "")'>
-                    <a asp-controller="Language" asp-action="Create" class="menu-link">
-                        <div>Add Language</div>
-                    </a>
-                </li>
+    <!-- Layouts -->
 
-        <li class='menu-item@(currentPage.StartsWith("/LayoutExamples") ? " active open" : "")'>
-                <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
-                    <a asp-controller="Product" asp-action="Index" class="menu-link">
-                        <div>Product</div>
-                    </a>
-                </li>
+    <li class='menu-item@(currentPage == "/LayoutExamples/WithoutMenu" ? " active" : "")'>
+        <a asp-controller="Language" asp-action="Create" class="menu-link">
+            <div>Add Language</div>
+        </a>
+    </li>
 
-                <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
-                    <a asp-controller="Category" asp-action="Index" class="menu-link">
-                        <div>Categories</div>
-                    </a>
-                </li>
+    <li class='menu-item@(currentPage.StartsWith("/LayoutExamples") ? " active open" : "")'>
+    <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
+        <a asp-controller="Product" asp-action="Index" class="menu-link">
+            <div>Product</div>
+        </a>
+    </li>
+
+    <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
+        <a asp-controller="Category" asp-action="Index" class="menu-link">
+            <div>Categories</div>
+        </a>
+    </li>
+
+    <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
+        <a asp-controller="Slider" asp-action="Index" class="menu-link">
+            <div>Sliders</div>
+        </a>
+    </li>
 
 
-        <li class="menu-header mt-7">
-            <span class="menu-header-text">Apps &amp; Pages</span>
-        </li>
-        <!-- Apps -->
-        @*         <li class='menu-item@(currentPage == "/Apps/Email" ? " active" : "")'>
+    <li class="menu-header mt-7">
+        <span class="menu-header-text">Apps &amp; Pages</span>
+    </li>
+    <!-- Apps -->
+    @*         <li class='menu-item@(currentPage == "/Apps/Email" ? " active" : "")'>
             <a href="" target="_blank" class="menu-link">
                 <i class="menu-icon tf-icons ri-mail-open-line"></i>
                 <div>Email</div>
             </a>
         </li> *@
 
-        <!-- Pages -->
-        @*   <li class='menu-item@(currentPage.StartsWith("/User") ? " active open" : "")'>
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons ri-layout-left-line"></i>
-                <div>Account Settings</div>
+    <!-- Pages -->
+    @*   <li class='menu-item@(currentPage.StartsWith("/User") ? " active open" : "")'>
+        <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons ri-layout-left-line"></i>
+            <div>Account Settings</div>
+        </a>
+        <ul class="menu-sub">
+            <li class='menu-item@(currentPage == "/User/Login" ? " active" : "")'>
+                <a asp-controller="User" asp-action="LogOut" class="menu-link">
+                    <div>LogOut</div>
+                </a>
+            </li> *@
+    @* <li class='menu-item@(currentPage == "/User/AccountSettingsNotifications" ? " active" : "")'>
+            <a asp-controller="Pages" asp-action="AccountSettingsNotifications" class="menu-link">
+                <div>Notifications</div>
             </a>
-            <ul class="menu-sub">
-                <li class='menu-item@(currentPage == "/User/Login" ? " active" : "")'>
-                    <a asp-controller="User" asp-action="LogOut" class="menu-link">
-                        <div>LogOut</div>
-                    </a>
-                </li> *@
-        @* <li class='menu-item@(currentPage == "/User/AccountSettingsNotifications" ? " active" : "")'>
-                    <a asp-controller="Pages" asp-action="AccountSettingsNotifications" class="menu-link">
-                        <div>Notifications</div>
-                    </a>
-                </li>
-                <li class='menu-item@(currentPage == "/User/AccountSettingsConnections" ? " active" : "")'>
-                    <a asp-controller="Pages" asp-action="AccountSettingsConnections" class="menu-link">
-                        <div>Connections</div>
-                    </a>
-                </li> *@
-    </ul>
+        </li>
+        <li class='menu-item@(currentPage == "/User/AccountSettingsConnections" ? " active" : "")'>
+            <a asp-controller="Pages" asp-action="AccountSettingsConnections" class="menu-link">
+                <div>Connections</div>
+            </a>
+        </li> *@
+</ul>
     @* </li> *@
     @*         <li class='menu-item@(currentPage.StartsWith("/Pages/Misc") ? " active open" : "")'>
             <a href="javascript:void(0);" class="menu-link menu-toggle">

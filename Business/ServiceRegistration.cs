@@ -25,11 +25,14 @@ namespace Business
 
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ISliderService, SliderService>();
 
             services.AddScoped<IProductReadRepository, ProductReadRepository>();
             services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
             services.AddScoped<ICategoryReadRepository, CategoryReadRepository>();
             services.AddScoped<ICategoryWriteRepository, CategoryWriteRepository>();
+            services.AddScoped<ISliderReadRepository, SliderReadRepository>();
+            services.AddScoped<ISliderWriteRepository, SliderWriteRepository>();
         }
     }
 }

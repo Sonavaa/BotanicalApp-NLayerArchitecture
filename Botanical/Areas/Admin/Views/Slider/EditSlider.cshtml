@@ -1,0 +1,62 @@
+﻿@using Business.DTOs.Slider
+@model CreateSliderDTO
+<form asp-action="EditSlider" asp-area="Admin" asp-controller="Slider" asp-route-id="@Model.Id" method="post" asp-validation-summary="All" enctype="multipart/form-data">
+    <h4 style="margin-left:40px">Edit Product</h4>
+
+    <div class="EditOrEditCard card">
+        <!-- Image Preview -->
+        <div class="chosenImage">
+            <img id="imagePreview" src="~/client/assets/images/noImg.jpg" alt="Slider Image" />
+        </div>
+
+        <div class="card-body">
+            <!-- File Input for Image -->
+            <div class="mb-3">
+                <label asp-for="ImageFile" class="form-label">Product's Image</label>
+                <input class="form-control" type="file" asp-for="ImageFile" name="ImageFile" id="ImageFile" accept="image/*" onchange="previewImage(event)">
+                <span class="form-text text-danger" asp-validation-for="ImageFile"></span>
+            </div>
+
+
+            <!-- Slider Title-->
+            <div>
+                <label asp-for="Title" class="form-label">Slider Title</label>
+                <input type="text" asp-for="Title" name="Title" class="form-control" placeholder="Enter Slider Title">
+                <span class="form-text text-danger" asp-validation-for="Title"></span>
+            </div>
+
+            <!-- Slider SubTitle-->
+            <div>
+                <label asp-for="SubTitle" class="form-label">Slider SubTitle</label>
+                <input type="text" asp-for="SubTitle" name="SubTitle" class="form-control" placeholder="Enter Slider SubTitle">
+                <span class="form-text text-danger" asp-validation-for="SubTitle"></span>
+            </div>
+
+            <!-- Slider Description -->
+            <div>
+                <label asp-for="Description" class="form-label">Product Description</label>
+                <textarea asp-for="Description" name="Description" class="form-control" placeholder="Enter Product Description"></textarea>
+                <span class="form-text text-danger" asp-validation-for="Description"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary mt-3">Save</button>
+        </div>
+    </div>
+</form>
+
+<!-- Image Preview Script -->
+<script>
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var output = document.getElementById('imagePreview');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>

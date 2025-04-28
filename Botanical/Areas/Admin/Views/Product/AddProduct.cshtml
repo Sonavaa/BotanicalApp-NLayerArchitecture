@@ -22,9 +22,12 @@
                 <label asp-for="CategoryId" class="form-label">Product Category</label>
                 <select asp-for="CategoryId" name="CategoryId" class="form-control">
                     <option value="" selected disabled>Select a Category</option>
-                    @foreach (var category in ViewBag.Categories as SelectList)
+                    @if (ViewBag.Categories != null)
                     {
-                        <option value="@category.Value">@category.Text</option>
+                        foreach (var category in (ViewBag.Categories as IEnumerable<SelectListItem>))
+                        {
+                            <option value="@category.Value">@category.Text</option>
+                        }
                     }
                 </select>
                 <span class="form-text text-danger" asp-validation-for="CategoryId"></span>

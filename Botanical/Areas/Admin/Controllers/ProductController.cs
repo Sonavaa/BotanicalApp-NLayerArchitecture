@@ -38,8 +38,6 @@ namespace Botanical.Areas.Admin.Controllers
         {
             var categories = _context.Categories.Where(c=>!c.IsDeleted).ToList();
             ViewBag.Categories = new SelectList(categories, "Id", "Name");
-            var tags = _context.Tags.Where(c => !c.IsDeleted).ToList();
-            ViewBag.Tags = new SelectList(tags, "Id", "Name"); 
             return View();
         }
 
@@ -51,7 +49,6 @@ namespace Botanical.Areas.Admin.Controllers
             {
                 return View(addProductDTO);
             }
-
 
             try
             {
