@@ -5688,6 +5688,132 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\productImages\f8710b70-6da8-4d71-812c-35102b20f7ee_254fea34b552ff9fefe8bf9a8ef63067.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\0a47baf2-c01a-4712-9bdf-f5f80895fc9f_8418782.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Botanical</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Botanical</BasePath>
+      <RelativePath>client/assets/images/SettingsImages/0a47baf2-c01a-4712-9bdf-f5f80895fc9f_8418782.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>trlodl6t3d</Fingerprint>
+      <Integrity>xzpTkEErUr7Rtosf1RGMYCI0hRHRpA4+GiQS5Ildtns=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\0a47baf2-c01a-4712-9bdf-f5f80895fc9f_8418782.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\13082f38-14fc-4b4b-a5e5-df4c24208fa2_aboutBannerImg.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Botanical</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Botanical</BasePath>
+      <RelativePath>client/assets/images/SettingsImages/13082f38-14fc-4b4b-a5e5-df4c24208fa2_aboutBannerImg.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tnh7jz3464</Fingerprint>
+      <Integrity>1xsz5CER4GOqrVWiAH8gltOdgwyYNzW0Pf9NLYKINMc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\13082f38-14fc-4b4b-a5e5-df4c24208fa2_aboutBannerImg.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\170a885f-58de-47f8-b770-256ffbe206e2_Role-Enum.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Botanical</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Botanical</BasePath>
+      <RelativePath>client/assets/images/SettingsImages/170a885f-58de-47f8-b770-256ffbe206e2_Role-Enum.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kedn32nyvx</Fingerprint>
+      <Integrity>ZEEbSU1jW8H5S+n3JEKvbU3rJvesDLKdUM8OcuZpAjg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\170a885f-58de-47f8-b770-256ffbe206e2_Role-Enum.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\1f1c5fd3-0613-4be6-8f8a-584e51798527_254fea34b552ff9fefe8bf9a8ef63067.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Botanical</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Botanical</BasePath>
+      <RelativePath>client/assets/images/SettingsImages/1f1c5fd3-0613-4be6-8f8a-584e51798527_254fea34b552ff9fefe8bf9a8ef63067.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0n3g1jwt6a</Fingerprint>
+      <Integrity>lHyDPQxPO2+8+BCMzSMe/ulf2UTSpw4cM8q3bEBBAVY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\1f1c5fd3-0613-4be6-8f8a-584e51798527_254fea34b552ff9fefe8bf9a8ef63067.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\4d96f9da-7301-424c-a2d9-6385662543da_aboutImg.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Botanical</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Botanical</BasePath>
+      <RelativePath>client/assets/images/SettingsImages/4d96f9da-7301-424c-a2d9-6385662543da_aboutImg.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>sc9j6pksnb</Fingerprint>
+      <Integrity>5D9fsMl/7fi/Ed7SNGCT3kfCfHOSaAHuhd+jPBlGuK0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\4d96f9da-7301-424c-a2d9-6385662543da_aboutImg.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\ee7e22f3-a933-4a6f-a10f-1fb095b85d53_254fea34b552ff9fefe8bf9a8ef63067.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Botanical</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Botanical</BasePath>
+      <RelativePath>client/assets/images/SettingsImages/ee7e22f3-a933-4a6f-a10f-1fb095b85d53_254fea34b552ff9fefe8bf9a8ef63067.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0n3g1jwt6a</Fingerprint>
+      <Integrity>lHyDPQxPO2+8+BCMzSMe/ulf2UTSpw4cM8q3bEBBAVY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\ee7e22f3-a933-4a6f-a10f-1fb095b85d53_254fea34b552ff9fefe8bf9a8ef63067.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\fb2fa32f-a366-439e-b071-9c97567cb419_254fea34b552ff9fefe8bf9a8ef63067.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Botanical</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Botanical</BasePath>
+      <RelativePath>client/assets/images/SettingsImages/fb2fa32f-a366-439e-b071-9c97567cb419_254fea34b552ff9fefe8bf9a8ef63067.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0n3g1jwt6a</Fingerprint>
+      <Integrity>lHyDPQxPO2+8+BCMzSMe/ulf2UTSpw4cM8q3bEBBAVY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SettingsImages\fb2fa32f-a366-439e-b071-9c97567cb419_254fea34b552ff9fefe8bf9a8ef63067.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\images\SliderImages\37b74cf1-2dbc-4431-b05f-227ba8a3244b_254fea34b552ff9fefe8bf9a8ef63067.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Botanical</SourceId>
@@ -5970,8 +6096,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hxgx70snof</Fingerprint>
-      <Integrity>9bo8XYNs4Wd+VIBmhi9ZFjMXpQqEXMISO3b9slSVk9M=</Integrity>
+      <Fingerprint>dr3ycdvbpa</Fingerprint>
+      <Integrity>dygpdGp6f6yKDcEW/ljiWVoEO64jz1BnUEGgRO7C9Jc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\js\main.js'))</OriginalItemSpec>

@@ -1,0 +1,81 @@
+﻿@using Business.DTOs.Settings
+@model CreateSettingsDTO
+
+<form asp-action="EditSetting" asp-area="Admin" asp-controller="Settings" asp-route-id="@Model.Id" method="post" asp-validation-summary="All" enctype="multipart/form-data">
+    <h4 style="margin-left:40px">Edit Setting</h4>
+
+    <div class="EditOrEditCard card">
+        <!-- Image Preview -->
+        <div class="chosenImage">
+            <img id="imagePreview" src="~/client/assets/images/noImg.jpg" alt="Setting Image" />
+        </div>
+
+
+        <div class="card-body">
+            <!-- Language Dropdown -->
+            @*      <div class="form-floating form-floating-outline mb-3">
+                <select asp-for="LanguageId" name="LanguageId" asp-items="@ViewBag.Languages" class="form-select" aria-label="Choose a Language">
+                    <option selected disabled value="">Choose a Language</option>
+
+                </select>
+                <label asp-for="LanguageId">Language</label>
+                <span class="form-text text-danger" asp-validation-for="LanguageId"></span>
+            </div> *@
+
+            <!-- File Input for Image -->
+            <div class="mb-3">
+                <label asp-for="ImageFile" class="form-label">Setting's Image</label>
+                <input class="form-control" type="file" asp-for="ImageFile" name="ImageFile" id="ImageFile" accept="image/*" onchange="previewImage(event)">
+                <span class="form-text text-danger" asp-validation-for="ImageFile"></span>
+            </div>
+
+            <!-- Setting Key -->
+            <div>
+                <label asp-for="Key" class="form-label">Setting Key</label>
+                <input type="text" asp-for="Key" name="Key" class="form-control" placeholder="Enter Setting Key">
+                <span class="form-text text-danger" asp-validation-for="Key"></span>
+            </div>
+
+            <!-- Setting Value -->
+            <div>
+                <label asp-for="Value" class="form-label">Setting Value</label>
+                <input type="text" asp-for="Value" name="Value" class="form-control" placeholder="Enter Setting Value">
+                <span class="form-text text-danger" asp-validation-for="Value"></span>
+            </div>
+
+            <!-- Setting Title -->
+            <div>
+                <label asp-for="Title" class="form-label">Setting Title</label>
+                <input type="text" asp-for="Title" name="Title" class="form-control" placeholder="Enter Setting Title">
+                <span class="form-text text-danger" asp-validation-for="Title"></span>
+            </div>
+
+            <!-- Setting Description -->
+            <div>
+                <label asp-for="Description" class="form-label">Setting Description</label>
+                <input type="text" asp-for="Description" name="Description" class="form-control" placeholder="Enter Setting Description">
+                <span class="form-text text-danger" asp-validation-for="Description"></span>
+            </div>
+
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary mt-3">Save</button>
+        </div>
+    </div>
+</form>
+
+<!-- Image Preview Script -->
+<script>
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var output = document.getElementById('imagePreview');
+            output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>

@@ -40,22 +40,28 @@
 
     <li class='menu-item@(currentPage.StartsWith("/LayoutExamples") ? " active open" : "")'>
     <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
-        <a asp-controller="Product" asp-action="Index" class="menu-link">
-            <div>Product</div>
-        </a>
-    </li>
-
-    <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
         <a asp-controller="Category" asp-action="Index" class="menu-link">
             <div>Categories</div>
         </a>
     </li>
+
+        <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
+            <a asp-controller="Product" asp-action="Index" class="menu-link">
+                <div>Product</div>
+            </a>
+        </li>
 
     <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
         <a asp-controller="Slider" asp-action="Index" class="menu-link">
             <div>Sliders</div>
         </a>
     </li>
+
+        <li class='menu-item@(currentPage == "/LayoutExamples/WithoutNavbar" ? " active" : "")'>
+            <a asp-controller="Settings" asp-action="Index" class="menu-link">
+                <div>Settings</div>
+            </a>
+        </li>
 
 
     <li class="menu-header mt-7">

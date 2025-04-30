@@ -4,17 +4,24 @@ namespace Business.Extensions
 {
     public static class FileExtensions
     {
-        public static async Task<string> SaveFilesAsync(this IFormFile file, string root, string client, string folderNameAssets, string folderNameImages, string folderName)
+        public static async Task<string?> SaveFilesAsync(this IFormFile file, string root, string client, string folderNameAssets, string folderNameImages, string folderName)
         {
-            string uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
-            string fullPath = Path.Combine(root, "wwwroot", client, folderNameAssets, folderNameImages, folderName, uniqueFileName);
+            if (file != null && file.FileName != null)
+            {
+                string uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
+                string fullPath = Path.Combine(root, "wwwroot", client, folderNameAssets, folderNameImages, folderName, uniqueFileName);
 
-            Directory.CreateDirectory(Path.GetDirectoryName(fullPath)!);
+                Directory.CreateDirectory(Path.GetDirectoryName(fullPath)!);
 
-            using FileStream fs = new FileStream(fullPath, FileMode.Create);
-            await file.CopyToAsync(fs);
-            return Path.Combine(client, folderNameAssets, folderNameImages, folderName, uniqueFileName).Replace("\\", "/"); // for returning relative web path
+                using FileStream fs = new FileStream(fullPath, FileMode.Create);
+                await file.CopyToAsync(fs);
+
+                return Path.Combine(client, folderNameAssets, folderNameImages, folderName, uniqueFileName).Replace("\\", "/");
+            }
+
+            return null;
         }
+
 
 
         public static bool CheckFileType(this IFormFile file, string fileType)

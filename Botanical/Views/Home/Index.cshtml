@@ -83,34 +83,36 @@
     <section class="chooseUs-sec container pt-xl-22 pt-lg-20 pt-md-16 pt-10 pb-xl-12 pb-md-7 pb-2">
         <div class="row">
             <div class="col-12 col-lg-6 mb-lg-0 mb-4">
-                <img src="~/client/assets/images/img01.jpg" alt="image description" class="img-fluid">
+                <img src="~/@Model.Settings.FirstOrDefault(s=>s.Key == "Why choose us ?").ImgPath" alt="image description" class="img-fluid">
             </div>
             <div class="col-12 col-lg-6 pr-4">
-                <h2 class="headingII fwEbold playfair position-relative mb-6 pb-5">Why choose us ?</h2>
-                <p class="mb-xl-14 mb-lg-10">Lorem ipsum is simply dummy text of the printing and typesetting industry, lorem ipsum has been the industry's standard dummy text ever since the 1500s  when an unknown printer took a galley ... <a href="~/client/assets/javascript:void(0);" class="btnMore"><i>Learn More</i></a></p>
+                <h2 class="headingII fwEbold playfair position-relative mb-6 pb-5">@Model.Settings.FirstOrDefault(s => s.Key == "Why choose us ?").Key</h2>
+                @{
+                    var fullText = Model.Settings.FirstOrDefault(s => s.Key == "Why choose us ?")?.Value ?? "";
+                    var previewText = fullText.Length > 200 ? fullText.Substring(0, 200) + "..." : fullText;
+                    var isLong = fullText.Length > 200;
+                }
+                <p class="mb-xl-14 mb-lg-10">
+                    <span class="text-preview">@previewText</span>
+                    <span class="text-full d-none">@fullText</span>
+                    @if (isLong)
+                    {
+                        <a href="javascript:void(0);" class="btnMore"><i>Learn More</i></a>
+                    }
+                </p>
+
                 <!-- chooseList -->
                 <ul class="list-unstyled chooseList">
-                    <li class="d-flex justify-content-start mb-xl-7 mb-lg-5 mb-3">
-                        <span class="icon icon-plant"></span>
-                        <div class="alignLeft d-flex justify-content-start flex-wrap">
-                            <h3 class="headingIII fwEbold mb-2">Hand Planted</h3>
-                            <p>There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form.</p>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-start mb-xl-6 mb-lg-5 mb-4">
-                        <span class="icon icon-ic-plant"></span>
-                        <div class="alignLeft d-flex justify-content-start flex-wrap">
-                            <h3 class="headingIII fwEbold mb-2">Natural Sunlight</h3>
-                            <p>It is a long established fact that a reader will be distracted by the reable content of a page.</p>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-start">
-                        <span class="icon icon-desert"></span>
-                        <div class="alignLeft d-flex justify-content-start flex-wrap">
-                            <h3 class="headingIII fwEbold mb-2">Clean Air</h3>
-                            <p>There are many variations of passages of lorem ipsum available, but the majority have suffered.</p>
-                        </div>
-                    </li>
+                    @foreach (var WCUElement in Model.Settings.Where(x => x.Key.StartsWith("WCU")))
+                    {
+                        <li class="d-flex justify-content-start mb-xl-7 mb-lg-5 mb-3">
+                            <span class="icon icon-plant"></span>
+                            <div class="alignLeft d-flex justify-content-start flex-wrap">
+                                <h3 class="headingIII fwEbold mb-2">@WCUElement.Title</h3>
+                                <p>@WCUElement.Value</p>
+                            </div>
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
@@ -119,9 +121,9 @@
     <section class="featureSec container-fluid overflow-hidden pt-xl-12 pt-lg-10 pt-md-80 pt-5 pb-xl-10 pb-lg-4 pb-md-2 px-xl-14 px-lg-7">
         <!-- mainHeader -->
         <header class="col-12 mainHeader mb-7 text-center">
-            <h1 class="headingIV playfair fwEblod mb-4">Featured Product</h1>
+            <h1 class="headingIV playfair fwEblod mb-4">@Model.Settings.FirstOrDefault(s => s.Key == "Featured Product").Key</h1>
             <span class="headerBorder d-block mb-md-5 mb-3"><img src="~/client/assets/images/hbdr.png" alt="Header Border" class="img-fluid img-bdr"></span>
-            <p>Trending Now: Featured Favorites.</p>
+            <p>@Model.Settings.FirstOrDefault(s => s.Key == "Featured Product").Value</p>
         </header>
         <div class="col-12 p-0 overflow-hidden d-flex flex-wrap">
             <!-- featureCol -->
@@ -134,10 +136,14 @@
                             <div class="imgHolder position-relative w-100 overflow-hidden">
                                 <img src="~/@slideProduct.ImagePath" alt="image description" class="img-fluid w-100" style="height:240px; width:240px !important">
                                 <ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
-                                    <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-heart d-block"></a></li>
-                                    <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-cart d-block"></a></li>
-                                    <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-eye d-block"></a></li>
-                                    <li class="overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-arrow d-block"></a></li>
+                                    @if(!slideProduct.IsInWishList){
+                                        <li class="mr-2 overflow-hidden"><a asp-controller="Product" asp-action="AddToWishList" asp-route-id="@slideProduct.Id" class="icon-heart d-block"></a></li>
+                                    }
+                                    else{
+                                        <li class="mr-2 overflow-hidden"><a asp-controller="Product" asp-action="RemoveFromWishList" asp-route-id="@slideProduct.Id" class="icon-heart d-block"></a></li>
+                                    }
+                                    <li class="mr-2 overflow-hidden"><a asp-controller="Product" asp-action="Detail" asp-route-id="@slideProduct.Id" class="icon-eye d-block"></a></li>
+                                    <li class="overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-cart d-block"></a></li>
                                 </ul>
                             </div>
                             <div class="text-center py-5 px-2">
@@ -227,17 +233,36 @@
     <!-- contactListBlock -->
     <div class="contactListBlock container overflow-hidden pt-xl-8 pt-lg-10 pt-md-8 pt-4 pb-xl-12 pb-lg-10 pb-md-4 pb-1">
         <div class="row">
-            <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                <!-- contactListColumn -->
-                <div class="contactListColumn border overflow-hidden py-xl-5 py-md-3 py-2 px-xl-6 px-md-3 px-3 d-flex">
-                    <span class="icon icon-van"></span>
-                    <div class="alignLeft pl-2">
-                        <strong class="headingV fwEbold d-block mb-1">Free shipping order</strong>
-                        <p class="m-0">On orders over  $100</p>
+            @foreach (var contactListElement in Model.Settings.Where(x => x.Key.StartsWith("contactListColumn")))
+            {
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                    <!-- contactListColumn -->
+                    <div class="contactListColumn border overflow-hidden py-xl-5 py-md-3 py-2 px-xl-6 px-md-3 px-3 d-flex">
+                        @if (@contactListElement.Title == "Free shipping order")
+                        {
+                            <span class="icon icon-van"></span>
+                        }
+                        else if (@contactListElement.Title == "Special gift card")
+                        {
+                            <span class="icon icon-gift"></span>
+                        }
+                        else if (@contactListElement.Title == "Return & exchange")
+                        {
+                            <span class="icon icon-recycle"></span>
+                        }
+                        else if (@contactListElement.Title == "Support 24 / 7 ")
+                        {
+                            <span class="icon icon-call"></span>
+                        }
+                        <div class="alignLeft pl-2">
+                            <strong class="headingV fwEbold d-block mb-1">@contactListElement.Title</strong>
+                            <p class="m-0">@contactListElement.Value</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+            }
+
+            @* <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
                 <!-- contactListColumn -->
                 <div class="contactListColumn border overflow-hidden py-xl-5 py-md-3 py-2 px-xl-6 px-md-3 px-3 d-flex">
                     <span class="icon icon-gift"></span>
@@ -266,16 +291,16 @@
                         <p class="m-0">Customer support</p>
                     </div>
                 </div>
-            </div>
+            </div> *@
         </div>
     </div>
     <!-- dealSecHolder -->
     <section class="dealSecHolder container-fluid overflow-hidden py-xl-12 py-lg-10 py-md-8 py-5">
         <!-- mainHeader -->
         <header class="col-12 mainHeader mb-7 text-center">
-            <h1 class="headingIV playfair fwEblod mb-5">Daily Deal</h1>
+            <h1 class="headingIV playfair fwEblod mb-5">@Model.Settings.FirstOrDefault(s => s.Key == "Daily Deal").Key</h1>
             <span class="headerBorder d-block mb-md-5 mb-3"><img src="~/client/assets/images/hbdr.png" alt="Header Border" class="img-fluid img-bdr"></span>
-            <p class="mb-6">There are many variations of passages of lorem ipsum available.</p>
+            <p class="mb-6">@Model.Settings.FirstOrDefault(s => s.Key == "Daily Deal").Value</p>
             <div id="defaultCountdown" class="comming-timer"></div>
         </header>
         <!-- dealSlider -->
@@ -289,10 +314,16 @@
                             <div class="imgHolder position-relative w-100 overflow-hidden">
                                 <img src="~/@slideProduct.ImagePath" alt="image description" class="img-fluid w-100" style="height:240px">
                                 <ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
-                                    <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-heart d-block"></a></li>
-                                    <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-cart d-block"></a></li>
-                                    <li class="mr-2 overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-eye d-block"></a></li>
-                                    <li class="overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-arrow d-block"></a></li>
+                                    @if (!slideProduct.IsInWishList)
+                                    {
+                                        <li class="mr-2 overflow-hidden"><a asp-controller="Product" asp-action="AddToWishList" asp-route-id="@slideProduct.Id" class="icon-heart d-block"></a></li>
+                                    }
+                                    else
+                                    {
+                                        <li class="mr-2 overflow-hidden"><a asp-controller="Product" asp-action="RemoveFromWishList" asp-route-id="@slideProduct.Id" class="icon-heart d-block"></a></li>
+                                    }
+                                    <li class="mr-2 overflow-hidden"><a asp-controller="Product" asp-action="Detail" asp-route-id="@slideProduct.Id" class="icon-eye d-block"></a></li>
+                                    <li class="overflow-hidden"><a href="~/client/assets/javascript:void(0);" class="icon-cart d-block"></a></li>
                                 </ul>
                             </div>
                             <div class="text-center py-5 px-2">
@@ -397,3 +428,26 @@
         </div>
     </aside>
 </main>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.querySelector(".btnMore");
+        const preview = document.querySelector(".text-preview");
+        const full = document.querySelector(".text-full");
+
+        if (btn) {
+            btn.addEventListener("click", function () {
+                const isExpanded = full.classList.contains("d-none");
+
+                if (isExpanded) {
+                    preview.classList.add("d-none");
+                    full.classList.remove("d-none");
+                    btn.innerHTML = "<i>Show Less</i>";
+                } else {
+                    full.classList.add("d-none");
+                    preview.classList.remove("d-none");
+                    btn.innerHTML = "<i>Learn More</i>";
+                }
+            });
+        }
+    });
+</script>

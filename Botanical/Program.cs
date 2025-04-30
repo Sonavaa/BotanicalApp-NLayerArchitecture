@@ -2,6 +2,7 @@ using Business;
 using Business.Profiles;
 using Business.Validators.Category;
 using Business.Validators.Product;
+using Business.Validators.Settings;
 using Business.Validators.Slider;
 using Data.Context;
 using FluentValidation;
@@ -14,7 +15,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews()
     .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateProductDTOValidator>())
       .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateCategoryDTOValidator>())
-       .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateSliderDTOValidator>());
+       .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateSliderDTOValidator>())
+        .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateSettingsDTOValidator>());
 
 
 builder.Services.AddDbContext<AppDbContext>(options =>

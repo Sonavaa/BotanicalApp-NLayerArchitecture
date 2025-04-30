@@ -5,13 +5,14 @@
     "\\Botanical\\Areas",
     "\\Botanical\\Areas\\Admin",
     "\\Botanical\\Areas\\Admin\\Views",
-    "\\Botanical\\Areas\\Admin\\Views\\Product",
     "\\Botanical\\Areas\\Admin\\Views\\Shared",
     "\\Botanical\\Areas\\Admin\\Views\\Shared\\Sections",
     "\\Botanical\\Areas\\Admin\\Views\\Shared\\Sections\\Menu",
+    "\\Botanical\\Views",
+    "\\Botanical\\Views\\Home",
     "\\Data",
     "\\Data\\Context"
   ],
-  "SelectedNode": "\\Botanical\\Areas\\Admin\\Views\\Product\\AddProduct.cshtml",
+  "SelectedNode": "\\Botanical\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

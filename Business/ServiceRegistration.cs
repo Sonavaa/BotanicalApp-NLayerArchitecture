@@ -2,6 +2,8 @@
 using Business.Services;
 using Business.Validators.Category;
 using Business.Validators.Product;
+using Business.Validators.Settings;
+using Business.Validators.Slider;
 using Core.Repositories;
 using Data.Repositories;
 using Data.Services;
@@ -22,10 +24,14 @@ namespace Business
         {
             services.AddValidatorsFromAssemblyContaining<CreateProductDTOValidator>();
             services.AddValidatorsFromAssemblyContaining<CreateCategoryDTOValidator>();
+            services.AddValidatorsFromAssemblyContaining<CreateSliderDTOValidator>();
+            services.AddValidatorsFromAssemblyContaining<CreateSettingsDTOValidator>();
 
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<ISliderService, SliderService>();
+            services.AddScoped<ISettingsService, SettingsService>();
+            services.AddScoped<IProductServiceForPresentation, ProductServiceForPresentation>();
 
             services.AddScoped<IProductReadRepository, ProductReadRepository>();
             services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
@@ -33,6 +39,8 @@ namespace Business
             services.AddScoped<ICategoryWriteRepository, CategoryWriteRepository>();
             services.AddScoped<ISliderReadRepository, SliderReadRepository>();
             services.AddScoped<ISliderWriteRepository, SliderWriteRepository>();
+            services.AddScoped<ISettingsReadRepository, SettingsReadRepository>();
+            services.AddScoped<ISettingsWriteRepository, SettingsWriteRepository>();
         }
     }
 }

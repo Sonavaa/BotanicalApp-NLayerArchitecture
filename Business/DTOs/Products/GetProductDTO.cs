@@ -20,5 +20,6 @@ namespace Business.DTOs.Products
         public string? ImagePath {  get; set; } 
         public DateTime CreatedAt { get; set; }
         public bool IsDeleted { get; set; }
-}
+        public bool IsInWishList { get; set; }
+    }
 }

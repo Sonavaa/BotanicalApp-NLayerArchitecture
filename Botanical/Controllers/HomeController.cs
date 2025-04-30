@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Botanical.ViewModels.HomeViewModels;
 using Business.DTOs.Products;
+using Business.DTOs.Settings;
 using Business.DTOs.Slider;
 using Data.Context;
 using Microsoft.AspNetCore.Mvc;
@@ -29,6 +30,9 @@ namespace Botanical.Controllers
 
                 Sliders = await _mapper.ProjectTo<GetSliderDTO>(
              _context.Sliders.Where(s => !s.IsDeleted)
+         ).ToListAsync(),
+                Settings = await _mapper.ProjectTo<GetSettingsDTO>(
+             _context.Settings.Where(s => !s.IsDeleted)
          ).ToListAsync()
             };
             return View(homeVM);

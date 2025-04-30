@@ -1,4 +1,6 @@
-﻿	<!-- introBannerHolder -->
+﻿@using Business.DTOs.Settings
+	@model List<GetSettingsDTO>
+<!-- introBannerHolder -->
 <section class="introBannerHolder mt-25 d-flex w-100 bgCover" style="background-image: url('/client/assets/images/b-bg7.jpg');">
 		<div class="container">
 			<div class="row">
@@ -17,38 +19,13 @@
 		<div class="row">
 			<div class="col-12 col-lg-6 pt-xl-12 pt-lg-8">
 				<h2 class="playfair fwEbold position-relative mb-7 pb-5">
-					<strong class="d-block">A Minimal Team</strong>
+				<strong class="d-block">@Model.FirstOrDefault(s => s.Key == "AboutSection").Title</strong>
 					<strong class="d-block">For a Better World</strong>
 				</h2>
-				<p class="pr-xl-16 pr-lg-10 mb-lg-0 mb-6">Lorem Khaled Ipsum is a major key to success. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. To succeed you must believe. When you believe, you will succeed. They will try to close the door on you, just open it. The key is to drink coconut, fresh coconut, trust me. It’s important to use cocoa butter. It’s the key to more success, why not live smooth?</p>
+			<p class="pr-xl-16 pr-lg-10 mb-lg-0 mb-6">@Model.FirstOrDefault(s => s.Key == "AboutSection").Value</p>
 			</div>
 			<div class="col-12 col-lg-6">
-				<img src="~/client/assets/images/aboutImg.jpg" alt="image description" class="img-fluid">
-			</div>
-		</div>
-	</section>
-	<section class="counterSec container pt-xl-12 pb-xl-24 pt-lg-10 pb-lg-20 pt-md-8 pb-md-16 pt-5 pb-10">
-		<div class="row">
-			<div class="col-12">
-				<!-- progressCounter -->
-				<ul class="progressCounter list-unstyled mb-2 d-flex flex-wrap text-capitalize text-center">
-					<li class="mb-md-0 mb-3">
-						<strong class="d-block fwEbold counter mb-2">229</strong>
-						<strong class="d-block text-uppercase txtWrap">Happy Clients</strong>
-					</li>
-					<li class="mb-md-0 mb-3">
-						<strong class="d-block fwEbold counter mb-2">109</strong>
-						<strong class="d-block text-uppercase txtWrap">completed project</strong>
-					</li>
-					<li class="mb-md-0 mb-3">
-						<strong class="d-block fwEbold counter mb-2">22</strong>
-						<strong class="d-block text-uppercase txtWrap">awesome staff</strong>
-					</li>
-					<li class="mb-md-0 mb-3">
-						<strong class="d-block fwEbold counter mb-2">11</strong>
-						<strong class="d-block text-uppercase txtWrap">winning awards</strong>
-					</li>
-				</ul>
+			<img src="~/@Model.FirstOrDefault(s => s.Key == "AboutSection").ImgPath" alt="image description" class="img-fluid">
 			</div>
 		</div>
 	</section>
@@ -56,66 +33,36 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-6 mb-lg-0 mb-6">
-				<img src="~/client/assets/images/aboutBannerImg.png" alt="image description" class="img-fluid">
+				<img src="~/@Model.FirstOrDefault(s => s.Key == "Why choose us ?").ImgPath" alt="image description" class="img-fluid">
 				</div>
 				<div class="col-12 col-lg-6">
 					<div id="accordion" class="accordionList pt-lg-12">
+					@{
+						var index = 0;
+					}
+					@foreach (var accordionItem in Model.Where(x => x.Key.StartsWith("Accordion Heading")))
+					{
+						var collapseId = $"collapse{index}";
+						var headingId = $"heading{index}";
 						<div class="card mb-2">
-							<div class="card-header px-xl-5 py-xl-3" id="headingOne">
+							<div class="card-header px-xl-5 py-xl-3 accordionHeading" id="@headingId">
 								<h5 class="mb-0">
-									<button class="btn btn-link fwEbold text-uppercase text-left w-100 p-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-										connecting people <i class="fas fa-sort-down float-right"></i>
+									<button class="btn btn-link fwEbold text-uppercase text-left w-100 p-0"
+											data-target="#@collapseId"
+											aria-controls="@collapseId">
+										@accordionItem.Title <i class="fas fa-sort-down float-right"></i>
 									</button>
 								</h5>
 							</div>
-							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							<div id="@collapseId" class="collapse" aria-labelledby="@headingId">
 								<div class="card-body px-xl-5 py-0">
-									<p class="mb-7">To succeed you must believe. When you believe, you will succeed. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! Lion!</p>
+									<p class="mb-7">@accordionItem.Value</p>
 								</div>
 							</div>
 						</div>
-						<div class="card mb-2">
-							<div class="card-header px-xl-5 py-xl-3" id="headingTwo">
-								<h5 class="mb-0">
-									<button class="btn btn-link fwEbold text-uppercase text-left w-100 collapsed p-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-										we build your dream <i class="fas fa-sort-down float-right"></i>
-									</button>
-								</h5>
-							</div>
-							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-								<div class="card-body px-xl-5 py-0">
-									<p class="mb-7">To succeed you must believe. When you believe, you will succeed. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! Lion!</p>
-								</div>
-							</div>
-						</div>
-						<div class="card mb-2">
-							<div class="card-header px-xl-5 py-xl-3" id="headingThree">
-								<h5 class="mb-0">
-									<button class="btn btn-link fwEbold text-uppercase text-left w-100 collapsed p-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-										nothing to fear <i class="fas fa-sort-down float-right"></i>
-									</button>
-								</h5>
-							</div>
-							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-								<div class="card-body px-xl-5 py-0">
-									<p class="mb-7">To succeed you must believe. When you believe, you will succeed. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! Lion!</p>
-								</div>
-							</div>
-						</div>
-						<div class="card mb-2">
-							<div class="card-header px-xl-5 py-xl-3" id="headingFour">
-								<h5 class="mb-0">
-									<button class="btn btn-link fwEbold text-uppercase text-left w-100 collapsed p-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-										make the world better <i class="fas fa-sort-down float-right"></i>
-									</button>
-								</h5>
-							</div>
-							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-								<div class="card-body px-xl-5 py-0">
-									<p class="mb-7">To succeed you must believe. When you believe, you will succeed. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! Lion!</p>
-								</div>
-							</div>
-						</div>
+						index++;
+					}
+
 					</div>
 				</div>
 			</div>
@@ -129,7 +76,7 @@
 			</header>
 		</div>
 		<div class="row">
-			<div class="col-12 pl-xl-23 mb-lg-3 mb-10">
+			@* <div class="col-12 pl-xl-23 mb-lg-3 mb-10">
 				<div class="stepCol position-relative bg-lightGray py-6 px-6">
 					<strong class="mainTitle text-uppercase mt-n8 mb-5 d-block text-center py-1 px-3">step 01</strong>
 					<h2 class="headingV fwEblod text-uppercase mb-3">Choose your products</h2>
@@ -156,7 +103,31 @@
 					<h2 class="headingV fwEblod text-uppercase mb-3">Get delivered fast</h2>
 					<p class="mb-5">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
 				</div>
+			</div> *@
+
+		@{
+			var orderedStages = Model
+			.Where(x => x.Key.StartsWith("Delivery Process"))
+			.OrderBy(x =>
+			{
+				var parts = x.Value.Split(' ');
+				int number;
+				return int.TryParse(parts.Last(), out number) ? number : int.MaxValue;
+			})
+			.ToList();
+		}
+
+		@foreach (var deliveryStage in orderedStages)
+		{
+			<div class="col-12 mb-lg-3 mb-10">
+				<div class="stepCol position-relative bg-lightGray py-6 px-6" style="width:530px">
+					<strong class="mainTitle text-uppercase mt-n8 mb-5 d-block text-center py-1 px-3">@deliveryStage.Value</strong>
+					<h2 class="headingV fwEblod text-uppercase mb-3">@deliveryStage.Title</h2>
+					<p class="mb-5">@deliveryStage.Description</p>
+				</div>
 			</div>
+		}
+
 		</div>
 	</section>
 	<!-- footerHolder -->
@@ -210,3 +181,39 @@
 			</div>
 		</div>
 	</aside>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const accordionButtons = document.querySelectorAll(".accordionHeading button");
+
+		accordionButtons.forEach(function (button) {
+			button.addEventListener("click", function () {
+				const collapseId = button.getAttribute("data-target");
+				const content = document.querySelector(collapseId);
+
+				// Toggle visibility
+				if (content.classList.contains("show")) {
+					content.classList.remove("show");
+				} else {
+					content.classList.add("show");
+				}
+
+				// Toggle icon direction
+				const icon = button.querySelector("i");
+				if (icon) {
+					icon.classList.toggle("fa-sort-down");
+					icon.classList.toggle("fa-sort-up");
+				}
+			});
+		});
+	});
+
+	document.addEventListener("DOMContentLoaded", function () {
+		const stepCols = document.querySelectorAll(".stepCol");
+
+		stepCols.forEach(function (el, index) {
+			if ((index + 1) % 2 === 0) {
+				el.classList.add("float-right");
+			}
+		});
+	});
+</script>

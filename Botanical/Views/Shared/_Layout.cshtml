@@ -1,38 +1,49 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- set the encoding of your site -->
-	<meta charset="utf-8">
-	<!-- set the Compatible of your site -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- set the page title -->
-	<title>Botanical - HTML5 Ecommerce Template</title>
-	<!-- include the site Google Fonts stylesheet -->
-	<link href="~/client/assets/client/assets/https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CRoboto:300,400,500,700,900&display=swap" rel="stylesheet">
-	<!-- include the site bootstrap stylesheet -->
-	<link rel="stylesheet" href="~/client/assets/css/bootstrap.css">
-	<!-- include the site fontawesome stylesheet -->
-	<link rel="stylesheet" href="~/client/assets/css/fontawesome.css">
-	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="~/client/assets/style.css">
-	<!-- include theme plugins setting stylesheet -->
-	<link rel="stylesheet" href="~/client/assets/css/plugins.css">
-	<!-- include theme color setting stylesheet -->
-	<link rel="stylesheet" href="~/client/assets/css/color.css">
-	<!-- include theme responsive setting stylesheet -->
-	<link rel="stylesheet" href="~/client/assets/css/responsive.css">
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the Compatible of your site -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- set the page title -->
+    <title>Botanical - HTML5 Ecommerce Template</title>
+    <!-- include the site Google Fonts stylesheet -->
+    <link href="~/client/assets/client/assets/https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CRoboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <!-- include the site bootstrap stylesheet -->
+    <link rel="stylesheet" href="~/client/assets/css/bootstrap.css">
+    <!-- include the site fontawesome stylesheet -->
+    <link rel="stylesheet" href="~/client/assets/css/fontawesome.css">
+    <!-- include the site stylesheet -->
+    <link rel="stylesheet" href="~/client/assets/style.css">
+    <!-- include theme plugins setting stylesheet -->
+    <link rel="stylesheet" href="~/client/assets/css/plugins.css">
+    <!-- include theme color setting stylesheet -->
+    <link rel="stylesheet" href="~/client/assets/css/color.css">
+    <!-- include theme responsive setting stylesheet -->
+    <link rel="stylesheet" href="~/client/assets/css/responsive.css">
+
+    <style>
+        #searchBody {
+            overflow-y: scroll;
+            max-height: 250px;
+            position: absolute;
+            width: 220px;
+            top: 60px;
+            margin-right: 35px;
+        }
+    </style>
 </head>
 <body>
-	<!-- pageWrapper -->
-	<div id="pageWrapper">
-		<!-- pageHeader -->
-		<header id="header" class="pt-lg-5 pt-md-3 pt-2 position-absolute w-100">
-			<div class="container-fluid px-xl-17 px-lg-5 px-md-3 px-0 d-flex flex-wrap">
-				<div class="col-6 col-sm-3 col-lg-2 order-sm-2 order-md-0 dis-none">
-					<!-- langList -->
-					<ul class="nav nav-tabs langList pt-xl-6 pt-lg-4 pt-3 border-bottom-0">
-				@* 		<li>
+    <!-- pageWrapper -->
+    <div id="pageWrapper">
+        <!-- pageHeader -->
+        <header id="header" class="pt-lg-5 pt-md-3 pt-2 position-absolute w-100">
+            <div class="container-fluid px-xl-17 px-lg-5 px-md-3 px-0 d-flex flex-wrap">
+                <div class="col-6 col-sm-3 col-lg-2 order-sm-2 order-md-0 dis-none">
+                    <!-- langList -->
+                    <ul class="nav nav-tabs langList pt-xl-6 pt-lg-4 pt-3 border-bottom-0">
+                        @* 		<li>
 							<a class="icon-menu" data-toggle="dropdown" href="~/client/assets/javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false"></a>
 							<div class="dropdown-menu pl-4 pr-4">
 								<a class="dropdown-item" href="~/client/assets/javascript:void(0);">Login</a>
@@ -41,144 +52,146 @@
 							</div>
 						</li> *@
 
-						<div id="google_translate_element"></div>
+                        <div id="google_translate_element"></div>
 
-						<li class="dropdown">
-							<a class="dropdown-toggle text-uppercase" data-toggle="dropdown" href="~/client/assets/javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">ENG</a>
-							<div class="dropdown-menu pl-4 pr-4">
-								<a class="dropdown-item" asp-controller="Home" asp-action="Index">English</a>
-								<a class="dropdown-item" asp-controller="Home" asp-action="Index">Vietnamese</a>
-								<a class="dropdown-item" asp-controller="Home" asp-action="Index">French</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="col-12 col-sm-6 col-lg-8 static-block">
-					<!-- mainHolder -->
-					<div class="mainHolder justify-content-center">
-						<!-- pageNav1 -->
-						<nav class="navbar navbar-expand-lg navbar-light p-0 pageNav1 position-static">
-							<button type="button" class="navbar-toggle collapsed position-relative mt-md-2" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarNav">
-								<ul class="navbar-nav mx-auto text-uppercase d-inline-block">
-									<li class="nav-item dropdown">
-										<a asp-controller="Home" asp-action="Index" class="dropdown-toggle d-block">Home</a>
-									</li>
-									<li class="nav-item dropdown">
-										<a asp-controller="Store" asp-action="Index" class="dropdown-toggle d-block">Store</a>
-									</li>
-									<li class="nav-item">
-										<a asp-controller="About" asp-action="Index" class="d-block">About</a>
-									</li>
-									<li class="nav-item">
-										<a asp-controller="Home" asp-action="Index" class="nLogo"><img src="~/client/assets/images/logo.png" alt="Botanical" class="img-fluid"></a>
-									</li>
-									<li class="nav-item dropdown">
-										<a asp-controller="Blog" asp-action="Index" class="dropdown-toggle d-block">Blog</a>
-									</li>
-									<li class="nav-item">
-										<a asp-controller="Contact" asp-action="Index" class="d-block">Contact</a>
-									</li>
-								</ul>
-							</div>
-						</nav>
-						<div class="logo">
-							<a href="~/client/assets/home.html"><img src="~/client/assets/images/logo.png" alt="Botanical" class="img-fluid"></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-lg-2">
-					<!-- wishListII -->
-					<ul class="nav nav-tabs wishListII pt-6 justify-content-end border-bottom-0">
-						<li class="nav-item ml-0"><a class="nav-link icon-search" href="javascript:void(0);"></a></li>
-						<li class="nav-item"><a asp-controller="Wishlist" asp-action="Index" class="nav-link position-relative icon-heart"><span class="num rounded d-block">1</span></a></li>
-						<li class="nav-item"><a asp-controller="Cart" asp-action="Index" class="nav-link position-relative icon-cart"><span class="num rounded d-block">2</span></a></li>
-						<li class="nav-item"><a class="nav-link icon-profile" href="javascript:void(0);"></a></li>
-					</ul>
-					<!-- Expanding Search Bar (Left of Search Icon) -->
-					<div id="searchBarContainer" class="position-absolute d-none" style="top: 20px; right: 165px; z-index: 1050;">
-						<form asp-controller="Search" asp-action="Index" method="get" class="position-relative">
-							<input type="text"
-								   name="query"
-								   class="form-control rounded-pill search-bar pe-5"
-								   placeholder="Search..."
-								   aria-label="Search" />
-						</form>
-					</div>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle text-uppercase" data-toggle="dropdown" href="~/client/assets/javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">ENG</a>
+                            <div class="dropdown-menu pl-4 pr-4">
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Index">English</a>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Index">Vietnamese</a>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Index">French</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-8 static-block">
+                    <!-- mainHolder -->
+                    <div class="mainHolder justify-content-center">
+                        <!-- pageNav1 -->
+                        <nav class="navbar navbar-expand-lg navbar-light p-0 pageNav1 position-static">
+                            <button type="button" class="navbar-toggle collapsed position-relative mt-md-2" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav mx-auto text-uppercase d-inline-block">
+                                    <li class="nav-item dropdown">
+                                        <a asp-controller="Home" asp-action="Index" class="dropdown-toggle d-block">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a asp-controller="Store" asp-action="Index" class="dropdown-toggle d-block">Store</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-controller="About" asp-action="Index" class="d-block">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-controller="Home" asp-action="Index" class="nLogo"><img src="~/client/assets/images/logo.png" alt="Botanical" class="img-fluid"></a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a asp-controller="Blog" asp-action="Index" class="dropdown-toggle d-block">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-controller="Contact" asp-action="Index" class="d-block">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="logo">
+                            <a href="~/client/assets/home.html"><img src="~/client/assets/images/logo.png" alt="Botanical" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-2">
+                    <!-- wishListII -->
+                    <ul class="nav nav-tabs wishListII pt-6 justify-content-end border-bottom-0">
+                        <li class="nav-item ml-0"><a class="nav-link icon-search" href="javascript:void(0);"></a></li>
+                        <li class="nav-item"><a asp-controller="Wishlist" asp-action="Index" class="nav-link position-relative icon-heart"><span class="num rounded d-block">1</span></a></li>
+                        <li class="nav-item"><a asp-controller="Cart" asp-action="Index" class="nav-link position-relative icon-cart"><span class="num rounded d-block">2</span></a></li>
+                        <li class="nav-item"><a class="nav-link icon-profile" href="javascript:void(0);"></a></li>
+                    </ul>
+                    <!-- Expanding Search Bar (Left of Search Icon) -->
+                    <div id="searchBarContainer" class="position-absolute d-none" style="top: 20px; right: 165px; z-index: 1050;">
+                        <form asp-controller="Product" asp-action="Search" method="get" class="position-relative">
+                            <input type="text"
+                                   id="searchInput"
+                                   name="query"
+                                   class="form-control rounded-pill search-bar pe-5"
+                                   placeholder="Search..."
+                                   aria-label="Search" />
+                        </form>
+                        <div id="searchBody">
+                        </div>
+                    </div>
 
+                    <style>
+                        .search-bar {
+                            transition: width 0.3s ease-in-out;
+                            width: 40px;
+                            height: 37px;
+                            padding-left: 15px;
+                            background-color: #fff;
+                        }
 
-					<style>
-						.search-bar {
-							transition: width 0.3s ease-in-out;
-							width: 40px;
-							height: 37px;
-							padding-left: 15px;
-							background-color: #fff;
-						}
+                            .search-bar:focus {
+                                width: 185px;
+                                height: 37px;
+                                background-color: #fff;
+                            }
+                    </style>
 
-							.search-bar:focus {
-								width: 185px;
-								height:37px;
-								background-color:#fff;
-							}
-					</style>
-
-				</div>
-			</div>
-		</header>
-		<!-- main -->
-    <div class="">
-        <main role="main">
-            @RenderBody()
-        </main>
+                </div>
+            </div>
+        </header>
+        <!-- main -->
+        <div class="">
+            <main role="main">
+                @RenderBody()
+            </main>
+        </div>
+        <!-- footer -->
+        <footer id="footer" class="container-fluid overflow-hidden px-lg-20">
+            <div class="copyRightHolder text-center pt-lg-5 pb-lg-4 py-3">
+                <p class="mb-0">Coppyright 2019 by <a href="~/client/assets/javascript:void(0);">Botanical Store</a> - All right reserved</p>
+            </div>
+        </footer>
     </div>
-		<!-- footer -->
-		<footer id="footer" class="container-fluid overflow-hidden px-lg-20">
-			<div class="copyRightHolder text-center pt-lg-5 pb-lg-4 py-3">
-				<p class="mb-0">Coppyright 2019 by <a href="~/client/assets/javascript:void(0);">Botanical Store</a> - All right reserved</p>
-			</div>
-		</footer>
-	</div>
-	<!-- include jQuery library -->
-	<script src="~/client/assets/js/jquery-3.4.1.min.js"></script>
-	<!-- include bootstrap popper JavaScript -->
-	<script src="~/client/assets/js/popper.min.js"></script>
-	<!-- include bootstrap JavaScript -->
-	<script src="~/client/assets/js/bootstrap.min.js"></script>
-	<!-- include custom JavaScript -->
-	<script src="~/client/assets/js/jqueryCustome.js"></script>
-	<script src="~/client/assets/js/main.js"></script>
+    <!-- include jQuery library -->
+    <script src="~/client/assets/js/jquery-3.4.1.min.js"></script>
+    <!-- include bootstrap popper JavaScript -->
+    <script src="~/client/assets/js/popper.min.js"></script>
+    <!-- include bootstrap JavaScript -->
+    <script src="~/client/assets/js/bootstrap.min.js"></script>
+    <!-- include custom JavaScript -->
+    <script src="~/client/assets/js/jqueryCustome.js"></script>
+    <script src="~/client/assets/js/main.js"></script>
 </body>
 </html>
 <script>
-	document.addEventListener("DOMContentLoaded", function () {
-		const searchIcon = document.querySelector(".icon-search");
-		const searchBar = document.getElementById("searchBarContainer");
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchIcon = document.querySelector(".icon-search");
+        const searchBar = document.getElementById("searchBarContainer");
 
-		if (searchIcon && searchBar) {
-			searchIcon.addEventListener("click", function (e) {
-				e.stopPropagation();
-				searchBar.classList.toggle("d-none");
-				searchBar.querySelector('input').focus(); // Autofocus input
-			});
-		}
+        if (searchIcon && searchBar) {
+            searchIcon.addEventListener("click", function (e) {
+                e.stopPropagation();
+                searchBar.classList.toggle("d-none");
+                searchBar.querySelector('input').focus(); // Autofocus input
+            });
+        }
 
-		document.addEventListener("click", function (e) {
-			if (!searchBar.contains(e.target) && !searchIcon.contains(e.target)) {
-				searchBar.classList.add("d-none");
-			}
-		});
-	});
+        document.addEventListener("click", function (e) {
+            if (!searchBar.contains(e.target) && !searchIcon.contains(e.target)) {
+                searchBar.classList.add("d-none");
+            }
+        });
+    });
 </script>
 <script type="text/javascript">
-	function googleTranslateElementInit() {
-	  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-	}
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

@@ -93,12 +93,6 @@ namespace Data.Services
 
         public async Task EditCategory(Guid Id, CreateCategoryDTO updateCategoryDTO)
         {
-            var validationResult = await _CreateCategoryValidator.ValidateAsync(updateCategoryDTO);
-            if (!validationResult.IsValid)
-            {
-                throw new ValidationException(validationResult.Errors);
-            }
-
             var category = await _CategoryReadRepository.GetAll()
                 .FirstOrDefaultAsync(c => c.Id == Id);
 

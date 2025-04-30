@@ -104,7 +104,6 @@ C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\Botanical.pdb
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\Botanical.genruntimeconfig.cache
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\ref\Botanical.dll
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\Botanical.sourcelink.json
-C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\o54pbjxpjh-hxgx70snof.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\scopedcss\projectbundle\Botanical.bundle.scp.css
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\j42ecy927c-wr9pjae3ce.gz
@@ -392,3 +391,4 @@ C:\Users\HP\Desktop\BotanicalProject\Botanical\bin\Debug\net9.0\System.Web.WebPa
 C:\Users\HP\Desktop\BotanicalProject\Botanical\bin\Debug\net9.0\System.Web.WebPages.dll
 C:\Users\HP\Desktop\BotanicalProject\Botanical\bin\Debug\net9.0\Microsoft.Web.Infrastructure.dll
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\Botanical.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\o54pbjxpjh-dr3ycdvbpa.gz

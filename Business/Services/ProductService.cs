@@ -79,7 +79,7 @@ namespace Data.Services
                      Description = p.Description,
                      ProductCode = p.ProductCode,
                      Quantity = p.Quantity,
-                     //Images = List<ProductImages>{ },
+                     IsInWishList = (bool)p.IsInWishList,
                      CreatedAt = DateTime.UtcNow.AddHours(4),
                  })
          .ToListAsync();
@@ -100,7 +100,8 @@ namespace Data.Services
                 DiscountedPrice = x.DiscountedPrice,
                 Description = x.Description,
                 Quantity = x.Quantity,
-                CategoryId = x.CategoryId
+                CategoryId = x.CategoryId,
+                IsInWishList = (bool)x.IsInWishList
             }).FirstOrDefaultAsync();
             return product;
         }
@@ -142,7 +143,7 @@ namespace Data.Services
                         "client",
                         "assets",
                         "images",
-                        "CategoryImages",
+                        "ProductImages",
                         oldFileName
                     );
                 }

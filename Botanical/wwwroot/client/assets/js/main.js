@@ -16,7 +16,7 @@
 
     document.getElementById("defaultCountdown").innerHTML =
     `${days}d ${hours}h ${minutes}m`;
-    }, 1000);
+    }, 50000);
 
 document.addEventListener('DOMContentLoaded', function () {
     const currentPath = window.location.pathname.toLowerCase();
@@ -32,3 +32,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+const searchInput = document.getElementById("searchInput");
+const searchBody = document.getElementById("searchBody"); 
+
+if (searchInput) {
+    searchInput.addEventListener("keyup", function () {
+        console.log(this.value);
+
+        fetch(`/product/search?search=${encodeURIComponent(this.value)}`)
+            .then(res => res.text())
+            .then(data => {
+                if (searchBody) {
+                    searchBody.innerHTML = data;
+                }
+            })
+            .catch(error => console.error("Error fetching data:", error));
+    });
+}

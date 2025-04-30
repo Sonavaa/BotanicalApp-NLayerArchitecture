@@ -400,6 +400,13 @@ wwwroot\client\assets\images\productImages\eaa4d9a9-625d-444c-927a-b6fbdaafae6e_
 wwwroot\client\assets\images\productImages\f3a53280-8db7-4a35-824d-9c476d33b48f_Screenshot (47).png
 wwwroot\client\assets\images\productImages\f6e49afc-82e5-4f53-83d5-ce2f3deb1366_254fea34b552ff9fefe8bf9a8ef63067.jpg
 wwwroot\client\assets\images\productImages\f8710b70-6da8-4d71-812c-35102b20f7ee_254fea34b552ff9fefe8bf9a8ef63067.jpg
+wwwroot\client\assets\images\SettingsImages\0a47baf2-c01a-4712-9bdf-f5f80895fc9f_8418782.jpg
+wwwroot\client\assets\images\SettingsImages\13082f38-14fc-4b4b-a5e5-df4c24208fa2_aboutBannerImg.png
+wwwroot\client\assets\images\SettingsImages\170a885f-58de-47f8-b770-256ffbe206e2_Role-Enum.png
+wwwroot\client\assets\images\SettingsImages\1f1c5fd3-0613-4be6-8f8a-584e51798527_254fea34b552ff9fefe8bf9a8ef63067.jpg
+wwwroot\client\assets\images\SettingsImages\4d96f9da-7301-424c-a2d9-6385662543da_aboutImg.jpg
+wwwroot\client\assets\images\SettingsImages\ee7e22f3-a933-4a6f-a10f-1fb095b85d53_254fea34b552ff9fefe8bf9a8ef63067.jpg
+wwwroot\client\assets\images\SettingsImages\fb2fa32f-a366-439e-b071-9c97567cb419_254fea34b552ff9fefe8bf9a8ef63067.jpg
 wwwroot\client\assets\images\SliderImages\37b74cf1-2dbc-4431-b05f-227ba8a3244b_254fea34b552ff9fefe8bf9a8ef63067.jpg
 wwwroot\client\assets\images\SliderImages\8a83ae44-8f81-4ee5-a429-617f3ad3f22a_8418782.jpg
 wwwroot\client\assets\images\SliderImages\9a651234-ab53-4fa4-a728-7dd402dc48db_254fea34b552ff9fefe8bf9a8ef63067.jpg

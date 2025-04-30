@@ -30,7 +30,7 @@ namespace Business.Validators.Slider
             RuleFor(x => x.ImageFile)
                 .Must(file => file == null || file.Length > 0).WithMessage("Uploaded image cannot be empty.")
                 .Must(file => file == null || file.Length <= 200 * 1024 * 1024) 
-                    .WithMessage("Image size must be less than 2MB.")
+                    .WithMessage("Image size must be less than 200MB.")
                 .Must(file => file == null ||
                     file.ContentType == "image/jpeg" ||
                     file.ContentType == "image/png" ||
