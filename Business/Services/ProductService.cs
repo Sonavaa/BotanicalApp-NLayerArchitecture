@@ -59,6 +59,7 @@ namespace Data.Services
             product.Id = Guid.NewGuid();
             product.ImagePath = uniqueFileName;
             product.IsInWishList = false;
+            product.IsInCart = false;
             product.CreatedBy = "System";
 
             await _ProductWriteRepository.AddAsync(product);
@@ -80,6 +81,7 @@ namespace Data.Services
                      ProductCode = p.ProductCode,
                      Quantity = p.Quantity,
                      IsInWishList = (bool)p.IsInWishList,
+                     IsInCart = (bool)p.IsInCart,
                      CreatedAt = DateTime.UtcNow.AddHours(4),
                  })
          .ToListAsync();
@@ -101,7 +103,8 @@ namespace Data.Services
                 Description = x.Description,
                 Quantity = x.Quantity,
                 CategoryId = x.CategoryId,
-                IsInWishList = (bool)x.IsInWishList
+                IsInWishList = (bool)x.IsInWishList,
+                IsInCart = (bool)x.IsInCart
             }).FirstOrDefaultAsync();
             return product;
         }

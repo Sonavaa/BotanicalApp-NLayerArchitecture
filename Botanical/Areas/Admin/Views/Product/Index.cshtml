@@ -5,7 +5,36 @@
 <!-- Basic Bootstrap Table -->
 <div class="card">
     <h5 class="card-header">Product Table</h5>
-    <a asp-controller="Product" asp-action="AddProduct" class="btn btn-primary mb-3" style="width:200px;margin-left:80%">Add New Product</a>
+   <div class="nav-div">
+  @*       <!-- Modal Trigger -->
+        <a href="javascript:void(0);" class="btn btn-primary mb-3" style="width:200px;margin-left:60%" data-bs-toggle="modal" data-bs-target="#setTimerModal">
+            <span>Set A Timer For Discounted Products</span>
+        </a>
+ *@
+        <a asp-controller="Product" asp-action="AddProduct" class="btn btn-primary mb-3" style="width:200px; margin-left:80%"><span>Add New Product</span></a>
+   </div>
+
+@* <!-- Modal HTML -->
+<div class="modal fade" id="setTimerModal" tabindex="-1" aria-labelledby="setTimerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form method="post" asp-controller="Product" asp-action="SetTimer">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Set Discount Timer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="datetime-local" class="form-control" name="endTime" required />
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Set Timer</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div> *@
+
+
 
     <div class="table-responsive text-nowrap">
         <table class="table">

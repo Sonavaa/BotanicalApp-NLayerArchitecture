@@ -1,4 +1,6 @@
-﻿	<!-- introBannerHolder -->
+﻿@using Botanical.ViewModels.StoreViewModels
+@model StoreVM	
+<!-- introBannerHolder -->
 	<section class="introBannerHolder d-flex w-100 bgCover" style="background-image: url(http://placehold.it/1920x300);">
 		<div class="container">
 			<div class="row">
@@ -16,7 +18,9 @@
 		</div>
 	</section>
 	<!-- cartHolder -->
-	<div class="cartHolder container pt-xl-21 pb-xl-24 py-lg-20 py-md-16 py-10">
+@if (Model.Products.Any(p => p.IsInCart))
+{
+	<div class="cartHolder container pb-xl-24 py-lg-20 py-md-16 py-10">
 		<div class="row">
 			<!-- table-responsive -->
 			<div class="col-12 table-responsive mb-xl-22 mb-lg-20 mb-md-16 mb-10">
@@ -31,61 +35,26 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr class="align-items-center">
-							<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
-								<div class="imgHolder">
-									<img src="http://placehold.it/70x80" alt="image description" class="img-fluid">
-								</div>
-								<span class="title pl-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
-							</td>
-							<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
-							<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
-							<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
-						</tr>
-						<tr class="align-items-center">
-							<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
-								<div class="imgHolder">
-									<img src="http://placehold.it/70x80" alt="image description" class="img-fluid">
-								</div>
-								<span class="title pl-2"><a href="shop-detail.html">Neque Porro Quisquam</a></span>
-							</td>
-							<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
-							<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
-							<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
-						</tr>
-						<tr class="align-items-center">
-							<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
-								<div class="imgHolder">
-									<img src="http://placehold.it/70x80" alt="image description" class="img-fluid">
-								</div>
-								<span class="title pl-2"><a href="shop-detail.html">Aliquam Quaerat Voluptem</a></span>
-							</td>
-							<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
-							<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
-							<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
-						</tr>
-						<tr class="align-items-center">
-							<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
-								<div class="imgHolder">
-									<img src="http://placehold.it/70x80" alt="image description" class="img-fluid">
-								</div>
-								<span class="title pl-2"><a href="shop-detail.html">Pellentesque aliquet</a></span>
-							</td>
-							<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
-							<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
-							<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
-						</tr>
-						<tr class="align-items-center">
-							<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
-								<div class="imgHolder">
-									<img src="http://placehold.it/70x80" alt="image description" class="img-fluid">
-								</div>
-								<span class="title pl-2"><a href="shop-detail.html">Sint Incidunt Utlabore</a></span>
-							</td>
-							<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
-							<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
-							<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $ <a href="javascript:void(0);" class="fas fa-times float-right"></a></td>
-						</tr>
+						@foreach (var product in Model.Products)
+						{
+							@if (product.IsInCart)
+							{
+								<tr class="align-items-center">
+									<td class="d-flex align-items-center border-top-0 border-bottom px-0 py-6">
+										<div class="imgHolder">
+											<img src="~/@product.ImagePath" alt="image description" class="img-fluid">
+										</div>
+										<span class="title pl-2"><a href="shop-detail.html">@product.Name</a></span>
+									</td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
+									<td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
+									<td class="fwEbold border-top-0 border-bottom px-0 py-6">
+										@(product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price)
+										$ <a href="javascript:void(0);" class="fas fa-times float-right"></a>
+									</td>
+								</tr>
+							}
+						}
 					</tbody>
 				</table>
 			</div>
@@ -119,6 +88,9 @@
 			</div>
 		</div>
 	</div>
+}else{
+	<p style="text-align:center; font-size:28px; margin-bottom:20px;">Cart is empty. Start shopping now!</p>
+}
 	<!-- footerHolder -->
 	<aside class="footerHolder overflow-hidden bg-lightGray pt-xl-23 pb-xl-8 pt-lg-10 pb-lg-8 pt-md-12 pb-md-8 pt-10">
 		<div class="container">

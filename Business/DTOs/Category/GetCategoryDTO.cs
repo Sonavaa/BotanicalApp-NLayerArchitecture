@@ -14,6 +14,6 @@ namespace Business.DTOs.Category
         public DateTime? CreatedAt { get; set; }
         public string Name { get; set; } = null!;
         public string? ImgPath { get; set; }
-        public IEnumerable<Product>? Products { get; set; }
+        public List<Product> Products { get; set; } = new();
     }
 }

@@ -162,3 +162,11 @@ input {
     background-color:red;
     color:#fff;
 }
+.nav-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 24px;
+    padding-right: 20px;
+    align-items: center;
+}

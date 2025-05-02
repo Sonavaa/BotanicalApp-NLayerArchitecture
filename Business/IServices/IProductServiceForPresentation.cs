@@ -12,6 +12,7 @@ namespace Business.IServices
     {
         Task AddToWishList(Guid Id);
         Task RemoveFromWishList(Guid Id);
+        Task AddToCart(Guid Id);
         Task<GetProductDTO> ProductDetail(Guid Id);
         Task<List<GetProductDTO>> Search(string search);
     }

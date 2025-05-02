@@ -50,6 +50,9 @@ namespace Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool?>("IsInCart")
+                        .HasColumnType("bit");
+
                     b.Property<bool?>("IsInWishList")
                         .HasColumnType("bit");
 

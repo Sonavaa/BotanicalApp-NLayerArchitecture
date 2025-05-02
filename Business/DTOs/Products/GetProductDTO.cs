@@ -21,5 +21,6 @@ namespace Business.DTOs.Products
         public DateTime CreatedAt { get; set; }
         public bool IsDeleted { get; set; }
         public bool IsInWishList { get; set; }
+        public bool IsInCart { get; set; }
     }
 }

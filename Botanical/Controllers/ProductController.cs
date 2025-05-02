@@ -1,5 +1,6 @@
 ﻿using Business.DTOs.Products;
 using Business.IServices;
+using Business.Services;
 using Data.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,17 +24,58 @@ namespace Botanical.Controllers
         }
 
         [HttpPost]
+        public async Task<IActionResult> AddToCart(Guid id)
+        {
+            try
+            {
+                await _productServiceForPresentation.AddToCart(id);
+                return RedirectToAction("Index", "Cart");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpPost]
         public async Task<IActionResult> AddToWishList(Guid id)
         {
-            await _productServiceForPresentation.AddToWishList(id);
-            return RedirectToAction("Detail", new { id });
+            try
+            {
+                await _productServiceForPresentation.AddToWishList(id);
+                return View("Index", "Home");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
+
 
         [HttpPost]
         public async Task<IActionResult> RemoveFromWishList(Guid id)
         {
-            await _productServiceForPresentation.RemoveFromWishList(id);
-            return RedirectToAction("Detail", new { id });
+            try
+            {
+                await _productServiceForPresentation.RemoveFromWishList(id);
+                return View("Index","Home");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult DailyDeal()
+        {
+            var startDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, 0, 0, 0);
+            var endDate = startDate.AddDays(1);
+
+            ViewBag.StartDate = startDate;
+            ViewBag.EndDate = endDate;
+
+            return View("Index", "Home");
         }
 
         public async Task<IActionResult> Search(string search)

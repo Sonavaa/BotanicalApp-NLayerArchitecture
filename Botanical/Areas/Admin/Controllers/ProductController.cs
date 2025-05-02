@@ -137,7 +137,6 @@ namespace Botanical.Areas.Admin.Controllers
             }
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditProductAsync(Guid id,  CreateProductDTO updateProductDTO)

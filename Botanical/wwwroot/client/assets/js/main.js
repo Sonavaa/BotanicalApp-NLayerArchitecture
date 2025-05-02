@@ -1,22 +1,23 @@
-﻿    const countdownDate = new Date("2025-01-31T23:59:59").getTime(); 
+﻿const countdownDate = new Date().getTime() + (24 * 60 * 60 * 1000); // 24 hours from now
 
-    const timerInterval = setInterval(() => {
-        const now = new Date().getTime();
+const timerInterval = setInterval(() => {
+    const now = new Date().getTime();
     const distance = countdownDate - now;
 
-    if (distance < 0) {
+    if (distance <= 0) {
         clearInterval(timerInterval);
-    document.getElementById("defaultCountdown").innerHTML = "Deal Expired";
-    return;
-        }
+        document.getElementById("defaultCountdown").innerHTML = "Deal Expired";
+        return;
+    }
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("defaultCountdown").innerHTML =
-    `${days}d ${hours}h ${minutes}m`;
-    }, 50000);
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+}, 1000);
 
 document.addEventListener('DOMContentLoaded', function () {
     const currentPath = window.location.pathname.toLowerCase();
@@ -32,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
 
 const searchInput = document.getElementById("searchInput");
 const searchBody = document.getElementById("searchBody"); 

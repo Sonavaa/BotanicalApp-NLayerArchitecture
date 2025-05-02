@@ -16,6 +16,7 @@ namespace Botanical.Models
         public string ProductCode { get; set; } = null!;
         public int Quantity { get; set; }
         public bool? IsInWishList { get; set; }
+        public bool? IsInCart { get; set; }
         public string? ImagePath { get; set; }
         public IEnumerable<ProductTag>? ProductTags { get; set; }
         public IEnumerable<Review>? Reviews { get; set; }
