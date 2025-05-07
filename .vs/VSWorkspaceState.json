@@ -8,11 +8,14 @@
     "\\Botanical\\Areas\\Admin\\Views\\Shared",
     "\\Botanical\\Areas\\Admin\\Views\\Shared\\Sections",
     "\\Botanical\\Areas\\Admin\\Views\\Shared\\Sections\\Menu",
+    "\\Botanical\\Controllers",
     "\\Botanical\\Views",
     "\\Botanical\\Views\\Home",
+    "\\Business",
+    "\\Business\\Services",
     "\\Data",
     "\\Data\\Context"
   ],
-  "SelectedNode": "\\Botanical.sln",
+  "SelectedNode": "\\Business\\Services\\ContactService.cs",
   "PreviewInSolutionExplorer": false
 }

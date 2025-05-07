@@ -12,15 +12,13 @@ namespace Botanical.Areas.Admin.Controllers
     public class CategoryController : Controller
     {
         private readonly ICategoryService _CategoryService;
-        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
-		public CategoryController(ICategoryService CategoryService, AppDbContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor)
+		public CategoryController(ICategoryService CategoryService, AppDbContext context, IMapper mapper)
 		{
             _CategoryService = CategoryService;
 			_context = context;
 			_mapper = mapper;
-			_httpContextAccessor = httpContextAccessor;
 		}
 
 		public async Task<IActionResult> Index()
@@ -62,7 +60,6 @@ namespace Botanical.Areas.Admin.Controllers
             //    return View(addCategoryDTO);
             //}
         }
-
 
         [HttpPost]
         public async Task<IActionResult> DeleteCategory(Guid id)

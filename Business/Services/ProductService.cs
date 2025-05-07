@@ -58,9 +58,6 @@ namespace Data.Services
 
             product.Id = Guid.NewGuid();
             product.ImagePath = uniqueFileName;
-            product.IsInWishList = false;
-            product.IsInCart = false;
-            product.CreatedBy = "System";
 
             await _ProductWriteRepository.AddAsync(product);
             await _ProductWriteRepository.SaveChangeAsync();
@@ -89,6 +86,7 @@ namespace Data.Services
 
             return products;
         }
+
         public async Task<GetProductDTO> GetProductById(Guid Id)
         {
 

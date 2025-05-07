@@ -11,15 +11,13 @@ namespace Botanical.Areas.Admin.Controllers
     public class SettingsController : Controller
     {
         private readonly ISettingsService _SettingService;
-        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
-        public SettingsController(ISettingsService SettingService, AppDbContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor)
+        public SettingsController(ISettingsService SettingService, AppDbContext context, IMapper mapper)
         {
             _SettingService = SettingService;
             _context = context;
             _mapper = mapper;
-            _httpContextAccessor = httpContextAccessor;
         }
         public async Task<IActionResult> IndexAsync()
         {

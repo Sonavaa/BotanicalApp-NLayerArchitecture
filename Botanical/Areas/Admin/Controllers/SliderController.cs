@@ -11,15 +11,13 @@ namespace Botanical.Areas.Admin.Controllers
     public class SliderController : Controller
     {
         private readonly ISliderService _SliderService;
-        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
-        public SliderController(ISliderService SliderService, AppDbContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor)
+        public SliderController(ISliderService SliderService, AppDbContext context, IMapper mapper)
         {
             _SliderService = SliderService;
             _context = context;
             _mapper = mapper;
-            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<IActionResult> Index()

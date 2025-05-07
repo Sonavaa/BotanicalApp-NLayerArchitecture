@@ -21,7 +21,6 @@ namespace Data.Services
         private readonly IValidator<CreateCategoryDTO> _CreateCategoryValidator;
         private readonly IMapper _mapper;
         private readonly IHostEnvironment _env;
-        //private readonly IFileService _fileService;
         public CategoryService(ICategoryReadRepository CategoryReadRepository, ICategoryWriteRepository CategoryWriteRepository, IValidator<CreateCategoryDTO> createCategoryValidator, IMapper mapper, IHostEnvironment env)
         {
             _CategoryReadRepository = CategoryReadRepository;
@@ -57,7 +56,6 @@ namespace Data.Services
 
             Category.Id = Guid.NewGuid();
             Category.ImgPath = uniqueFileName;
-            Category.CreatedBy = "System";
 
             await _CategoryWriteRepository.AddAsync(Category);
             await _CategoryWriteRepository.SaveChangeAsync();
@@ -88,6 +86,7 @@ namespace Data.Services
                 Name = x.Name,
                 ImgPath = x.ImgPath,
             }).FirstOrDefaultAsync();
+
             return Category;
         }
 

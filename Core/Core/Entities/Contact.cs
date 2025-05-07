@@ -10,6 +10,6 @@ namespace Core.Entities
     public class Contact : BaseAuditable
     {
         public string Key { get; set; } = null!;
-        public IEnumerable<string>? Value { get; set; }
+        public List<string>? Values { get; set; }
     }
 }

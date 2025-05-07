@@ -58,7 +58,6 @@ namespace Business.Services
 
             Slider.Id = Guid.NewGuid();
             Slider.ImagePath = uniqueFileName;
-            Slider.CreatedBy = "System";
 
             await _SliderWriteRepository.AddAsync(Slider);
             await _SliderWriteRepository.SaveChangeAsync();

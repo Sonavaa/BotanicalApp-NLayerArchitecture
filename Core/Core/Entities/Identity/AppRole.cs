@@ -8,12 +8,9 @@ using System.Threading.Tasks;
 
 namespace Core.Entities.Identity
 {
-        public class AppRole : IdentityRole<string>
-        {
-            public AppRole()
-            {
-                Id = Guid.NewGuid().ToString();
-            }
-            public RoleModel RoleModel { get; set; }
+    public enum AppRole
+    {
+        Admin,
+        User
     }
 }

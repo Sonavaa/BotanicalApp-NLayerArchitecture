@@ -183,7 +183,7 @@ namespace Data.Migrations
                     b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.PrimitiveCollection<string>("Value")
+                    b.PrimitiveCollection<string>("Values")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -278,6 +278,10 @@ namespace Data.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");

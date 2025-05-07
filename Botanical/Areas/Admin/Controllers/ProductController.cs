@@ -15,16 +15,14 @@ namespace Botanical.Areas.Admin.Controllers
     {
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
-        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
-		public ProductController(IProductService productService, ICategoryService categoryService, AppDbContext context, IMapper mapper, IHttpContextAccessor httpContextAccessor)
+		public ProductController(IProductService productService, ICategoryService categoryService, AppDbContext context, IMapper mapper)
 		{
             _productService = productService;
             _categoryService = categoryService;
 			_context = context;
 			_mapper = mapper;
-			_httpContextAccessor = httpContextAccessor;
 		}
 
 		public async Task<IActionResult> Index()

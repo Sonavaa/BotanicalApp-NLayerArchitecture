@@ -60,7 +60,6 @@ namespace Business.Services
 
             Settings.Id = Guid.NewGuid();
                 Settings.ImgPath = uniqueFileName;
-            Settings.CreatedBy = "System";
 
             await _SettingsWriteRepository.AddAsync(Settings);
             await _SettingsWriteRepository.SaveChangeAsync();

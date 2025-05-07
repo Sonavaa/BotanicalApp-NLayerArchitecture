@@ -1,0 +1,80 @@
+﻿@using Business.DTOs.Contact
+@model CreateContactDTO
+
+<form asp-action="EditContact" asp-area="Admin" asp-controller="Contact" asp-route-id="@Model.Id" method="post" asp-validation-summary="All" enctype="multipart/form-data">
+    <h4 style="margin-left:40px">Edit Contact</h4>
+
+    <div class="addOrEditCard card">
+        <div class="card-body">
+
+            <!-- Hidden ID -->
+            <input type="hidden" asp-for="Id" />
+
+            <!-- Contact Key -->
+            <div>
+                <label asp-for="Key" class="form-label">Contact Key</label>
+                <input type="text" asp-for="Key" name="Key" class="form-control" placeholder="Enter Contact Key">
+                <span class="form-text text-danger" asp-validation-for="Key"></span>
+            </div>
+
+            <!-- Contact Values -->
+            <div id="valuesContainer">
+                <label asp-for="Values" class="form-label">Contact Values</label>
+
+                @for (int i = 0; i < Model.Values.Count; i++)
+                {
+                    <div class="mb-2">
+                        <input type="text" name="Values[@i]" value="@Model.Values[i]" class="form-control" placeholder="Enter Contact Value">
+                        <span class="form-text text-danger" asp-validation-for="Values"></span>
+                    </div>
+                }
+                @if (Model.Values.Count == 0)
+                {
+                    <div class="mb-2">
+                        <input type="text" name="Values[0]" class="form-control" placeholder="Enter Contact Value">
+                        <span class="form-text text-danger" asp-validation-for="Values"></span>
+                    </div>
+                }
+            </div>
+
+            <!-- Buttons -->
+            <div style="display:flex; gap:10px">
+                <button type="button" id="addValueBtn" class="btn btn-primary mt-3">Add new Value</button>
+                <button type="submit" class="btn btn-primary mt-3">Save</button>
+            </div>
+
+        </div>
+    </div>
+</form>
+
+<script>
+    document.getElementById('addValueBtn').addEventListener('click', function () {
+        const container = document.getElementById('valuesContainer');
+        const inputs = container.querySelectorAll('input[name^="Values"]');
+        let allFilled = true;
+
+        inputs.forEach(input => {
+            if (!input.value.trim()) {
+                allFilled = false;
+            }
+        });
+
+        if (!allFilled) {
+            alert("Please fill in all existing contact value fields before adding a new one.");
+            return;
+        }
+
+        const newIndex = inputs.length;
+        const wrapperDiv = document.createElement('div');
+        wrapperDiv.classList.add('mb-2');
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.name = `Values[${newIndex}]`;
+        input.className = 'form-control';
+        input.placeholder = 'Enter Contact Value';
+
+        wrapperDiv.appendChild(input);
+        container.appendChild(wrapperDiv);
+    });
+</script>
