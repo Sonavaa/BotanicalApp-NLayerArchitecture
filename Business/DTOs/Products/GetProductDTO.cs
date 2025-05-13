@@ -22,5 +22,6 @@ namespace Business.DTOs.Products
         public bool IsDeleted { get; set; }
         public bool IsInWishList { get; set; }
         public bool IsInCart { get; set; }
+        public string? Tags { get; set; }
     }
 }

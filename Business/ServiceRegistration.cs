@@ -47,6 +47,10 @@ namespace Business
             services.AddScoped<ISettingsWriteRepository, SettingsWriteRepository>();
             services.AddScoped<IContactReadRepository, ContactReadRepository>();
             services.AddScoped<IContactWriteRepository, ContactWriteRepository>();
+            services.AddScoped<ITagsReadRepository, TagsReadRepository>();
+            services.AddScoped<ITagsWriteRepository, TagsWriteRepository>();
+            services.AddScoped<IProductTagReadRepository, ProductTagReadRepository>();
+            services.AddScoped<IProductTagWriteRepository, ProductTagWriteRepository>();
         }
     }
 }

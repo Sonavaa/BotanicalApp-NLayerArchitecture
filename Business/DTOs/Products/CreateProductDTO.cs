@@ -20,5 +20,7 @@ namespace Business.DTOs.Products
         public int Quantity { get; set; }
         public string? ImagePath {  get; set; }
         public IFormFile? ImageFile { get; set; }
+        public string? Tags { get; set; }
+        public IEnumerable<Guid>? TagIds { get; set; }
     }
 }

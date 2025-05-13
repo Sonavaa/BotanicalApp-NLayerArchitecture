@@ -18,14 +18,25 @@ namespace Data.Services
     {
         private readonly IProductReadRepository _ProductReadRepository;
         private readonly IProductWriteRepository _ProductWriteRepository;
+        private readonly ITagsReadRepository _tagReadRepository;
+        private readonly ITagsWriteRepository _tagWriteRepository;
+        private readonly IProductTagReadRepository _productTagReadRepository;
+        private readonly IProductTagWriteRepository _productTagWriteRepository;
         private readonly IValidator<CreateProductDTO> _CreateProductValidator;
         private readonly IMapper _mapper;
         private readonly IHostEnvironment _env;
         //private readonly IFileService _fileService;
-        public ProductService(IProductReadRepository ProductReadRepository, IProductWriteRepository ProductWriteRepository, IValidator<CreateProductDTO> createProductValidator, IMapper mapper, IHostEnvironment env)
+        public ProductService(IProductReadRepository ProductReadRepository, IProductWriteRepository ProductWriteRepository,
+            ITagsReadRepository tagReadRepository, ITagsWriteRepository tagWriteRepository,
+            IProductTagReadRepository productTagReadRepository, IProductTagWriteRepository productTagWriteRepository,
+            IValidator<CreateProductDTO> createProductValidator, IMapper mapper, IHostEnvironment env)
         {
             _ProductReadRepository = ProductReadRepository;
             _ProductWriteRepository = ProductWriteRepository;
+            _tagReadRepository = tagReadRepository;
+            _tagWriteRepository = tagWriteRepository;
+            _productTagReadRepository = productTagReadRepository;
+            _productTagWriteRepository = productTagWriteRepository;
             _CreateProductValidator = createProductValidator;
             _mapper = mapper;
             _env = env;
@@ -58,6 +69,51 @@ namespace Data.Services
 
             product.Id = Guid.NewGuid();
             product.ImagePath = uniqueFileName;
+            product.ProductTags = new List<ProductTag>();
+
+            if (!string.IsNullOrWhiteSpace(addProductDTO.Tags))
+            {
+                var tagNames = addProductDTO.Tags
+                    .Split(',', StringSplitOptions.RemoveEmptyEntries)
+                    .Select(t => t.Trim().ToLower())
+                    .Distinct();
+
+                foreach (var tagName in tagNames)
+                {
+                    var existingTag = await _tagReadRepository.GetAll()
+                        .FirstOrDefaultAsync(t => t.Name == tagName);
+
+                    if (existingTag == null)
+                    {
+                        existingTag = new Tag
+                        {
+                            Id = Guid.NewGuid(),
+                            CreatedAt = DateTime.UtcNow.AddHours(4),
+                            CreatedBy = "System",
+                            Name = tagName
+                        };
+
+                        await _tagWriteRepository.AddAsync(existingTag);
+                        await _tagWriteRepository.SaveChangeAsync();
+                    }
+
+                    product.ProductTags = new List<ProductTag>
+                    {
+                        new ProductTag
+                        {
+                            Id = Guid.NewGuid(),
+                            TagId = existingTag.Id,
+                            ProductId = product.Id,
+                            CreatedAt = DateTime.UtcNow.AddHours(4),
+                            CreatedBy = "System"
+                        }
+                    };
+
+
+                    await _productTagWriteRepository.AddRangeAsync(product.ProductTags.ToList());
+                    await _productTagWriteRepository.SaveChangeAsync();
+                }
+            }
 
             await _ProductWriteRepository.AddAsync(product);
             await _ProductWriteRepository.SaveChangeAsync();
@@ -69,6 +125,7 @@ namespace Data.Services
                  .Select(p => new GetProductDTO
                  {
                      Id = p.Id,
+                     CategoryId = p.CategoryId,
                      IsDeleted = p.IsDeleted,
                      ImagePath = p.ImagePath,
                      Name = p.Name,
@@ -77,8 +134,8 @@ namespace Data.Services
                      Description = p.Description,
                      ProductCode = p.ProductCode,
                      Quantity = p.Quantity,
-                     IsInWishList = (bool)p.IsInWishList,
-                     IsInCart = (bool)p.IsInCart,
+                     IsInWishList = p.IsInWishList ?? false,
+                     IsInCart = p.IsInCart ?? false,
                      CreatedAt = DateTime.UtcNow.AddHours(4),
                  })
          .ToListAsync();

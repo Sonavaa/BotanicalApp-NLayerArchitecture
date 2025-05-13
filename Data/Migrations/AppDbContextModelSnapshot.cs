@@ -80,7 +80,7 @@ namespace Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("Core.Entities.Cart", b =>
@@ -120,7 +120,7 @@ namespace Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Carts");
+                    b.ToTable("Carts", (string)null);
                 });
 
             modelBuilder.Entity("Core.Entities.Category", b =>
@@ -154,7 +154,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("Core.Entities.Contact", b =>
@@ -188,7 +188,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Contacts", (string)null);
                 });
 
             modelBuilder.Entity("Core.Entities.GetInTouch", b =>
@@ -231,7 +231,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("GetInTouches");
+                    b.ToTable("GetInTouches", (string)null);
                 });
 
             modelBuilder.Entity("Core.Entities.Identity.AppUser", b =>
@@ -343,7 +343,7 @@ namespace Data.Migrations
 
                     b.HasIndex("TagId");
 
-                    b.ToTable("ProductTags");
+                    b.ToTable("ProductTags", (string)null);
                 });
 
             modelBuilder.Entity("Core.Entities.Review", b =>
@@ -392,7 +392,7 @@ namespace Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Reviews");
+                    b.ToTable("Reviews", (string)null);
                 });
 
             modelBuilder.Entity("Core.Entities.Setting", b =>
@@ -436,7 +436,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Settings");
+                    b.ToTable("Settings", (string)null);
                 });
 
             modelBuilder.Entity("Core.Entities.Slider", b =>
@@ -477,7 +477,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders");
+                    b.ToTable("Sliders", (string)null);
                 });
 
             modelBuilder.Entity("Core.Entities.Subscription", b =>
@@ -516,7 +516,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Subscriptions");
+                    b.ToTable("Subscriptions", (string)null);
                 });
 
             modelBuilder.Entity("Core.Entities.Tag", b =>
@@ -547,7 +547,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tags");
+                    b.ToTable("Tags", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

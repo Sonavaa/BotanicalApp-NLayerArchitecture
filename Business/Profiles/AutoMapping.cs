@@ -27,7 +27,8 @@ namespace Business.Profiles
                   .ForMember(dest => dest.UpdatedAt, opt => opt.Ignore())
                   .ForMember(dest => dest.CreatedBy, opt => opt.MapFrom(src => "System"))
                   .ForMember(dest => dest.IsInWishList, opt => opt.MapFrom(src => false))
-                  .ForMember(dest => dest.IsInCart, opt => opt.MapFrom(src => false));
+                  .ForMember(dest => dest.IsInCart, opt => opt.MapFrom(src => false))
+                   .ForMember(dest => dest.TagIds, opt => opt.MapFrom(src => src.TagIds));
             CreateMap<Product, GetProductDTO>().ReverseMap();
 
             //Category

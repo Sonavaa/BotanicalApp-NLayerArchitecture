@@ -77,6 +77,39 @@ namespace Business.Services
             return result;
         }
 
+        public async Task<IdentityResult> CreateAdmin(UserRegisterDTO registerDTO)
+        {
+            var existingUser = await _userManager.FindByEmailAsync(registerDTO.Email);
+            if (existingUser != null)
+            {
+                return IdentityResult.Failed(new IdentityError { Description = "Admin already exists with this email." });
+            }
+
+            if (registerDTO.Password != registerDTO.ConfirmPassword)
+            {
+                return IdentityResult.Failed(new IdentityError { Description = "Passwords do not match." });
+            }
+
+            var admin = _mapper.Map<AppUser>(registerDTO);
+            admin.EmailConfirmed = false;
+            admin.Role = "Admin";
+
+            var result = await _userManager.CreateAsync(admin, registerDTO.Password);
+            if (!result.Succeeded)
+            {
+                return result;
+            }
+
+            var roleExists = await _roleManager.RoleExistsAsync("Admin");
+            if (!roleExists)
+            {
+                return IdentityResult.Failed(new IdentityError { Description = "Role 'Admin' does not exist." });
+            }
+
+            await _userManager.AddToRoleAsync(admin, "Admin");
+            return result;
+        }
+
         public async Task LogOutAsync()
         {
             await _signInManager.SignOutAsync();

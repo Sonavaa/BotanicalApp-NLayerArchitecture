@@ -76,6 +76,11 @@
             </div>
 
             <!-- Tags -->
+            <div>
+                <label asp-for="Tags" class="form-label">Tags</label>
+                <input type="text" asp-for="Tags" name="Tags" class="form-control" placeholder="Enter Tag or Tags">
+                <span class="form-text text-danger" asp-validation-for="Tags"></span>
+            </div>
       @*       <div>
                 <label for="Tags" class="form-label">Tags</label>
                 <div class="form-group">

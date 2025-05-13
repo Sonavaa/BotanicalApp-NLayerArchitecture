@@ -11,6 +11,7 @@ namespace Business.IServices
     public interface IUserService
     {
         Task<IdentityResult> RegisterAsync(UserRegisterDTO registerDTO);
+        Task<IdentityResult> CreateAdmin(UserRegisterDTO registerDTO);
         Task<SignInResult> LoginAsync(UserLoginDTO userLoginDTO);
         Task LogOutAsync();
     }

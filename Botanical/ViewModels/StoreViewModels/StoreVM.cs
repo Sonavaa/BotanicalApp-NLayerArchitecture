@@ -11,5 +11,7 @@ namespace Botanical.ViewModels.StoreViewModels
         public List<GetProductDTO>? Products { get; set; } = new();
         public List<GetSettingsDTO>? Settings { get; set; } = new();
         public List<GetCategoryDTO>? Categories { get; set; } = new();
+        public int CurrentPage { get; set; }
+        public int TotalPages { get; set; }
     }
 }

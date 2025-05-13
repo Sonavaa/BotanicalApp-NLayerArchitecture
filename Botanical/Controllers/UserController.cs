@@ -74,7 +74,7 @@ namespace Botanical.Controllers
             {
                 if (User.IsInRole("Admin"))
                 {
-                    return RedirectToAction("Index", "Dashboards");
+                    return RedirectToAction("Index", "Dashboards", new { area = "Admin" });
                 }
                 else if (User.IsInRole("User"))
                 {
@@ -186,6 +186,37 @@ namespace Botanical.Controllers
             }
 
             return Ok("Roles Created");
+        }
+
+        [HttpGet]
+        public IActionResult CreateAdmin()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateAdmin([FromForm] UserRegisterDTO registerDTO)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                var result = await _userService.CreateAdmin(registerDTO);
+
+                if (result.Succeeded)
+                {
+                    return Ok("Admin Created Successfully!");
+                }
+
+                return BadRequest(new { errors = result.Errors.Select(e => e.Description) });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
         }
     }
 }
