@@ -126,7 +126,7 @@
                                 </ul>
                             </div>
                             <div class="text-center py-5 px-2">
-                                <span class="title d-block mb-2"><a href="~/client/assets/shop-detail.html">@slideProduct.Name</a></span>
+                                <span style="width:220px;" class="title d-block mb-2"><a href="~/client/assets/shop-detail.html">@slideProduct.Name</a></span>
                                 @if (slideProduct.DiscountedPrice is not null & slideProduct.DiscountedPrice < slideProduct.Price)
                                 {
                                     <span class="price d-block fwEbold"><del>@slideProduct.Price $</del>@slideProduct.DiscountedPrice $</span>
@@ -287,26 +287,7 @@
             </div>
         }
     </div>
-    <!-- partnerSec -->
-    <div class="partnerSec container overflow-hidden pt-xl-12 pb-xl-23 pt-lg-10 pt-md-8 pt-5 pb-lg-20 pb-md-16 pb-10">
-        <div class="row">
-            <div class="col-12">
-                <!-- partnerSlider -->
-                <div class="partnerSlider d-flex flex-wrap">
-                    @foreach (var item in Model.Products)
-                    {
-                        <div>
-                            <div class="logoColumn d-flex align-items-center justify-content-center">
-                                <a href="~/client/assets/javascript:void(0);"><img src="~/client/assets/http://placehold.it/105x59" alt="Partner Logo" class="img-fluid"></a>
-                            </div>
-                        </div>
-
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid px-xl-20 px-lg-14">
+    <div class="container-fluid px-xl-20 px-lg-14 mt-5">
         <!-- subscribeSecBlock -->
         <section class="subscribeSecBlock bgCover col-12 pt-xl-24 pb-xl-12 pt-lg-20 pt-md-16 pt-10 pb-md-8 pb-5" style="background-color:#f5f5f5">
             <header class="col-12 mainHeader mb-sm-9 mb-6 text-center">

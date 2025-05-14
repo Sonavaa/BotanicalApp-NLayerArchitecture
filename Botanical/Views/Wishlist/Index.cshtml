@@ -46,8 +46,10 @@
                                     </div>
                                     <span class="title pl-2"><a href="shop-detail.html">@product.Name</a></span>
                                 </td>
-                                <td class="fwEbold border-top-0 border-bottom px-0 py-6">180.00 $</td>
-                                <td class="border-top-0 border-bottom px-0 py-6"><input type="number" placeholder="1"></td>
+                                    <td class="fwEbold border-top-0 border-bottom px-0 py-6">
+                                        @(product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price) $
+                                    </td>
+                                <td class="border-top-0 border-bottom px-0 py-6"><input class="quantity-input" type="number" placeholder="1" min="1"></td>
                                 <td class="fwEbold border-top-0 border-bottom px-0 py-6">
                                     @(product.DiscountedPrice > 0 ? product.DiscountedPrice : product.Price)
                                     $ <a href="javascript:void(0);" class="fas fa-times float-right"></a>

@@ -384,47 +384,16 @@ wwwroot\client\assets\images\p-logo3.png
 wwwroot\client\assets\images\p-logo4.png
 wwwroot\client\assets\images\p-logo5.png
 wwwroot\client\assets\images\p-logo6.png
-wwwroot\client\assets\images\productImages\077316e6-e9e2-4069-9fa0-0ebab9187f3c_Role-Enum.png
-wwwroot\client\assets\images\productImages\0846f3de-b604-4e12-8ffa-995cb3e852dc_Statistika İot.png
-wwwroot\client\assets\images\productImages\0bf1ceff-4f9d-407e-b01a-d4b2b325c9d4_Screenshot (48).png
-wwwroot\client\assets\images\productImages\0ea2f5f6-54c4-452b-930b-6bf3a016199a_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\1e1d0cd5-5a46-44d2-9644-c28c03fea60c_254fea34b552ff9fefe8bf9a8ef63067.jpg
-wwwroot\client\assets\images\productImages\2077e73c-ada2-4b4e-83c0-1967efdd0ea7_254fea34b552ff9fefe8bf9a8ef63067.jpg
-wwwroot\client\assets\images\productImages\264b9cfa-0cd8-4351-94bc-919937fa23eb_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\272bd713-b320-4957-9118-ad386352c178_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\29ec7d19-cf93-4d65-9186-f7533f7bdf0e_Role-Enum.png
-wwwroot\client\assets\images\productImages\2e4e5165-200f-4837-a774-aa5cc9816961_201902151010474055665.png
-wwwroot\client\assets\images\productImages\316983bc-965a-4418-be91-2fec033848d7_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\31921312-7a26-4a8e-86f5-8167d603a74a_254fea34b552ff9fefe8bf9a8ef63067.jpg
-wwwroot\client\assets\images\productImages\3229fa7b-e731-4ce2-b92e-99b3d16087d3_201902151010474055665.png
-wwwroot\client\assets\images\productImages\35aecb77-cf62-4a2b-a35a-add9c5e9980c_Role-Enum.png
-wwwroot\client\assets\images\productImages\3b0c5f80-36bd-4555-bbdf-e88846ef189f_Statistika İot.png
-wwwroot\client\assets\images\productImages\3d30c619-533d-4690-a15c-510c4998f4b1_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\3e5d7c63-4317-430f-a887-b5c9deef7255_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\479b2911-1295-428f-9155-affc5a8653f2_Screenshot (47).png
-wwwroot\client\assets\images\productImages\4f478f7e-462e-48e3-b000-022000844284_Statistika İot.png
-wwwroot\client\assets\images\productImages\5014a380-5ae8-4bc2-9218-62bc2ee533ea_Statistika İot.png
-wwwroot\client\assets\images\productImages\5c3c1dec-db3d-4383-8aa4-f9a28b330fc2_254fea34b552ff9fefe8bf9a8ef63067.jpg
-wwwroot\client\assets\images\productImages\6599f48e-e22f-4dd4-a027-b7a1e6408fcb_Screenshot (48).png
-wwwroot\client\assets\images\productImages\66336b42-fa1d-446d-82a1-55888e05567b_Role-Enum.png
-wwwroot\client\assets\images\productImages\7469adba-57e2-4ecc-ad06-0cf89cb006b3_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\7f5adde4-485d-44f1-82fc-9777c1b210ac_254fea34b552ff9fefe8bf9a8ef63067.jpg
-wwwroot\client\assets\images\productImages\912df2de-cb10-46a7-b94c-49149497f733_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\914d4098-dd92-4a2b-996c-95800609d061_Statistika İot.png
-wwwroot\client\assets\images\productImages\9ada323c-6595-49f2-86e7-d234c3bf3a47_Statistika İot.png
-wwwroot\client\assets\images\productImages\9ba1b644-9bca-4982-8970-2e784c977b81_201902151010474055665.png
-wwwroot\client\assets\images\productImages\a2a365b8-dfce-4c9c-a0da-2ea9eb1f74a1_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\b32cacae-07f4-45d6-86d0-af26a5c216bf_Screenshot (47).png
-wwwroot\client\assets\images\productImages\b7fcfe44-64eb-4860-b9da-fa42dea60019_Role-Enum.png
-wwwroot\client\assets\images\productImages\ba6b00aa-4504-4d30-af4c-1a7f0dbe89ec_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\c5476332-bf29-42f3-8910-44382211fbaa_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\e773934e-dd73-4ca8-88e4-8eb34d0da8d1_İoT Zaman-Mekan.png
-wwwroot\client\assets\images\productImages\eaa4d9a9-625d-444c-927a-b6fbdaafae6e_Screenshot (47).png
-wwwroot\client\assets\images\productImages\f3a53280-8db7-4a35-824d-9c476d33b48f_Screenshot (47).png
-wwwroot\client\assets\images\productImages\f6e49afc-82e5-4f53-83d5-ce2f3deb1366_254fea34b552ff9fefe8bf9a8ef63067.jpg
-wwwroot\client\assets\images\productImages\f8710b70-6da8-4d71-812c-35102b20f7ee_254fea34b552ff9fefe8bf9a8ef63067.jpg
-wwwroot\client\assets\images\productImages\fa39b834-933d-43b9-acf9-6584be24b61f_Role-Enum.png
-wwwroot\client\assets\images\productImages\fa6a5bbd-5bd9-42cc-be5c-3c69cf4ebf03_İoT Zaman-Mekan.png
+wwwroot\client\assets\images\productImages\1918e18e-d12e-40bc-b12e-1bc6a44529d5_img16.jpg
+wwwroot\client\assets\images\productImages\3d396bc3-83f2-4b28-9407-dbbe497dc606_img08.jpg
+wwwroot\client\assets\images\productImages\3fd6811d-f105-405b-977b-482733c623f8_img15.jpg
+wwwroot\client\assets\images\productImages\45dc5884-c21e-4b84-9b9b-4d2fd3180b81_img10.jpg
+wwwroot\client\assets\images\productImages\4bef2f38-2e98-439b-8f13-175641c4134f_img05.jpg
+wwwroot\client\assets\images\productImages\5c32139b-cae5-4b10-b1b9-00b81b518161_img11.jpg
+wwwroot\client\assets\images\productImages\da89a7d1-7f4e-44d8-9845-e972e5c5fa91_img12.jpg
+wwwroot\client\assets\images\productImages\ec31842c-e8d6-4626-9f9b-4691c4eb82d7_img04.jpg
+wwwroot\client\assets\images\productImages\f52062e3-250a-408f-b0da-4c4add5a5626_img06.jpg
+wwwroot\client\assets\images\productImages\f6ee9fe7-c21e-407c-8c1c-e70e91fd48b3_img09.jpg
 wwwroot\client\assets\images\SettingsImages\0a47baf2-c01a-4712-9bdf-f5f80895fc9f_8418782.jpg
 wwwroot\client\assets\images\SettingsImages\13082f38-14fc-4b4b-a5e5-df4c24208fa2_aboutBannerImg.png
 wwwroot\client\assets\images\SettingsImages\170a885f-58de-47f8-b770-256ffbe206e2_Role-Enum.png

@@ -6,6 +6,7 @@ using Business.DTOs.Contact;
 using Business.DTOs.Products;
 using Business.DTOs.Settings;
 using Business.DTOs.Slider;
+using Business.DTOs.Tag;
 using Core.Entities;
 using Core.Entities.Identity;
 using System;
@@ -70,6 +71,9 @@ namespace Business.Profiles
               .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Firstname))
               .ForMember(dest => dest.Surname, opt => opt.MapFrom(src => src.Lastname))
               .ForMember(dest => dest.PasswordHash, opt => opt.Ignore());
+
+            //Tag
+            CreateMap<Tag, GetProductTagDTO>();
         }
     }
 }

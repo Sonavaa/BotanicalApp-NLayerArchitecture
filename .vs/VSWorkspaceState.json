@@ -2,20 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Botanical",
-    "\\Botanical\\Areas",
-    "\\Botanical\\Areas\\Admin",
-    "\\Botanical\\Areas\\Admin\\Views",
-    "\\Botanical\\Areas\\Admin\\Views\\Shared",
-    "\\Botanical\\Areas\\Admin\\Views\\Shared\\Sections",
-    "\\Botanical\\Areas\\Admin\\Views\\Shared\\Sections\\Menu",
     "\\Botanical\\Controllers",
     "\\Botanical\\Views",
     "\\Botanical\\Views\\Home",
+    "\\Botanical\\Views\\Store",
     "\\Business",
     "\\Business\\Services",
     "\\Data",
     "\\Data\\Context"
   ],
-  "SelectedNode": "\\Botanical\\Controllers\\UserController.cs",
+  "SelectedNode": "\\Botanical\\Views\\Store\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

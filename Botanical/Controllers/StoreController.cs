@@ -5,7 +5,9 @@ using Business.DTOs.Category;
 using Business.DTOs.Products;
 using Business.DTOs.Settings;
 using Business.DTOs.Slider;
+using Business.DTOs.Tag;
 using Business.Services;
+using Core.Entities;
 using Data.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -48,6 +50,9 @@ namespace Botanical.Controllers
 
                 Settings = await _mapper.ProjectTo<GetSettingsDTO>(
                     _context.Settings.Where(s => !s.IsDeleted)).ToListAsync(),
+
+                Tags = await _mapper.ProjectTo<GetProductTagDTO>(
+                    _context.Tags.Where(s => !s.IsDeleted)).ToListAsync(),
 
                 CurrentPage = page,
                 TotalPages = (int)Math.Ceiling(totalProducts / (double)pageSize)

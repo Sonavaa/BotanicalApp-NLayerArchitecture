@@ -101,22 +101,19 @@ namespace Data.Services
                     {
                         new ProductTag
                         {
-                            Id = Guid.NewGuid(),
-                            TagId = existingTag.Id,
-                            ProductId = product.Id,
-                            CreatedAt = DateTime.UtcNow.AddHours(4),
-                            CreatedBy = "System"
+                          Id = Guid.NewGuid(),
+                          TagId = existingTag.Id,
+                          ProductId = product.Id,
+                          CreatedAt = DateTime.UtcNow.AddHours(4),
+                          CreatedBy = "System"
                         }
                     };
-
-
-                    await _productTagWriteRepository.AddRangeAsync(product.ProductTags.ToList());
-                    await _productTagWriteRepository.SaveChangeAsync();
                 }
             }
-
             await _ProductWriteRepository.AddAsync(product);
+            await _productTagWriteRepository.AddRangeAsync(product.ProductTags.ToList());
             await _ProductWriteRepository.SaveChangeAsync();
+            await _productTagWriteRepository.SaveChangeAsync();
         }
 
         public async Task<List<GetProductDTO>> GetAllProductAsync()
