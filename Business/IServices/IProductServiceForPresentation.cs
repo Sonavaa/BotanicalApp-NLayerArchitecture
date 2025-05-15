@@ -1,4 +1,5 @@
-﻿using Business.DTOs.Products;
+﻿using Botanical.Models;
+using Business.DTOs.Products;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,5 +16,6 @@ namespace Business.IServices
         Task AddToCart(Guid Id);
         Task<GetProductDTO> ProductDetail(Guid Id);
         Task<List<GetProductDTO>> Search(string search);
+        Task<List<GetProductDTO>> GetSortedProductsAsync(string sort, string category, string tag, decimal? minPrice, decimal? maxPrice);
     }
 }

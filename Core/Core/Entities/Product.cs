@@ -20,6 +20,7 @@ namespace Botanical.Models
         public string? ImagePath { get; set; }
         public IEnumerable<ProductTag>? ProductTags { get; set; }
         public IEnumerable<Review>? Reviews { get; set; }
+        public ICollection<WishListItem> WishListItems { get; set; }
 
         [NotMapped]
         public IEnumerable<Guid>? TagIds { get; set; }

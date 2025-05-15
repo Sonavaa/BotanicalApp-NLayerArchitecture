@@ -43,7 +43,7 @@ namespace Botanical.Controllers
             try
             {
                 await _productServiceForPresentation.AddToWishList(id);
-                return View("Index", "Home");
+                return Ok();
             }
             catch (Exception ex)
             {

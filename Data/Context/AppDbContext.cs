@@ -40,6 +40,20 @@ namespace Data.Context
                 .HasForeignKey(p => p.CategoryId)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<WishListItem>()
+    .HasKey(w => new { w.AppUserId, w.ProductId });
+
+            modelBuilder.Entity<WishListItem>()
+                .HasOne(w => w.Product)
+                .WithMany(p => p.WishListItems)
+                .HasForeignKey(w => w.ProductId);
+
+            modelBuilder.Entity<WishListItem>()
+                .HasOne(w => w.AppUser)
+                .WithMany(u => u.WishListItems)
+                .HasForeignKey(w => w.AppUserId);
+
+
             //        modelBuilder.Entity<Cart>()
             //.HasOne(c => c.AppUser)
             //.WithMany()

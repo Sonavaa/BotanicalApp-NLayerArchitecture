@@ -63,7 +63,8 @@ namespace Data.Services
 
         public async Task<List<GetCategoryDTO>> GetAllCategoryAsync()
         {
-            var Categorys = await _CategoryReadRepository.GetAll()
+            var categories = await _CategoryReadRepository.GetAll()
+                 .Include(c => c.Products)
                  .Select(p => new GetCategoryDTO
                  {
                      Id = p.Id,
@@ -71,11 +72,14 @@ namespace Data.Services
                      Name = p.Name,
                      ImgPath = p.ImgPath,
                      CreatedAt = DateTime.UtcNow.AddHours(4),
+                     Products = p.Products
+            .Where(p => !p.IsDeleted)
+            .ToList()
                  })
          .ToListAsync();
 
 
-            return Categorys;
+            return categories;
         }
 
         public async Task<GetCategoryDTO> GetCategoryById(Guid Id)

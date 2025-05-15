@@ -1,7 +1,10 @@
 ﻿using AutoMapper;
+using Botanical.Models;
 using Business.DTOs.Products;
 using Business.IServices;
+using Core.Entities;
 using Core.Repositories;
+using Data.Services;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -18,13 +21,16 @@ namespace Business.Services
     {
         private readonly IProductReadRepository _ProductReadRepository;
         private readonly IProductWriteRepository _ProductWriteRepository;
+        private readonly IProductService _productService;
         private readonly IValidator<CreateProductDTO> _CreateProductValidator;
         private readonly IMapper _mapper;
         //private readonly IFileService _fileService;
-        public ProductServiceForPresentation(IProductReadRepository ProductReadRepository, IProductWriteRepository ProductWriteRepository, IValidator<CreateProductDTO> createProductValidator, IMapper mapper)
+        public ProductServiceForPresentation(IProductReadRepository ProductReadRepository, IProductWriteRepository ProductWriteRepository,
+            IProductService productService, IValidator<CreateProductDTO> createProductValidator, IMapper mapper)
         {
             _ProductReadRepository = ProductReadRepository;
             _ProductWriteRepository = ProductWriteRepository;
+            _productService = productService;
             _CreateProductValidator = createProductValidator;
             _mapper = mapper;
         }
@@ -97,6 +103,7 @@ namespace Business.Services
                 .Where(p => !p.IsDeleted)
                 .Select(p => new GetProductDTO
                 {
+                    Id = p.Id,
                     Name = p.Name,
                     ImagePath = p.ImagePath
                 })
@@ -104,5 +111,35 @@ namespace Business.Services
 
             return products.ToList();
         }
+
+        public async Task<List<GetProductDTO>> GetSortedProductsAsync(string sort, string category, string tag, decimal? minPrice, decimal? maxPrice)
+        {
+            var products = await _productService.GetAllProductAsync();
+
+
+            if (!string.IsNullOrEmpty(category))
+                products = products.Where(p => p.categoryName == category).ToList();
+
+            if (!string.IsNullOrEmpty(tag))
+                products = products.Where(p => p.tagName == tag).ToList();
+
+            if (minPrice.HasValue)
+                products = products.Where(p => (p.DiscountedPrice ?? p.Price) >= minPrice.Value).ToList();
+
+            if (maxPrice.HasValue)
+                products = products.Where(p => (p.DiscountedPrice ?? p.Price) <= maxPrice.Value).ToList();
+
+            products = sort switch
+            {
+                "price_asc" => products.OrderBy(p => p.DiscountedPrice ?? p.Price).ToList(),
+                "price_desc" => products.OrderByDescending(p => p.DiscountedPrice ?? p.Price).ToList(),
+                "top_rated" => products.OrderBy(p => p.CreatedAt).Where(p => p.IsInWishList).ToList(),
+                "new_arr" => products.OrderByDescending(p => p.CreatedAt).ToList(),
+                _ => products
+            };
+
+            return products;
+        }
+
     }
 }

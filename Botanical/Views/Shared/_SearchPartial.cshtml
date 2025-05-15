@@ -7,7 +7,10 @@
         <li style="height: 60px;padding-top: 8px;">
             <a asp-controller="Product" asp-action="Detail" asp-route-id="@product.Id" style="width:100%; cursor: pointer; color: #000">
                 <img style="width:60px;height: 50px !important;" src="@product.ImagePath" />
-                <p style="display:inline-block; margin-bottom:0">@product.Name</p>
+                <p style="display:inline-block; margin-bottom:0">
+                    @(product.Name.Length > 20 ? product.Name.Substring(0, 20) + "..." : product.Name)
+                </p>
+
             </a>
         </li>
     </ul>

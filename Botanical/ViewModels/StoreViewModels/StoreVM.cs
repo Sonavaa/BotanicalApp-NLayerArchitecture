@@ -16,5 +16,6 @@ namespace Botanical.ViewModels.StoreViewModels
         public List<GetCategoryDTO>? Categories { get; set; } = new();
         public int CurrentPage { get; set; }
         public int TotalPages { get; set; }
+        public int AllProductsCount { get; set; }
     }
 }

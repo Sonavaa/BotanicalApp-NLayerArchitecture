@@ -123,6 +123,8 @@ namespace Data.Services
                  {
                      Id = p.Id,
                      CategoryId = p.CategoryId,
+                     categoryName = p.Category.Name,
+                     tagName = string.Join(", ", p.ProductTags.Select(t => t.Tag.Name)),
                      IsDeleted = p.IsDeleted,
                      ImagePath = p.ImagePath,
                      Name = p.Name,
@@ -132,7 +134,9 @@ namespace Data.Services
                      ProductCode = p.ProductCode,
                      Quantity = p.Quantity,
                      IsInWishList = p.IsInWishList ?? false,
-                     IsInCart = p.IsInCart ?? false,
+                     IsInCart = p.IsInCart ?? false,    
+                     WishListCount = p.WishListItems.Count(),
+
                      CreatedAt = DateTime.UtcNow.AddHours(4),
                  })
          .ToListAsync();

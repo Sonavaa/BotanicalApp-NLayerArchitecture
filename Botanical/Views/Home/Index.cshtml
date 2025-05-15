@@ -93,6 +93,14 @@
                         <div class="border">
                             <div class="imgHolder position-relative w-100 overflow-hidden">
                                 <img src="~/@slideProduct.ImagePath" alt="image description" class="img-fluid w-100" style="height:240px; width:240px !important">
+                                @if (slideProduct.DiscountedPrice is not null && slideProduct.DiscountedPrice < slideProduct.Price)
+                                {
+                                    <span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block p-1">Sale</span>
+                                }
+                                @if (slideProduct.IsInWishList && slideProduct.WishListCount >= 2)
+                                {
+                                    <span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block bg-red p-1">HOT</span>
+                                }
                                 <ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
                                     @if (!slideProduct.IsInWishList)
                                     {
@@ -135,8 +143,6 @@
                                 {
                                     <span class="price d-block fwEbold">@slideProduct.Price $</span>
                                 }
-                                <span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block bg-red">HOT</span>
-                                <span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block">Sale</span>
                             </div>
                         </div>
                     </div>
@@ -245,6 +251,14 @@
                     <div class="border">
                         <div class="imgHolder position-relative w-100 overflow-hidden">
                             <img src="~/@slideProduct.ImagePath" alt="image description" class="img-fluid w-100" style="height:240px">
+                            @if (slideProduct.DiscountedPrice is not null && slideProduct.DiscountedPrice < slideProduct.Price)
+                            {
+                                <span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block p-1">Sale</span>
+                            }
+                            @if (slideProduct.IsInWishList && slideProduct.WishListCount >= 2)
+                            {
+                                <span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block bg-red p-1">HOT</span>
+                            }
                             <ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
                                 @if (!slideProduct.IsInWishList)
                                 {
@@ -279,8 +293,6 @@
                             {
                                 <span class="price d-block fwEbold">@slideProduct.Price $</span>
                             }
-                            <span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block bg-red">HOT</span>
-                            <span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block">Sale</span>
                         </div>
                     </div>
                 </div>

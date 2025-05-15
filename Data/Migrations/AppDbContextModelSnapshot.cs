@@ -80,7 +80,7 @@ namespace Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Core.Entities.Cart", b =>
@@ -120,7 +120,7 @@ namespace Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Carts", (string)null);
+                    b.ToTable("Carts");
                 });
 
             modelBuilder.Entity("Core.Entities.Category", b =>
@@ -154,7 +154,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories", (string)null);
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Core.Entities.Contact", b =>
@@ -188,7 +188,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contacts", (string)null);
+                    b.ToTable("Contacts");
                 });
 
             modelBuilder.Entity("Core.Entities.GetInTouch", b =>
@@ -231,7 +231,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("GetInTouches", (string)null);
+                    b.ToTable("GetInTouches");
                 });
 
             modelBuilder.Entity("Core.Entities.Identity.AppUser", b =>
@@ -343,7 +343,7 @@ namespace Data.Migrations
 
                     b.HasIndex("TagId");
 
-                    b.ToTable("ProductTags", (string)null);
+                    b.ToTable("ProductTags");
                 });
 
             modelBuilder.Entity("Core.Entities.Review", b =>
@@ -392,7 +392,7 @@ namespace Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Reviews", (string)null);
+                    b.ToTable("Reviews");
                 });
 
             modelBuilder.Entity("Core.Entities.Setting", b =>
@@ -436,7 +436,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Settings", (string)null);
+                    b.ToTable("Settings");
                 });
 
             modelBuilder.Entity("Core.Entities.Slider", b =>
@@ -477,7 +477,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders", (string)null);
+                    b.ToTable("Sliders");
                 });
 
             modelBuilder.Entity("Core.Entities.Subscription", b =>
@@ -516,7 +516,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Subscriptions", (string)null);
+                    b.ToTable("Subscriptions");
                 });
 
             modelBuilder.Entity("Core.Entities.Tag", b =>
@@ -547,7 +547,28 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tags", (string)null);
+                    b.ToTable("Tags");
+                });
+
+            modelBuilder.Entity("Core.Entities.WishListItem", b =>
+                {
+                    b.Property<string>("AppUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.HasKey("AppUserId", "ProductId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("WishListItem");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -743,6 +764,25 @@ namespace Data.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Core.Entities.WishListItem", b =>
+                {
+                    b.HasOne("Core.Entities.Identity.AppUser", "AppUser")
+                        .WithMany("WishListItems")
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Botanical.Models.Product", "Product")
+                        .WithMany("WishListItems")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -799,6 +839,8 @@ namespace Data.Migrations
                     b.Navigation("ProductTags");
 
                     b.Navigation("Reviews");
+
+                    b.Navigation("WishListItems");
                 });
 
             modelBuilder.Entity("Core.Entities.Category", b =>
@@ -811,6 +853,8 @@ namespace Data.Migrations
                     b.Navigation("Carts");
 
                     b.Navigation("Reviews");
+
+                    b.Navigation("WishListItems");
                 });
 #pragma warning restore 612, 618
         }

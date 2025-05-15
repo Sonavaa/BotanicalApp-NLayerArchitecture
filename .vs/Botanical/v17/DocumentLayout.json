@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\BotanicalProject\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|c:\\users\\hp\\desktop\\botanicalproject\\business\\services\\productserviceforpresentation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|solutionrelative:business\\services\\productserviceforpresentation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|c:\\users\\hp\\desktop\\botanicalproject\\business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|solutionrelative:business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\views\\store\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\views\\store\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,6 +59,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Botanical\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Botanical\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:17:58.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductServiceForPresentation.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\ProductServiceForPresentation.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\ProductServiceForPresentation.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\ProductServiceForPresentation.cs",
+              "RelativeToolTip": "Business\\Services\\ProductServiceForPresentation.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:17:39.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\ProductService.cs",
+              "RelativeToolTip": "Business\\Services\\ProductService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:17:26.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Views\\Store\\Index.cshtml",
+              "RelativeDocumentMoniker": "Botanical\\Views\\Store\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Views\\Store\\Index.cshtml",
+              "RelativeToolTip": "Botanical\\Views\\Store\\Index.cshtml",
+              "ViewState": "AgIAALsAAAAAAAAAAAAowMQAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-15T13:49:11.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StoreController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\StoreController.cs",
+              "RelativeDocumentMoniker": "Botanical\\Controllers\\StoreController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\StoreController.cs",
+              "RelativeToolTip": "Botanical\\Controllers\\StoreController.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAkwHUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T13:48:35.261Z",
+              "EditorCaption": ""
             }
           ]
         }

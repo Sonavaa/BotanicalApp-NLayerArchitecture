@@ -84,7 +84,6 @@ C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\dxb5v
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\fuuoljf2lh-x6zjoepmxw.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\h00nrro1pb-zu238p5lxg.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\y5ricytoad-lrqn8z9hfd.gz
-C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\v7qqslry5q-uovj7gxr5x.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\w6c8bnf7wf-4ehpg0512y.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\8k5ckbmypb-i8roixljxz.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\staticwebassets.build.json
@@ -391,4 +390,5 @@ C:\Users\HP\Desktop\BotanicalProject\Botanical\bin\Debug\net9.0\System.Web.WebPa
 C:\Users\HP\Desktop\BotanicalProject\Botanical\bin\Debug\net9.0\Microsoft.Web.Infrastructure.dll
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\Botanical.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\vtgo873eys-kft3i7ejjz.gz
-C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\o54pbjxpjh-e2v9j1w1oo.gz
+C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\o54pbjxpjh-ws7rri3dbd.gz
+C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\v7qqslry5q-4m8dl6wtqe.gz

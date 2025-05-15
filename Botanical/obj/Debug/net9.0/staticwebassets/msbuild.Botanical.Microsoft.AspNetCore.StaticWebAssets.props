@@ -5970,8 +5970,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uovj7gxr5x</Fingerprint>
-      <Integrity>0mHZi+tnsvmUIDPsBBIjFm8iM3EOx+d1Ii4RoDanV4M=</Integrity>
+      <Fingerprint>4m8dl6wtqe</Fingerprint>
+      <Integrity>JEYrfV+ZQoTzB2mPVEo8kqJGfsoput+nfe3mQxytIuw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\js\jqueryCustome.js'))</OriginalItemSpec>
@@ -5988,8 +5988,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>e2v9j1w1oo</Fingerprint>
-      <Integrity>eiNvfH9Ci9PkcEQjeVCTsF4G+tZieYe0Im8WCIkTPoY=</Integrity>
+      <Fingerprint>ws7rri3dbd</Fingerprint>
+      <Integrity>wKwTpAxjf8WIXGTLDBD3Ra9MHwzM3NmPFhzNpYkvfB0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\js\main.js'))</OriginalItemSpec>

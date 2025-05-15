@@ -25,6 +25,11 @@
                 <header class="show-head d-flex flex-wrap justify-content-between mb-7">
                     <!-- sortGroup -->
                     <form method="get" asp-action="Shop" class="mb-4">
+                        @if (!string.IsNullOrEmpty(ViewBag.CurrentCategory as string))
+                        {
+                            <input type="hidden" name="category" value="@ViewBag.CurrentCategory" />
+                        }
+
                         <select id="sortSelect" name="sort" class="form-select w-auto d-inline" onchange="this.form.submit()">
                             <option value="" disabled selected>Sort by</option>
                             <option value="price_asc" selected="@(ViewBag.CurrentSort == "price_asc")">Price: Low to High</option>
@@ -33,6 +38,7 @@
                             <option value="new_arr" selected="@(ViewBag.CurrentSort == "new_arr")">New Arrivals</option>
                         </select>
                     </form>
+
 
                 </header>
                 <div class="row" id="productGridContainer">
@@ -75,24 +81,24 @@
             <aside id="sidebar">
                 <!-- widget -->
                 <section class="widget overflow-hidden mb-9">
-                    <form action="javascript:void(0);" class="searchForm position-relative border">
-                        <fieldset>
-                            <input type="search" class="form-control" placeholder="Search product...">
-                            <button class="position-absolute"><i class="icon-search"></i></button>
-                        </fieldset>
-                    </form>
-                </section>
-                <!-- widget -->
-                <section class="widget overflow-hidden mb-9">
                     <h3 class="headingVII fwEbold text-uppercase mb-5">PRODUCT CATEGORIES</h3>
                     <ul class="list-unstyled categoryList mb-0">
+                        <li class="mb-4 overflow-hidden">
+                            <a asp-action="Shop">
+                                All Categories<span class="num border float-right">@Model.AllProductsCount</span>
+                            </a>
+                        </li>
                         @foreach (var category in Model.Categories)
                         {
-                            var count = category.Products.Count();
+                            var count = category.Products?.Count() ?? 0;
                             if (count != 0)
                             {
                                 <li class="mb-4 overflow-hidden">
-                                    <a href="javascript:void(0);">@category.Name <span class="num border float-right">@count</span></a>
+                                    <a asp-action="Shop"
+                                       asp-route-category="@category.Name"
+                                       asp-route-sort="@ViewBag.CurrentSort">
+                                        @category.Name <span class="num border float-right">@count</span>
+                                    </a>
                                 </li>
                             }
                         }
@@ -101,16 +107,20 @@
                 <!-- widget -->
                 <section class="widget mb-9">
                     <h3 class="headingVII fwEbold text-uppercase mb-6">Filter by price</h3>
-                    <form asp-controller="Store" asp-action="GetFilteredProductsAsync" method="post" id="filterForm" class="filter-ranger-form">
+                    <form asp-controller="Store" asp-action="Shop" method="get" id="filterForm" class="filter-ranger-form">
                         <div id="slider-range"></div>
                         <input type="hidden" id="amount1" name="minPrice" />
                         <input type="hidden" id="amount2" name="maxPrice" />
+                        <input type="hidden" name="sort" value="@ViewBag.CurrentSort" />
+                        <input type="hidden" name="category" value="@ViewBag.CurrentCategory" />
+                        <input type="hidden" name="tag" value="@ViewBag.CurrentTag" />
                         <div class="get-results-wrap d-flex align-items-center justify-content-between">
                             <button type="submit" class="btn btnTheme btn-shop fwEbold md-round px-3 pt-1 pb-2 text-uppercase">Filter</button>
                             <p id="amount" class="mb-0"></p>
                         </div>
                     </form>
                 </section>
+
 
 
                 <!-- widget -->
@@ -139,11 +149,25 @@
                 <section class="widget mb-9">
                     <h3 class="headingVII fwEbold text-uppercase mb-5">product tags</h3>
                     <ul class="list-unstyled tagNavList d-flex flex-wrap mb-0">
+
                         @foreach (var tag in Model.Tags.Take(8))
+                        {
+                            <li class="mb-4 text-center overflow-hidden">
+                                    <a asp-action="Shop"
+                                       asp-route-tag="@tag.Name"
+                                       asp-route-sort="@ViewBag.CurrentTag"
+                                   class="md-round d-block">
+                                        @tag.Name 
+                                    </a>
+                                </li>
+                        }
+
+
+                  @*       @foreach (var tag in Model.Tags.Take(8))
                         {
                             <li class="text-center"><a href="javascript:void(0);" class="md-round d-block">@tag.Name</a></li>
 
-                        }
+                        } *@
                     </ul>
                 </section>
             </aside>

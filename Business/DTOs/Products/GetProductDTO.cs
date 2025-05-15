@@ -11,6 +11,7 @@ namespace Business.DTOs.Products
     {
         public Guid Id { get; set; }
         public Guid CategoryId { get; set; }
+        public string categoryName { get; set; }
         public string Name { get; set; } = null!;
         public decimal Price { get; set; } = default!;
         public decimal? DiscountedPrice { get; set; }
@@ -21,7 +22,9 @@ namespace Business.DTOs.Products
         public DateTime CreatedAt { get; set; }
         public bool IsDeleted { get; set; }
         public bool IsInWishList { get; set; }
+        public int WishListCount { get; set; }
         public bool IsInCart { get; set; }
         public string? Tags { get; set; }
+        public string tagName { get; set; }
     }
 }

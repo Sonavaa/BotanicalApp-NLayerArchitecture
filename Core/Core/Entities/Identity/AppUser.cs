@@ -15,6 +15,7 @@ namespace Core.Entities.Identity
         public string? Name { get; set; }
         public string? Surname { get; set; }
         public IEnumerable<Review>? Reviews { get; set; }
+        public ICollection<WishListItem>? WishListItems { get; set; }
         public List<Cart>? Carts { get; set; }
         public string Role { get; set; } = null!;
     }
