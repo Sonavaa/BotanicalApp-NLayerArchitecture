@@ -4,6 +4,7 @@ using Business.DTOs.Category;
 using Business.DTOs.Products;
 using Business.DTOs.Settings;
 using Business.DTOs.Slider;
+using Business.DTOs.Subscriber;
 using Data.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -38,7 +39,10 @@ namespace Botanical.Controllers
          ).ToListAsync(),
                 Settings = await _mapper.ProjectTo<GetSettingsDTO>(
              _context.Settings.Where(s => !s.IsDeleted)
-         ).ToListAsync()
+         ).ToListAsync(),
+                Subscriber = await _mapper.ProjectTo<GetSubscriberDTO>(
+    _context.Subscribers
+).FirstOrDefaultAsync()
             };
             return View(homeVM);
         }

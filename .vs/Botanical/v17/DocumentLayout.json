@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\BotanicalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|c:\\users\\hp\\desktop\\botanicalproject\\business\\services\\productserviceforpresentation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|solutionrelative:business\\services\\productserviceforpresentation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|c:\\users\\hp\\desktop\\botanicalproject\\business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29CEA8CA-24D6-4301-A7EF-8FB297B2B3D4}|Business\\Business.csproj|solutionrelative:business\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\views\\store\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,6 +17,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\controllers\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\wwwroot\\client\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\wwwroot\\client\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\views\\wishlist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\views\\wishlist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|c:\\users\\hp\\desktop\\botanicalproject\\botanical\\viewcomponent\\wishlistcountviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63BA522B-9167-49B6-BA4E-75162B413CD2}|Botanical\\Botanical.csproj|solutionrelative:botanical\\viewcomponent\\wishlistcountviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,67 +78,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Botanical\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Botanical\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwCsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:17:58.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductServiceForPresentation.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\ProductServiceForPresentation.cs",
-              "RelativeDocumentMoniker": "Business\\Services\\ProductServiceForPresentation.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\ProductServiceForPresentation.cs",
-              "RelativeToolTip": "Business\\Services\\ProductServiceForPresentation.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:17:39.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Business\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Business\\Services\\ProductService.cs",
-              "RelativeToolTip": "Business\\Services\\ProductService.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:17:26.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Views\\Store\\Index.cshtml",
               "RelativeDocumentMoniker": "Botanical\\Views\\Store\\Index.cshtml",
               "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Views\\Store\\Index.cshtml",
               "RelativeToolTip": "Botanical\\Views\\Store\\Index.cshtml",
-              "ViewState": "AgIAALsAAAAAAAAAAAAowMQAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAQwIEAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-15T13:49:11.063Z",
+              "WhenOpened": "2025-05-19T21:53:06.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Botanical\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Botanical\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T21:52:09.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Botanical\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Botanical\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T21:47:59.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\js\\main.js",
+              "RelativeDocumentMoniker": "Botanical\\wwwroot\\client\\assets\\js\\main.js",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\wwwroot\\client\\assets\\js\\main.js",
+              "RelativeToolTip": "Botanical\\wwwroot\\client\\assets\\js\\main.js",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAgwJIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-19T21:36:58.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "StoreController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\StoreController.cs",
               "RelativeDocumentMoniker": "Botanical\\Controllers\\StoreController.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\StoreController.cs",
               "RelativeToolTip": "Botanical\\Controllers\\StoreController.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAkwHUAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T13:48:35.261Z",
+              "WhenOpened": "2025-05-19T21:34:18.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WishlistController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\WishlistController.cs",
+              "RelativeDocumentMoniker": "Botanical\\Controllers\\WishlistController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Controllers\\WishlistController.cs",
+              "RelativeToolTip": "Botanical\\Controllers\\WishlistController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:18:43.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Views\\Wishlist\\Index.cshtml",
+              "RelativeDocumentMoniker": "Botanical\\Views\\Wishlist\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Views\\Wishlist\\Index.cshtml",
+              "RelativeToolTip": "Botanical\\Views\\Wishlist\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T06:44:16.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WishlistCountViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\ViewComponent\\WishlistCountViewComponent.cs",
+              "RelativeDocumentMoniker": "Botanical\\ViewComponent\\WishlistCountViewComponent.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\ViewComponent\\WishlistCountViewComponent.cs",
+              "RelativeToolTip": "Botanical\\ViewComponent\\WishlistCountViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:00:34.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Botanical\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\BotanicalProject\\Botanical\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Botanical\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAowG4AAACoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T06:54:14.578Z",
               "EditorCaption": ""
             }
           ]

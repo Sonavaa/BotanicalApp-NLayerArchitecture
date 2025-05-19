@@ -105,31 +105,35 @@
                                     @if (!slideProduct.IsInWishList)
                                     {
                                         <li class="mr-2 overflow-hidden">
-                                                <form asp-controller="Product" asp-action="AddToWishList" asp-route-id="@slideProduct.Id" method="post">
-                                                <button type="submit" class="icon-heart d-block pt-2 px-2" style="border:none; background-color:transparent">
-                                                        <i class="ri-heart-line"></i> 
-                                                    </button>
-                                                </form>
+                                            <a asp-controller="Store"
+                                               asp-action="AddToWishlist"
+                                               asp-route-wishlistId="@slideProduct.Id"
+                                               class="icon-heart d-block add-to-wishlist-btn"
+                                               title="Add to Wishlist">
+                                                <i class="ri-heart-line"></i>
+                                            </a>
                                         </li>
                                     }
                                     else
                                     {
                                         <li class="mr-2 overflow-hidden">
-                                                <form asp-controller="Product" asp-action="RemoveFromWishList" asp-route-id="@slideProduct.Id" method="post" onsubmit="return confirm('Are you sure you want to remove this product from your wishlist?');">
-                                                    <button type="submit" class="icon-heart d-block text-danger pt-2 px-2" style="border:none; background-color:transparent">
-                                                        <i class="ri-heart-fill"></i> 
-                                                    </button>
-                                                </form>
+                                            <a asp-controller="Store"
+                                               asp-action="RemoveFromWishlist"
+                                               asp-route-wishlistId="@slideProduct.Id"
+                                               class="icon-heart d-block text-danger remove-from-wishlist-btn"
+                                               title="Remove from Wishlist">
+                                                <i class="ri-heart-fill"></i>
+                                            </a>
                                         </li>
                                     }
 
                                     <li class="mr-2 overflow-hidden"><a asp-controller="Product" asp-action="Detail" asp-route-id="@slideProduct.Id" class="icon-eye d-block"></a></li>
                                     <li class="overflow-hidden">
-                                    <form asp-controller="Product" asp-action="AddToCart" asp-route-id="@slideProduct.Id" method="post">
-                                        <button type="submit" class="icon-cart d-block pt-2 px-2" style="border:none; background-color:transparent">
-                                            <i class="ri-shopping-cart-fill"></i>
-                                        </button>
-                                    </form>
+                                        <form asp-controller="Product" asp-action="AddToCart" asp-route-id="@slideProduct.Id" method="post">
+                                            <button type="submit" class="icon-cart d-block pt-2 px-2" style="border:none; background-color:transparent">
+                                                <i class="ri-shopping-cart-fill"></i>
+                                            </button>
+                                        </form>
                                     </li>
                                 </ul>
                             </div>
@@ -250,7 +254,7 @@
                 <div class="featureCol w-100 px-3 mb-sm-8 mb-6">
                     <div class="border">
                         <div class="imgHolder position-relative w-100 overflow-hidden">
-                            <img src="~/@slideProduct.ImagePath" alt="image description" class="img-fluid w-100" style="height:240px">
+                            <img src="~/@slideProduct.ImagePath" alt="image description" class="img-fluid w-100" style="height:240px; width:240px !important">
                             @if (slideProduct.DiscountedPrice is not null && slideProduct.DiscountedPrice < slideProduct.Price)
                             {
                                 <span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block p-1">Sale</span>
@@ -263,13 +267,25 @@
                                 @if (!slideProduct.IsInWishList)
                                 {
                                     <li class="mr-2 overflow-hidden">
-                                        <a asp-controller="Product" asp-action="AddToWishList" asp-route-id="@slideProduct.Id" class="icon-heart d-block"></a>
+                                        <a asp-controller="Store"
+                                           asp-action="AddToWishlist"
+                                           asp-route-wishlistId="@slideProduct.Id"
+                                           class="icon-heart d-block add-to-wishlist-btn"
+                                           title="Add to Wishlist">
+                                            <i class="ri-heart-line"></i>
+                                        </a>
                                     </li>
                                 }
                                 else
                                 {
                                     <li class="mr-2 overflow-hidden">
-                                        <a asp-controller="Product" asp-action="RemoveFromWishList" asp-route-id="@slideProduct.Id" class="icon-heart d-block text-danger"></a>
+                                        <a asp-controller="Store"
+                                           asp-action="RemoveFromWishlist"
+                                           asp-route-wishlistId="@slideProduct.Id"
+                                           class="icon-heart d-block text-danger remove-from-wishlist-btn"
+                                           title="Remove from Wishlist">
+                                            <i class="ri-heart-fill"></i>
+                                        </a>
                                     </li>
                                 }
 
@@ -284,7 +300,7 @@
                             </ul>
                         </div>
                         <div class="text-center py-5 px-2">
-                            <span class="title d-block mb-2"><a href="~/client/assets/shop-detail.html">@slideProduct.Name</a></span>
+                            <span style="width:220px;" class="title d-block mb-2"><a href="~/client/assets/shop-detail.html">@slideProduct.Name</a></span>
                             @if (slideProduct.DiscountedPrice is not null & slideProduct.DiscountedPrice < slideProduct.Price)
                             {
                                 <span class="price d-block fwEbold"><del>@slideProduct.Price $</del>@slideProduct.DiscountedPrice $</span>
@@ -301,7 +317,9 @@
     </div>
     <div class="container-fluid px-xl-20 px-lg-14 mt-5">
         <!-- subscribeSecBlock -->
-        <section class="subscribeSecBlock bgCover col-12 pt-xl-24 pb-xl-12 pt-lg-20 pt-md-16 pt-10 pb-md-8 pb-5" style="background-color:#f5f5f5">
+        @await Html.PartialAsync("_SubscriptionPartial", Model.Subscriber)
+
+        @*     <section class="subscribeSecBlock bgCover col-12 pt-xl-24 pb-xl-12 pt-lg-20 pt-md-16 pt-10 pb-md-8 pb-5" style="background-color:#f5f5f5">
             <header class="col-12 mainHeader mb-sm-9 mb-6 text-center">
                 <h1 class="headingIV playfair fwEblod mb-4">Subscribe Our Newsletter</h1>
                 <span class="headerBorder d-block mb-md-5 mb-3"><img src="~/client/assets/images/hbdr.png" alt="Header Border" class="img-fluid img-bdr"></span>
@@ -311,7 +329,7 @@
                 <input type="email" class="form-control px-4 border-0" placeholder="Enter your mail...">
                 <button type="submit" class="btn btnTheme btnShop fwEbold text-white py-3 px-4">Shop Now <i class="fas fa-arrow-right ml-2"></i></button>
             </form>
-        </section>
+        </section> *@
     </div>
     <!-- footerHolder -->
     <aside class="footerHolder container-fluid overflow-hidden px-xl-20 px-lg-14 pt-xl-12 pb-xl-8 pt-lg-12 pt-md-8 pt-10 pb-lg-8">
@@ -364,34 +382,3 @@
         </div>
     </aside>
 </main>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const btn = document.querySelector(".btnMore");
-        const preview = document.querySelector(".text-preview");
-        const full = document.querySelector(".text-full");
-
-        if (btn) {
-            btn.addEventListener("click", function () {
-                const isExpanded = full.classList.contains("d-none");
-
-                if (isExpanded) {
-                    preview.classList.add("d-none");
-                    full.classList.remove("d-none");
-                    btn.innerHTML = "<i>Show Less</i>";
-                } else {
-                    full.classList.add("d-none");
-                    preview.classList.remove("d-none");
-                    btn.innerHTML = "<i>Learn More</i>";
-                }
-            });
-        }
-    });
-
-     document.addEventListener("DOMContentLoaded", function () {
-            const gridItems = document.querySelectorAll('.masonryHolder .grid-item');
-            if (gridItems.length >= 4) {
-                gridItems[2].classList.add('grid-item2'); // 3rd item (index 2)
-                gridItems[3].classList.add('grid-item2'); // 4th item (index 3)
-            }
-        });
-</script>

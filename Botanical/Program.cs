@@ -5,6 +5,7 @@ using Business.Validators.Contact;
 using Business.Validators.Product;
 using Business.Validators.Settings;
 using Business.Validators.Slider;
+using Business.Validators.User;
 using Core.Entities.Identity;
 using Data.Context;
 using FluentValidation;
@@ -55,6 +56,8 @@ builder.Services.AddControllersWithViews()
       .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateCategoryDTOValidator>())
        .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateSliderDTOValidator>())
         .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateSettingsDTOValidator>())
+            .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginDTOValidator>())
+             .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<RegisterDTOValidator>())
         .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateContactDTOValidator>());
 
 

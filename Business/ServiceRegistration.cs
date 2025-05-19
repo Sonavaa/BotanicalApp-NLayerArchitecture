@@ -5,6 +5,7 @@ using Business.Validators.Contact;
 using Business.Validators.Product;
 using Business.Validators.Settings;
 using Business.Validators.Slider;
+using Business.Validators.User;
 using Core.Repositories;
 using Data.Repositories;
 using Data.Services;
@@ -28,6 +29,8 @@ namespace Business
             services.AddValidatorsFromAssemblyContaining<CreateSliderDTOValidator>();
             services.AddValidatorsFromAssemblyContaining<CreateSettingsDTOValidator>();
             services.AddValidatorsFromAssemblyContaining<CreateContactDTOValidator>();
+            services.AddValidatorsFromAssemblyContaining<LoginDTOValidator>();
+            services.AddValidatorsFromAssemblyContaining<RegisterDTOValidator>();
 
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
@@ -36,6 +39,8 @@ namespace Business
             services.AddScoped<IProductServiceForPresentation, ProductServiceForPresentation>();
             services.AddScoped<IContactService, ContactService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ISubscriptionService, SubscriptionService>();
+            services.AddScoped<IWishlistService, WishlistService>();
 
             services.AddScoped<IProductReadRepository, ProductReadRepository>();
             services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
@@ -51,6 +56,10 @@ namespace Business
             services.AddScoped<ITagsWriteRepository, TagsWriteRepository>();
             services.AddScoped<IProductTagReadRepository, ProductTagReadRepository>();
             services.AddScoped<IProductTagWriteRepository, ProductTagWriteRepository>();
+            services.AddScoped<ISubscriberReadRepository, SubscriberReadRepository>();
+            services.AddScoped<ISubscriberWriteRepository, SubscriberWriteRepository>();
+            services.AddScoped<IWishlistItemReadRepository, WishlistItemReadRepository>();
+            services.AddScoped<IWishlistItemWriteRepository, WishlistItemWriteRepository>();
         }
     }
 }

@@ -6,6 +6,7 @@ using Business.DTOs.Contact;
 using Business.DTOs.Products;
 using Business.DTOs.Settings;
 using Business.DTOs.Slider;
+using Business.DTOs.Subscriber;
 using Business.DTOs.Tag;
 using Core.Entities;
 using Core.Entities.Identity;
@@ -74,6 +75,13 @@ namespace Business.Profiles
 
             //Tag
             CreateMap<Tag, GetProductTagDTO>();
+
+            //Subscriber
+            CreateMap<CreateSubscriberDTO, Subscriber>()
+           .ForMember(dest => dest.Id, opt => opt.Condition(src => src.Id != Guid.Empty))
+            .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+             .ForMember(dest => dest.SubscribedAt, opt => opt.MapFrom(src => src.SubscribedAt));
+            CreateMap<Subscriber, GetSubscriberDTO>();
         }
     }
 }

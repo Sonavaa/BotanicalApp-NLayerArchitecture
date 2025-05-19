@@ -107,16 +107,23 @@
                     <!-- wishListII -->
                     <ul class="nav nav-tabs wishListII pt-6 justify-content-end border-bottom-0">
                         <li class="nav-item ml-0"><a class="nav-link icon-search" href="javascript:void(0);"></a></li>
-                        <li class="nav-item"><a asp-controller="Wishlist" asp-action="Index" class="nav-link position-relative icon-heart"><span class="num rounded d-block">1</span></a></li>
-                        <li class="nav-item"><a asp-controller="Cart" asp-action="Index" class="nav-link position-relative icon-cart"><span class="num rounded d-block">2</span></a></li>
+                        <li class="nav-item"><a asp-controller="Wishlist" asp-action="Index" class="nav-link position-relative icon-heart"><span class="num rounded d-block"></span></a></li>
+                        <li class="nav-item"><a asp-controller="Cart" asp-action="Index" class="nav-link position-relative icon-cart"><span class="num rounded d-block"></span></a></li>
                         <li class="nav-item dropdown position-relative">
                             <a class="nav-link icon-profile" href="javascript:void(0);" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false"></a>
                             <ul class="dropdown-menu dropdown-menu-end mt-2 profile-dropdown shadow-sm" aria-labelledby="profileDropdown">
-                                <li><a class="dropdown-item" asp-controller="User" asp-action="Login">Login</a></li>
-                                <li><a class="dropdown-item" asp-controller="User" asp-action="Register">Register</a></li>
-                                <li><a class="dropdown-item" asp-controller="User" asp-action="Logout">Logout</a></li>
-                                <li><a class="dropdown-item" asp-controller="User" asp-action="Profile">My Account</a></li>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li><a class="dropdown-item" asp-controller="User" asp-action="Profile">My Account</a></li>
+                                    <li><a class="dropdown-item" asp-controller="User" asp-action="Logout">Logout</a></li>
+                                }
+                                else
+                                {
+                                    <li><a class="dropdown-item" asp-controller="User" asp-action="Login">Login</a></li>
+                                    <li><a class="dropdown-item" asp-controller="User" asp-action="Register">Register</a></li>
+                                }
                             </ul>
+
                         </li>
                         <style>
                             .nav-item.dropdown:hover .dropdown-menu {

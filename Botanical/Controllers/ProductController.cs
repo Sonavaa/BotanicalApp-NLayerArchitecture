@@ -23,48 +23,6 @@ namespace Botanical.Controllers
             return View(product); 
         }
 
-        [HttpPost]
-        public async Task<IActionResult> AddToCart(Guid id)
-        {
-            try
-            {
-                await _productServiceForPresentation.AddToCart(id);
-                return RedirectToAction("Index", "Cart");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> AddToWishList(Guid id)
-        {
-            try
-            {
-                await _productServiceForPresentation.AddToWishList(id);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
-        }
-
-
-        [HttpPost]
-        public async Task<IActionResult> RemoveFromWishList(Guid id)
-        {
-            try
-            {
-                await _productServiceForPresentation.RemoveFromWishList(id);
-                return View("Index","Home");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
-        }
 
         [HttpPost]
         public IActionResult DailyDeal()

@@ -3984,17 +3984,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-JEYrfV\u002BZQoTzB2mPVEo8kqJGfsoput\u002Bnfe3mQxytIuw="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"724041"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022JEYrfV\u002BZQoTzB2mPVEo8kqJGfsoput\u002Bnfe3mQxytIuw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 20:07:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Botanical/client/assets/js/main.j60wlyrh6d.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\js\main.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j60wlyrh6d"},{"Name":"integrity","Value":"sha256-67XtwfKfahVGJeu\u002BHEmtll0QWucjyexNx23jxHQAbCc="},{"Name":"label","Value":"_content/Botanical/client/assets/js/main.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5091"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002267XtwfKfahVGJeu\u002BHEmtll0QWucjyexNx23jxHQAbCc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 21:37:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Botanical/client/assets/js/main.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\js\main.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wKwTpAxjf8WIXGTLDBD3Ra9MHwzM3NmPFhzNpYkvfB0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1958"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wKwTpAxjf8WIXGTLDBD3Ra9MHwzM3NmPFhzNpYkvfB0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 18:32:03 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Botanical/client/assets/js/main.ws7rri3dbd.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\js\main.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ws7rri3dbd"},{"Name":"integrity","Value":"sha256-wKwTpAxjf8WIXGTLDBD3Ra9MHwzM3NmPFhzNpYkvfB0="},{"Name":"label","Value":"_content/Botanical/client/assets/js/main.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1958"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wKwTpAxjf8WIXGTLDBD3Ra9MHwzM3NmPFhzNpYkvfB0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 18:32:03 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-67XtwfKfahVGJeu\u002BHEmtll0QWucjyexNx23jxHQAbCc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5091"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002267XtwfKfahVGJeu\u002BHEmtll0QWucjyexNx23jxHQAbCc=\u0022"},{"Name":"Last-Modified","Value":"Mon, 19 May 2025 21:37:04 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Botanical/client/assets/js/popper.min.4ehpg0512y.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\client\assets\js\popper.min.js'))</AssetFile>

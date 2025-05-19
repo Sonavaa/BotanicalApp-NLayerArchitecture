@@ -11,9 +11,6 @@ namespace Business.IServices
 {
     public interface IProductServiceForPresentation
     {
-        Task AddToWishList(Guid Id);
-        Task RemoveFromWishList(Guid Id);
-        Task AddToCart(Guid Id);
         Task<GetProductDTO> ProductDetail(Guid Id);
         Task<List<GetProductDTO>> Search(string search);
         Task<List<GetProductDTO>> GetSortedProductsAsync(string sort, string category, string tag, decimal? minPrice, decimal? maxPrice);

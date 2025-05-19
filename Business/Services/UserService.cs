@@ -115,5 +115,16 @@ namespace Business.Services
             await _signInManager.SignOutAsync();
         }
 
+        public async Task VerifyEmail(ForgotPasswordDTO verifyEmailDTO)
+        {
+
+            var user = await _userManager.FindByNameAsync(verifyEmailDTO.Email);
+            if (user == null)
+            {
+                throw new Exception("Something is wrong!");
+            }
+            user.EmailConfirmed = true;
+        }
+
     }
 }

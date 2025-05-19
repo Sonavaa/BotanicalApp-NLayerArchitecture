@@ -34,32 +34,6 @@ namespace Business.Services
             _CreateProductValidator = createProductValidator;
             _mapper = mapper;
         }
-        public async Task AddToWishList(Guid Id)
-        {
-            var product = await _ProductReadRepository.GetByIdAsync(Id.ToString());
-            if (product == null)
-            {
-                throw new Exception("Product not found");
-            }
-            product.IsInWishList = true;
-
-            _ProductWriteRepository.Update(product);
-            await _ProductWriteRepository.SaveChangeAsync();
-        }
-
-        public async Task AddToCart(Guid Id)
-        {
-            var product = await _ProductReadRepository.GetByIdAsync(Id.ToString());
-            if (product == null)
-            {
-                throw new Exception("Product not found");
-            }
-            product.IsInCart = true;
-
-            _ProductWriteRepository.Update(product);
-            await _ProductWriteRepository.SaveChangeAsync();
-        }
-
 
         public async Task<GetProductDTO> ProductDetail(Guid Id)
         {
@@ -77,19 +51,6 @@ namespace Business.Services
             }).FirstOrDefaultAsync();
 
             return productDetail;
-        }
-
-        public async Task RemoveFromWishList(Guid Id)
-        {
-            var product = await _ProductReadRepository.GetByIdAsync(Id.ToString());
-            if (product == null)
-            {
-                throw new Exception("Product not found");
-            }
-            product.IsInWishList = false;
-
-            _ProductWriteRepository.Update(product);
-            await _ProductWriteRepository.SaveChangeAsync();
         }
 
         public async Task<List<GetProductDTO>> Search(string search)

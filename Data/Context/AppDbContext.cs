@@ -22,7 +22,8 @@ namespace Data.Context
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Slider> Sliders { get; set; }
-        public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<Subscriber> Subscribers { get; set; }
+        public DbSet<WishListItem> WishListItem { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

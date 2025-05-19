@@ -390,5 +390,8 @@ C:\Users\HP\Desktop\BotanicalProject\Botanical\bin\Debug\net9.0\System.Web.WebPa
 C:\Users\HP\Desktop\BotanicalProject\Botanical\bin\Debug\net9.0\Microsoft.Web.Infrastructure.dll
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\Botanical.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\vtgo873eys-kft3i7ejjz.gz
-C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\o54pbjxpjh-ws7rri3dbd.gz
 C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\v7qqslry5q-4m8dl6wtqe.gz
+C:\Users\HP\Desktop\BotanicalProject\Botanical\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+C:\Users\HP\Desktop\BotanicalProject\Botanical\bin\Debug\net9.0\MailKit.dll
+C:\Users\HP\Desktop\BotanicalProject\Botanical\bin\Debug\net9.0\MimeKit.dll
+C:\Users\HP\Desktop\BotanicalProject\Botanical\obj\Debug\net9.0\compressed\o54pbjxpjh-j60wlyrh6d.gz

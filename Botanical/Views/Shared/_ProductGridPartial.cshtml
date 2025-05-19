@@ -2,75 +2,72 @@
 @model List<GetProductDTO>
 
 <div class="row">
-	@foreach (var product in Model)
-	{
-		<div class="productCard col-12 col-sm-6 col-lg-4 featureCol mb-7">
-			<div class="border">
-				<div class="imgHolder position-relative w-100 overflow-hidden">
-					<img src="~/@product.ImagePath" alt="image description" class="img-fluid w-100">
+    @foreach (var product in Model)
+    {
+        <div class="productCard col-12 col-sm-6 col-lg-4 featureCol mb-7">
+            <div class="border">
+                <div class="imgHolder position-relative w-100 overflow-hidden">
+                    <img src="~/@product.ImagePath" alt="image description" class="img-fluid w-100" >
+                    @if (product.DiscountedPrice is not null && product.DiscountedPrice < product.Price)
+                    {
+                        <span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block p-1">Sale</span>
+                    }
+                    @if (product.IsInWishList && product.WishListCount >= 2)
+                    {
+                        <span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block bg-red p-1">HOT</span>
+                    }
+                    <ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
+                        @if (!product.IsInWishList)
+                        {
+                            <li class="mr-2 overflow-hidden">
+                                <a asp-controller="Store"
+                                   asp-action="AddToWishlist"
+                                   asp-route-wishlistId="@product.Id"
+                                   class="icon-heart d-block add-to-wishlist-btn"
+                                   title="Add to Wishlist">
+                                    <i class="ri-heart-line"></i>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="mr-2 overflow-hidden">
+                                <a asp-controller="Store"
+                                   asp-action="RemoveFromWishlist"
+                                   asp-route-wishlistId="@product.Id"
+                                   class="icon-heart d-block text-danger remove-from-wishlist-btn"
+                                   title="Remove from Wishlist">
+                                    <i class="ri-heart-fill"></i>
+                                </a>
+                            </li>
+                        }
 
-					@* Conditional ribbons *@
-					@if (product.DiscountedPrice is not null && product.DiscountedPrice < product.Price)
-					{
-						<span class="hotOffer green fwEbold text-uppercase text-white position-absolute d-block p-1">Sale</span>
-					}
-					@if (product.IsInWishList && product.WishListCount >= 2)
-					{
-						<span class="hotOffer fwEbold text-uppercase text-white position-absolute d-block bg-red p-1">HOT</span>
-					}
-
-					<ul class="list-unstyled postHoverLinskList d-flex justify-content-center m-0">
-						@if (!product.IsInWishList)
-						{
-							<li class="mr-2 overflow-hidden">
-								<form asp-controller="Product" asp-action="AddToWishList" asp-route-id="@product.Id" method="post">
-									<button type="submit" class="icon-heart d-block pt-2 px-2" style="border:none; background-color:transparent">
-										<i class="ri-heart-line"></i>
-									</button>
-								</form>
-							</li>
-						}
-						else
-						{
-							<li class="mr-2 overflow-hidden">
-								<form asp-controller="Product" asp-action="RemoveFromWishList" asp-route-id="@product.Id" method="post" onsubmit="return confirm('Are you sure you want to remove this product from your wishlist?');">
-									<button type="submit" class="icon-heart d-block text-danger pt-2 px-2" style="border:none; background-color:transparent">
-										<i class="ri-heart-fill"></i>
-									</button>
-								</form>
-							</li>
-						}
-
-						<li class="mr-2 overflow-hidden">
-							<a asp-controller="Product" asp-action="Detail" asp-route-id="@product.Id" class="icon-eye d-block"></a>
-						</li>
-						<li class="overflow-hidden">
-							<form asp-controller="Product" asp-action="AddToCart" asp-route-id="@product.Id" method="post">
-								<button type="submit" class="icon-cart d-block pt-2 px-2" style="border:none; background-color:transparent">
-									<i class="ri-shopping-cart-fill"></i>
-								</button>
-							</form>
-						</li>
-					</ul>
-				</div>
-
-				<div class="text-center py-5 px-2">
-					<span class="title d-block mb-2">
-						<a href="~/client/assets/shop-detail.html">@product.Name</a>
-					</span>
-
-					@if (product.DiscountedPrice is not null && product.DiscountedPrice < product.Price)
-					{
-						<span class="price d-block fwEbold">
-							<del>@product.Price $</del> @product.DiscountedPrice $
-						</span>
-					}
-					else
-					{
-						<span class="price d-block fwEbold">@product.Price $</span>
-					}
-				</div>
-			</div>
-		</div>
-	}
+                        <li class="mr-2 overflow-hidden"><a asp-controller="Product" asp-action="Detail" asp-route-id="@product.Id" class="icon-eye d-block"></a></li>
+                        <li class="overflow-hidden">
+                            <form asp-controller="Product" asp-action="AddToCart" asp-route-id="@product.Id" method="post">
+                                <button type="submit" class="icon-cart d-block pt-2 px-2" style="border:none; background-color:transparent">
+                                    <i class="ri-shopping-cart-fill"></i>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center py-5 px-2">
+                    <span style="width:220px;" class="title d-block mb-2"><a href="~/client/assets/shop-detail.html">@product.Name</a></span>
+                    @if (product.DiscountedPrice is not null & product.DiscountedPrice < product.Price)
+                    {
+                        <span class="price d-block fwEbold"><del>@product.Price $</del>@product.DiscountedPrice $</span>
+                    }
+                    else
+                    {
+                        <span class="price d-block fwEbold">@product.Price $</span>
+                    }
+                </div>
+            </div>
+        </div>
+    }
 </div>
+
+<script>
+
+</script>
